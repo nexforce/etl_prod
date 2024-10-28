@@ -39,7 +39,7 @@ def run_query(client, query):
     #return query_dict.get(query_name, None)
 
 # CÓDIGO NUVEM
-def load_query_from_file(query_name, file_path="/home/ricardo_semerene/ETL_BI/sql_queries/queries.sql"):
+def load_query_from_file(query_name, file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql"):
     # Verifica se o arquivo existe antes de tentar abrir
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"O arquivo {file_path} não foi encontrado.")
@@ -85,7 +85,7 @@ def main():
     # Carregar as credenciais do arquivo JSON
     #credentials = service_account.Credentials.from_service_account_file('bigquery_credentials.json')
     # CÓDIGO NUVEM
-    credentials = service_account.Credentials.from_service_account_file('/home/ricardo_semerene/ETL_BI/bigquery_credentials.json')
+    credentials = service_account.Credentials.from_service_account_file('/home/ricardo_semerene/etl_prod/bigquery_credentials.json')
 
     # Criar o cliente BigQuery usando as credenciais
     client = bigquery.Client(credentials=credentials, project=credentials.project_id)
@@ -150,11 +150,11 @@ def main():
     #query_tl_fat_sprint_detail = load_query_from_file("tl_fat_sprint_detail")
 
     #CÓDIGO NUVEM
-    query_tl_dim_customer = load_query_from_file("tl_dim_customer", file_path="/home/ricardo_semerene/ETL_BI/sql_queries/queries.sql")
-    query_tl_dim_service = load_query_from_file("tl_dim_service", file_path="/home/ricardo_semerene/ETL_BI/sql_queries/queries.sql")
-    query_tl_dim_squad = load_query_from_file("tl_dim_squad", file_path="/home/ricardo_semerene/ETL_BI/sql_queries/queries.sql")
-    query_tl_dim_task = load_query_from_file("tl_dim_task", file_path="/home/ricardo_semerene/ETL_BI/sql_queries/queries.sql")
-    query_tl_fat_sprint_detail = load_query_from_file("tl_fat_sprint_detail", file_path="/home/ricardo_semerene/ETL_BI/sql_queries/queries.sql")
+    query_tl_dim_customer = load_query_from_file("tl_dim_customer", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
+    query_tl_dim_service = load_query_from_file("tl_dim_service", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
+    query_tl_dim_squad = load_query_from_file("tl_dim_squad", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
+    query_tl_dim_task = load_query_from_file("tl_dim_task", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
+    query_tl_fat_sprint_detail = load_query_from_file("tl_fat_sprint_detail", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
 
     truncate_table(table_dim_service, client)
 
