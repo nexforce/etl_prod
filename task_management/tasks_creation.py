@@ -40,7 +40,8 @@ def create_tasks_in_history(task_history, exp_squad):
                 {'id': '516a19de-a502-458b-879a-617f49c5516b', 'name': 'Education', 'color': None, 'orderindex': 17},
                 {'id': 'e2048562-52f8-4422-9d17-11d9cc235594', 'name': 'Support', 'color': None, 'orderindex': 18},
                 {'id': '65c70817-345a-4307-9a8f-f8ab216e0d76', 'name': 'Other', 'color': None, 'orderindex': 19},
-                {'id': 'd754d703-fb35-46b0-86b6-1ddbf603a561', 'name': 'Customer', 'color': None, 'orderindex': 20}
+                {'id': 'd754d703-fb35-46b0-86b6-1ddbf603a561', 'name': 'Customer', 'color': None, 'orderindex': 20},
+                {'id': 'd754d703-fb35-46b0-86b6-1ddbf603a562', 'name': 'Martini', 'color': None, 'orderindex': 21}
             ]
         },
         'date_created': '1673287867538',

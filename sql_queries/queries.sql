@@ -235,8 +235,8 @@ OPTIONS(
 ) AS 
 SELECT
      DIM.uuid
-    ,DIM.task_id
-    ,TRIM(DIM.task_name) AS task_name         
+    ,DIM.external_id
+    ,TRIM(DIM.member_name) AS member_name         
     ,DIM.email             
     ,DIM.position          
     ,DIM.team              
@@ -267,8 +267,8 @@ WHERE DIM.uuid = STG.uuid;
 --INSERE O REGISTRO MAIS NOVO
 INSERT INTO `starry-compiler-387319.Clickup_Source.dim_squad` (
      uuid
-    ,task_id
-    ,task_name         
+    ,external_id
+    ,member_name         
     ,email             
     ,position          
     ,team              
@@ -327,14 +327,14 @@ SELECT
 FROM `starry-compiler-387319.Stage.stg_squad` AS STG
 LEFT JOIN `starry-compiler-387319.Clickup_Source.dim_squad` AS DIM ON DIM.email = STG.email
 WHERE STG.task_name IS NOT NULL
-  AND DIM.task_name IS NULL;
+  AND DIM.member_name IS NULL;
 
 
 --INSERE O REGISTRO MAIS NOVO
 INSERT INTO `starry-compiler-387319.Clickup_Source.dim_squad` (
      uuid
-    ,task_id
-    ,task_name         
+    ,external_id
+    ,member_name         
     ,email             
     ,position          
     ,team              

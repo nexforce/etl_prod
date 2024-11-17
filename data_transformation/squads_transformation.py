@@ -1,6 +1,7 @@
 # squads_transformation.py
 
 import pandas as pd
+import numpy as np
 
 def transform_squads_data(squads):
     
@@ -36,9 +37,11 @@ def transform_squads_data(squads):
     squads['capacity_points'] = pd.to_numeric(squads['capacity_points'], errors='coerce')
     squads['monthly_cost'] = pd.to_numeric(squads['monthly_cost'], errors='coerce')
     squads['team'] = squads['team'].astype(str)
-    squads['slack_channel'] = squads['slack_channel'].astype(str)
+   # squads['slack_channel'] = squads['slack_channel'].astype(str)
+    squads['slack_channel'] = squads['slack_channel'].replace('None', np.nan).astype('string')
     squads['status'] = squads['status'].astype(str)
-    squads['list'] = squads['list'].astype(str)
+   # squads['list'] = squads['list'].astype(str)
+    squads['list'] = squads['list'].replace('None', np.nan).astype('string')
     
     # Converter colunas de data para o formato de string ou datetime adequado para BigQuery
     squads['date_created'] = pd.to_datetime(squads['date_created'], errors='coerce', dayfirst=True).dt.date  # Converte para formato de data

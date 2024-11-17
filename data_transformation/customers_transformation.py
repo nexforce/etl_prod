@@ -87,7 +87,8 @@ def transform_customers_data(customer):
     service.columns = new_columns_service
 
     # Converter as colunas para os tipos indicados
-    service['plan_points'] = service['plan_points'].fillna(0).astype('int64')
+    service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+   #service['plan_points'] = service['plan_points'].fillna(0).astype('int64')
     service['mrr'] = service['mrr'].astype('float')
     service.loc[:, 'mrr'] = service['mrr'].round(2)
 
@@ -103,7 +104,7 @@ def transform_customers_data(customer):
     customer = customer[['id','customer_name','customer_name','plan','sprint_points_plan','service_currency','amount','term',
                         'service_start_date','go_live_date', 'last_renew_date','due_date', 'growth_formula_implemented','slack_channel',
                         'squad_name', 'subscription_crm_id','list', 'temperature','createdAt','updatedAt','chances_to_renew',
-                        'renewal_term','service_status'
+                        'renewal_term','customer_status'
                         ]]
 
     new_columns = ['task_id', 'task_name', 'customer','plan','plan_points','currency', 'monthly_revenue','term','start_date',
@@ -132,7 +133,8 @@ def transform_customers_data(customer):
     df_final['monthly_revenue'] = df_final['monthly_revenue'].round(2)
 
     # Converte as colunas para o tipo inteiro
-    df_final['plan_points'] = df_final['plan_points'].astype('Int64')  # Inteiro (permite NaNs)
+    df_final['plan_points'] = pd.to_numeric(df_final['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+    #df_final['plan_points'] = df_final['plan_points'].astype('Int64')  # Inteiro (permite NaNs)
     df_final['term'] = df_final['term'].astype('Int64')
     df_final['renewal_term'] = df_final['renewal_term'].astype('Int64')           # Inteiro (permite NaNs)
 
