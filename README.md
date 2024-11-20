@@ -71,3 +71,9 @@ O Looker é alimentado ao final do passo 4. Ou seja, o passo 5 não precisa esta
 sudo apt update
 sudo apt install python3-pip
 sudo apt install python3-venv
+
+### 2. Configuração do ambiente virtual
+```bash
+Copiar código
+python3 -m venv myenv
+source myenv/bin/activate
