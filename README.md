@@ -72,8 +72,28 @@ sudo apt update
 sudo apt install python3-pip
 sudo apt install python3-venv
 
-### *2. Configuração do ambiente virtual*
+### 2. Configuração do ambiente virtual
+
 ```bash
-Copiar código
 python3 -m venv myenv
 source myenv/bin/activate
+
+markdown
+Copiar código
+## Configuração do Ambiente
+
+### 2. Configuração do ambiente virtual
+
+```bash
+python3 -m venv myenv
+source myenv/bin/activate
+python3 -m venv myenv: Cria o ambiente virtual.
+source myenv/bin/activate: Ativa o ambiente virtual, garantindo que todas as dependências sejam instaladas isoladamente nesse ambiente.
+
+### 3. Instalação do Git e clonagem do repositório
+bash
+Copiar código
+sudo apt install git
+git clone https://github.com/nexforce/etl_prod.git
+cd etl_prod
+
