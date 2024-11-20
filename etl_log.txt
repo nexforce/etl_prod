@@ -2150,3 +2150,1407 @@ Tarefa 'Plataforma - TO BE: Propriedades de Profilling & Copy Property' criada c
 Tarefa 'Documentar o processo AS IS: Support' criada com sucesso!
 Todas as etapas concluídas em 659.74 segundos.
 Execução finalizada, desligando a instância...
+INFO:data_extraction.tasks_extraction:O sprint atual é: Sprint 23 - 2024
+Fetching tasks:   0%|          | 0/90 [00:00<?, ?it/s]Fetching tasks:  20%|██        | 18/90 [00:00<00:00, 104.93it/s]Fetching tasks:  32%|███▏      | 29/90 [00:12<00:31,  1.96it/s] Fetching tasks:  33%|███▎      | 30/90 [00:12<00:29,  2.01it/s]Fetching tasks:  39%|███▉      | 35/90 [00:16<00:33,  1.62it/s]Fetching tasks:  42%|████▏     | 38/90 [00:26<00:59,  1.14s/it]Fetching tasks:  44%|████▍     | 40/90 [00:27<00:51,  1.02s/it]Fetching tasks:  47%|████▋     | 42/90 [00:28<00:45,  1.05it/s]Fetching tasks:  49%|████▉     | 44/90 [00:29<00:37,  1.22it/s]Fetching tasks:  50%|█████     | 45/90 [00:30<00:35,  1.26it/s]Fetching tasks:  51%|█████     | 46/90 [00:30<00:30,  1.42it/s]Fetching tasks:  53%|█████▎    | 48/90 [00:30<00:22,  1.90it/s]Fetching tasks:  54%|█████▍    | 49/90 [00:38<01:14,  1.81s/it]Fetching tasks:  56%|█████▌    | 50/90 [00:38<00:59,  1.49s/it]Fetching tasks:  57%|█████▋    | 51/90 [00:39<00:54,  1.40s/it]Fetching tasks:  58%|█████▊    | 52/90 [00:39<00:42,  1.11s/it]Fetching tasks:  59%|█████▉    | 53/90 [00:40<00:39,  1.08s/it]Fetching tasks:  60%|██████    | 54/90 [00:40<00:31,  1.16it/s]Fetching tasks:  61%|██████    | 55/90 [00:42<00:39,  1.13s/it]Fetching tasks:  62%|██████▏   | 56/90 [00:43<00:30,  1.12it/s]Fetching tasks:  63%|██████▎   | 57/90 [00:45<00:45,  1.39s/it]Fetching tasks:  64%|██████▍   | 58/90 [00:46<00:34,  1.09s/it]Fetching tasks:  66%|██████▌   | 59/90 [00:49<00:51,  1.65s/it]Fetching tasks:  67%|██████▋   | 60/90 [00:49<00:37,  1.26s/it]Fetching tasks:  68%|██████▊   | 61/90 [00:50<00:31,  1.08s/it]Fetching tasks:  69%|██████▉   | 62/90 [00:50<00:28,  1.02s/it]Fetching tasks:  70%|███████   | 63/90 [00:51<00:21,  1.26it/s]Fetching tasks:  71%|███████   | 64/90 [00:51<00:18,  1.40it/s]Fetching tasks:  72%|███████▏  | 65/90 [00:52<00:14,  1.73it/s]Fetching tasks:  73%|███████▎  | 66/90 [00:57<00:49,  2.06s/it]Fetching tasks:  74%|███████▍  | 67/90 [00:57<00:34,  1.51s/it]Fetching tasks:  76%|███████▌  | 68/90 [00:58<00:29,  1.32s/it]Fetching tasks:  77%|███████▋  | 69/90 [00:58<00:20,  1.00it/s]Fetching tasks:  78%|███████▊  | 70/90 [01:00<00:22,  1.13s/it]Fetching tasks:  79%|███████▉  | 71/90 [01:00<00:17,  1.11it/s]Fetching tasks:  80%|████████  | 72/90 [01:01<00:14,  1.22it/s]Fetching tasks:  81%|████████  | 73/90 [01:01<00:11,  1.48it/s]Fetching tasks:  82%|████████▏ | 74/90 [01:03<00:14,  1.14it/s]Fetching tasks:  83%|████████▎ | 75/90 [01:04<00:17,  1.17s/it]Fetching tasks:  86%|████████▌ | 77/90 [01:05<00:09,  1.43it/s]Fetching tasks:  87%|████████▋ | 78/90 [01:05<00:07,  1.57it/s]Fetching tasks:  88%|████████▊ | 79/90 [01:06<00:08,  1.35it/s]Fetching tasks:  89%|████████▉ | 80/90 [01:06<00:05,  1.68it/s]Fetching tasks:  90%|█████████ | 81/90 [01:07<00:06,  1.40it/s]Fetching tasks:  91%|█████████ | 82/90 [01:09<00:06,  1.15it/s]Fetching tasks:  92%|█████████▏| 83/90 [01:10<00:06,  1.07it/s]Fetching tasks:  93%|█████████▎| 84/90 [01:11<00:05,  1.07it/s]Fetching tasks:  94%|█████████▍| 85/90 [01:18<00:14,  2.92s/it]Fetching tasks:  96%|█████████▌| 86/90 [01:19<00:09,  2.26s/it]Fetching tasks:  97%|█████████▋| 87/90 [01:20<00:05,  1.83s/it]Fetching tasks:  98%|█████████▊| 88/90 [01:23<00:04,  2.13s/it]Fetching tasks:  99%|█████████▉| 89/90 [01:23<00:01,  1.64s/it]Fetching tasks: 100%|██████████| 90/90 [01:31<00:00,  3.55s/it]Fetching tasks: 100%|██████████| 90/90 [01:31<00:00,  1.02s/it]
+INFO:data_extraction.tasks_extraction:Tarefas obtidas com sucesso!
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 185.30 segundos.
+        task_id           task_name  ... date_created date_updated
+0   14220340285    Willian Teodosio  ...   2024-07-23   2024-11-16
+1   14220274509     Leonardo Mendes  ...   2024-07-23   2024-11-16
+2   14220338820        Heitor Saadj  ...   2024-07-23   2024-11-16
+3   14221010233   Gabriel Possomato  ...   2024-07-23   2024-11-16
+4   14221064469  Guilherme Katayose  ...   2024-07-23   2024-11-16
+..          ...                 ...  ...          ...          ...
+60  18835764653      Giovanna Ayoub  ...   2024-10-21   2024-11-16
+61  19312204151      Bruno Pancotto  ...   2024-11-04   2024-11-16
+62  19314517848    Eduardo Baldoino  ...   2024-11-04   2024-11-16
+63  19329566603     Thiago Oliveira  ...   2024-11-05   2024-11-16
+64  19414340759     Isabella Pecula  ...   2024-11-06   2024-11-16
+
+[65 rows x 14 columns]
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    Active
+1   14963146054                 Magis5  ...         <NA>    Active
+2   14963311801                 MKraft  ...         <NA>    Active
+3   14963311872      Bluepay Solutions  ...         <NA>    Active
+4   14963846170             Fechometal  ...         <NA>  Inactive
+5   14964660517                Sellers  ...         <NA>    Active
+6   14965086309                  Cepel  ...         <NA>    Active
+7   14966965592                  Okena  ...         <NA>    Active
+8   14987437892             Quick Soft  ...         <NA>    Active
+9   14987437893                  Hurst  ...         <NA>    Active
+10  14987437894                 Printi  ...         <NA>  Inactive
+11  14990716536           Cubo Network  ...         <NA>  inactive
+12  14991174554                   Upik  ...         <NA>    Active
+13  14992263052  Todos Empreendimentos  ...         <NA>    Active
+14  14995201557             Rocketseat  ...         <NA>    Active
+15  14995944007                     DM  ...         <NA>    Active
+16  14995944008                Aeromot  ...         <NA>  inactive
+17  14995952174    Terra Investimentos  ...         <NA>    Active
+18  14995990707         W1 Consultoria  ...         <NA>    Active
+19  14996006433                   Bagy  ...         <NA>  Inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    Active
+21  14996014991                  Housi  ...         <NA>    Active
+22  14996176981                   Oobj  ...         <NA>    Active
+23  14996339362           Ecom Energia  ...         <NA>    Active
+24  14996354114                Plugify  ...         <NA>    Active
+25  14996698917          MA Hospitalar  ...         <NA>    Active
+26  14996849766                   Cora  ...         <NA>    Active
+27  14997048701           Santo Inacio  ...         <NA>    Active
+28  14997055532           Partido Novo  ...         <NA>    Active
+29  14997215284                 Uniube  ...         <NA>    Active
+30  14997215285         Remessa Online  ...         <NA>  inactive
+31  14997223812              Metadados  ...         <NA>  inactive
+32  14997232046                  Frete  ...         <NA>    Active
+33  14997410635       Centro Dom Bosco  ...         <NA>    Active
+34  14997428652    Seguralta Corretora  ...         <NA>  inactive
+35  14997433524         Soluti Digital  ...         <NA>    Active
+36  14997433525                  Payfy  ...         <NA>  inactive
+37  14997627566           Akad Seguros  ...         <NA>  inactive
+38  14997685110             Data Guide  ...         <NA>  Inactive
+39  14997692830               Poder360  ...         <NA>    Active
+40  15644325166              Allied IT  ...         <NA>    Active
+41  16279965720          Phytoterapica  ...         <NA>    Active
+42  16279965721       Gifted Education  ...         <NA>    Active
+43  16279965746               Inchurch  ...         <NA>    Active
+44  16279965751                  Jusfy  ...         <NA>    Active
+45  16286521388            MEI Digital  ...         <NA>    Active
+46  17145705272             Unicidades  ...         <NA>    Active
+47  19188266757           On Projeções  ...         <NA>    Active
+48  19188266833                   Reag  ...         <NA>    Active
+49  19245198172          Pris Software  ...         <NA>    Active
+50  19459774991                 Lastro  ...         <NA>    Active
+51  19649057892                  Konsi  ...         <NA>    Active
+52  19840256596                Beetech  ...         <NA>    Active
+
+[53 rows x 23 columns]
+/home/ricardo_semerene/etl_prod/task_management/tasks_creation.py:155: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  task_history = task_history.fillna(0)
+             id               customer  ... service_end_date service_due_date
+0   14996849766                   Cora  ...              NaN       19/01/2024
+1   14997215284                 Uniube  ...              NaN       29/05/2025
+2   14959515507                   Sasi  ...              NaN       29/12/2023
+3   14963311801                 MKraft  ...              NaN       22/09/2024
+4   14966965592                  Okena  ...              NaN       04/09/2025
+5   14995201557             Rocketseat  ...              NaN       18/03/2025
+6   14995990707         W1 Consultoria  ...              NaN       06/12/2025
+7   14996176981                   Oobj  ...       30/11/2024       28/02/2025
+8   14996339362           Ecom Energia  ...              NaN       16/10/2024
+9   14997215285         Remessa Online  ...       31/03/2024       03/10/2024
+10  14997215285         Remessa Online  ...              NaN       04/01/2025
+11  14997223812              Metadados  ...              NaN       01/01/2025
+12  14997223812              Metadados  ...       01/01/2024       01/01/2024
+13  14992263052  Todos Empreendimentos  ...              NaN       03/09/2024
+14  14963311872      Bluepay Solutions  ...              NaN       12/01/2024
+15  14987437892             Quick Soft  ...              NaN       17/05/2025
+16  14991174554                   Upik  ...              NaN       04/10/2025
+17  14995952174    Terra Investimentos  ...              NaN       30/06/2024
+18  14987437893                  Hurst  ...              NaN       07/01/2025
+19  14997055532           Partido Novo  ...              NaN       20/02/2025
+20  14997433524         Soluti Digital  ...              NaN       19/07/2024
+21  14996006433                   Bagy  ...       13/10/2024       12/01/2024
+22  14996006434  Direcional Engenharia  ...              NaN       09/06/2024
+23  14990716536           Cubo Network  ...              NaN       02/01/2025
+24  14990716536           Cubo Network  ...              NaN       25/11/2024
+25  14965086309                  Cepel  ...              NaN       28/05/2025
+26  14995944007                     DM  ...              NaN       07/11/2025
+27  14995944008                Aeromot  ...              NaN       18/09/2024
+28  14995944008                Aeromot  ...              NaN       18/01/2025
+29  14963146054                 Magis5  ...              NaN       23/04/2025
+30  14996014991                  Housi  ...              NaN       06/12/2025
+31  14997232046                  Frete  ...              NaN       08/02/2025
+32  14997433525                  Payfy  ...       31/07/2024       01/12/2024
+33  14997433525                  Payfy  ...              NaN       02/01/2025
+34  14997627566           Akad Seguros  ...       31/03/2024       29/01/2025
+35  14997627566           Akad Seguros  ...              NaN       29/01/2025
+36  14987437894                 Printi  ...       09/08/2024       02/01/2025
+37  14996698917          MA Hospitalar  ...              NaN       04/12/2025
+38  14996354114                Plugify  ...              NaN       17/06/2025
+39  14997410635       Centro Dom Bosco  ...              NaN       04/04/2025
+40  14963846170             Fechometal  ...       28/09/2024       28/09/2024
+41  14997048701           Santo Inacio  ...       30/06/2024       30/06/2024
+42  14997428652    Seguralta Corretora  ...       31/07/2024       31/07/2024
+43  14997428652    Seguralta Corretora  ...       11/04/2024       11/04/2024
+44  14997692830               Poder360  ...              NaN       11/04/2024
+45  14997685110             Data Guide  ...       14/09/2024       14/09/2024
+46  14964660517                Sellers  ...              NaN       11/05/2024
+47  15644325166              Allied IT  ...              NaN       18/11/2024
+48  16279965720          Phytoterapica  ...              NaN       11/04/2024
+49  16279965721       Gifted Education  ...              NaN       19/10/2024
+50  16279965746               Inchurch  ...              NaN       12/11/2024
+51  16286521388            MEI Digital  ...              NaN       11/04/2024
+52  16279965751                  Jusfy  ...              NaN       10/01/2025
+53  17145705272             Unicidades  ...              NaN       15/12/2024
+54  19188266757           On Projeções  ...              NaN       01/10/2025
+55  19188266833                   Reag  ...              NaN       14/01/2025
+56  19245198172          Pris Software  ...              NaN       01/10/2025
+57  19459774991                 Lastro  ...              NaN       01/06/2025
+58  19649057892                  Konsi  ...              NaN       26/03/2025
+59  19840256596                Beetech  ...              NaN       05/05/2025
+
+[60 rows x 14 columns]
+       task_id  ...                        email
+0    86a5h25p4  ...      joao.aguiar@nexforce.co
+1    86a5h2583  ...      joao.aguiar@nexforce.co
+2    86a5g8c87  ...      osmar.alves@nexforce.co
+3    86a5fqahk  ...      joao.aguiar@nexforce.co
+4    86a51atqh  ...      joao.aguiar@nexforce.co
+..         ...  ...                          ...
+420  86a5fr9pg  ...    mayara.soares@nexforce.co
+421  86a5fr78b  ...  laiane.caroline@nexforce.co
+422  86a4b9693  ...    mayara.soares@nexforce.co
+423  86a2p8vtf  ...    mayara.soares@nexforce.co
+424  86a2p8u3b  ...   gabriela.hadid@nexforce.co
+
+[425 rows x 21 columns]
+Etapa 2/5 concluída em 185.72 segundos.
+Tabela starry-compiler-387319.Stage.stg_squad foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_task foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_squad
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Dados carregados em starry-compiler-387319.Stage.stg_task
+Etapa 3/5 concluída em 206.42 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 256.24 segundos.
+Tarefa 'Configurar processo de atualização de Lead Score no contato' criada com sucesso!
+Tarefa 'Fazer o set de MQL retroativo na base de Leads' criada com sucesso!
+Tarefa 'Configurar Motivos de desqualificação Macro' criada com sucesso!
+Tarefa 'Realizar a configuração da sequência de prospecção automática (e-mails)' criada com sucesso!
+Tarefa 'Realizar configuração da ferramenta de contrato escolhida' criada com sucesso!
+Tarefa 'Documentar o processo AS IS de Marketing' criada com sucesso!
+Tarefa 'Iniciar as configurações finais de Sales para go-live' criada com sucesso!
+Tarefa 'Verificar configurações restantes para go-live de Sales' criada com sucesso!
+Tarefa 'Plantão pós go-live' criada com sucesso!
+Tarefa '[Sprint 23 - 2024] Criação de Artigos de Education' criada com sucesso!
+Tarefa '[Sprint 23 - 2024] Suporte Interno - Chimarrão' criada com sucesso!
+Tarefa '[Sprint 23-2024] Monitoramento suporte para equipe' criada com sucesso!
+Tarefa '[Sprint 23-2024] Suporte Interno (reuniões, refinamento, revisões)' criada com sucesso!
+Tarefa 'Ajustar objetos fonte de propriedades em Copys' criada com sucesso!
+Falha ao criar a tarefa 'Entrevistar executivo de vendas para mapear gargalos e oportunidades': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa 'Preparar e conduzir workshop de levantamento de necessidades e oportunidades da jornada do cliente': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Investigar fluxo atual de dados do Spread.chat e benchmarking sobre histórico de conversa no CRM' criada com sucesso!
+Tarefa 'Realizar treinamento sobre relatórios' criada com sucesso!
+Tarefa 'Corrigir processo de aquisição' criada com sucesso!
+Tarefa 'Desenvolver lista para export de tickets' criada com sucesso!
+Tarefa 'Alterar pesquisa de satisfação para NPS' criada com sucesso!
+Tarefa 'Adicionar visualizações no dashboard de suporte' criada com sucesso!
+Tarefa 'Configurar processo da nova campanha' criada com sucesso!
+Tarefa 'Desenvolver TO BE do novo processo de Self Service' criada com sucesso!
+Tarefa 'Discovery do processo' criada com sucesso!
+Tarefa 'Desenvolver dash para o processo de Onboarding' criada com sucesso!
+Tarefa 'Desenvolver processo de métricas e datas para Onboarding' criada com sucesso!
+Tarefa 'Realizar go-live' criada com sucesso!
+Tarefa 'Estudar novas features de tradução' criada com sucesso!
+Tarefa 'Ajustar Copy de Handover time Marca/Prédio' criada com sucesso!
+Tarefa 'Configurar envio de e-mail interno de marketing de Boas-vindas Corporate' criada com sucesso!
+Tarefa 'Investigar melhor forma de envio de grupos de Whatsapp' criada com sucesso!
+Tarefa 'Desenvolver pipeline de Renovação' criada com sucesso!
+Tarefa 'Realizar demonstração do dashboard de CSAT' criada com sucesso!
+Tarefa 'Realizar demonstração do processo de Forecast' criada com sucesso!
+Tarefa 'Investigar possibilidade de criação automática de conexões por e-mail' criada com sucesso!
+Tarefa 'Verificar passagem de informações de produtos do plano' criada com sucesso!
+Tarefa 'Realizar demonstração do processo' criada com sucesso!
+Tarefa 'Realizar testes end-to-end do processo' criada com sucesso!
+Tarefa 'Realizar reunião de dúvidas 3' criada com sucesso!
+Tarefa 'Realizar reunião de dúvidas 1' criada com sucesso!
+Tarefa 'Realizar go-live da nova régua de tentativa de comunicação 1 e 2' criada com sucesso!
+Tarefa 'Realizar discovery de performance do processo de pré vendas' criada com sucesso!
+Tarefa 'Conduzir dailies para onboarding técnico do novo Adm de CRM' criada com sucesso!
+Tarefa 'Apresentar histórico da parceria e planejamento para novo Adm de CRM' criada com sucesso!
+Tarefa 'Revisar automações de associação de SDRs nos registros de deals' criada com sucesso!
+Tarefa 'Revisar automações de criação e rotação de registros para leads B2B' criada com sucesso!
+Tarefa 'Cerimônias da Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de etapas de pipeline' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de regras de roteamento' criada com sucesso!
+Tarefa 'Revisar automações de criação e rotação de registros para horário útil' criada com sucesso!
+Tarefa 'Revisar passagem de infos de Pré-Vendas -> Vendas e otimizar tela de trabalho' criada com sucesso!
+Tarefa 'Aprovar limpeza de propriedades, automações, listas, relatórios e painéis sugeridos para exclusão' criada com sucesso!
+Tarefa 'Realizar limpeza das propriedades, listas e automações mapeadas' criada com sucesso!
+Tarefa 'Criar os paineis táticos-estratégicos para gestão de Vendas' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Lifecycle' criada com sucesso!
+Tarefa 'Gestão da conta e preparação do material de SR&P' criada com sucesso!
+Tarefa 'Suporte nos Relatórios de Revenue Aquisition' criada com sucesso!
+Tarefa 'Criar plano de ação para realizar o go-live' criada com sucesso!
+Tarefa 'Realizar testes completos do processo de Revenue Acquisition com os usuários chave da área' criada com sucesso!
+Tarefa 'Treinar os diferentes grupos de key users de cada time (executives, managers, individual contributors)' criada com sucesso!
+Tarefa 'Realizar a verificação de qualidade da conta (workflows, APIs, views, testes)' criada com sucesso!
+Tarefa 'Apoiar os usuários na configuração do "Your Preferences", meeting links e afins' criada com sucesso!
+Tarefa 'Garantir que os usuários estão alocados nos times e permissões corretas' criada com sucesso!
+Tarefa 'Investigar relatórios de comunicações de Whatsapp' criada com sucesso!
+Tarefa 'Desenhar processo de Handover para Hunter a partir do Loop de Vínculos' criada com sucesso!
+Tarefa 'Desenvolver automações e refatorar pipeline de Hunters' criada com sucesso!
+Tarefa 'Ajustar automação de Handover para Hunter (Campanha)' criada com sucesso!
+Tarefa 'Cerimônias da Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Análise de Campanha de Reativação para Outbound' criada com sucesso!
+Tarefa 'Análise de Integração Whatsapp e HubSpot - Objeto Deal' criada com sucesso!
+Tarefa 'Treinar usuários chave e lideres sobre o processo de Pre-sales' criada com sucesso!
+Tarefa 'Realizar o go live, oficialmente colocando o sistema em produção para uso' criada com sucesso!
+Tarefa 'Apoiar os usuários na configuração do "Your Preferences", meeting links e afins' criada com sucesso!
+Tarefa 'Realizar a verificação de qualidade da conta (workflows, APIs, views, testes)' criada com sucesso!
+Tarefa 'Garantir que os usuários estão alocados nos times e permissões corretas' criada com sucesso!
+Tarefa 'Realizar a migração dos dados' criada com sucesso!
+Tarefa 'Garantir que os itens críticos para migração foram concluídos' criada com sucesso!
+Tarefa 'Cerimônias da Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Construir o planejamento da Go-Live do projeto Monetização' criada com sucesso!
+Tarefa 'Realizar os stress testes com as lideranças do projeto Monetização' criada com sucesso!
+Tarefa 'Desenvolver automações de criação e designação de registros - Monetização' criada com sucesso!
+Tarefa 'Realizar a validação das estratégias e ações de mitigação de risco do projeto de Monetização' criada com sucesso!
+Tarefa 'Configuração de entrada de contatos (Zendesk e TakeBlip)' criada com sucesso!
+Tarefa 'Stress Testes Internos do projeto monetização' criada com sucesso!
+Tarefa 'Aprovar analise de higienização enviada' criada com sucesso!
+Tarefa 'Configurar Forecast de Revenue Acquisition na guia de Gerenciamento de dados' criada com sucesso!
+Tarefa 'Entregar os critérios adotados na reunião de descoberta e aceite do negócio' criada com sucesso!
+Tarefa 'Configurar o objeto Contato' criada com sucesso!
+Tarefa 'Configurar o objeto Lead' criada com sucesso!
+Tarefa 'Entregar os critérios de qualificação de leads para construção do playbook' criada com sucesso!
+Tarefa 'Validação do mapeamento de propriedades' criada com sucesso!
+Tarefa '[Contador de emails] Criação de Relatório de Auditoria de E-mails e Melhoria de Desempenho' criada com sucesso!
+Tarefa '[Governança] Viabilizar aumento de times na Hubspot' criada com sucesso!
+Tarefa '[Contador de emails] Criação de Relatório de Auditoria de E-mails e Melhoria de Desempenho' criada com sucesso!
+Tarefa '[Governança] Migrar times, permissões e ajustar os dashboards e workflows que utilizam os times e usuários' criada com sucesso!
+Tarefa '[Governança] Criar times e permissões na HubSpot' criada com sucesso!
+Tarefa '[Central do conhecimento] Alterar a identidade visual da knowledge Base' criada com sucesso!
+Tarefa '[Contador de leads] Montagem do workflow' criada com sucesso!
+Tarefa '[Origem do lead] Emissão do parecer sobre a composição das UTM´s' criada com sucesso!
+Tarefa '[Origem do lead]  Desenvolvimento de lead Score' criada com sucesso!
+Tarefa '[Central do conhecimento] Feedback Pós-Implementação e Ajustes Finais' criada com sucesso!
+Tarefa '[Central do conhecimento] Mapear forma de solicitação para novas infos' criada com sucesso!
+Tarefa '[Governança] Apresentação das alterações e preenchimento da planilha de usuários' criada com sucesso!
+Tarefa '[Governança] Sinalização de que o permissionamento dos times da Refurutiza foi alterado' criada com sucesso!
+Tarefa '[Distribuição] Desenvolvimento de Fluxos de Trabalho Automatizados (Workflows) ' criada com sucesso!
+Tarefa '[Distribuição] Mapeamento e desenho dos fluxos de trabalho' criada com sucesso!
+Tarefa '[Data Lake] Analisar Data Lake recebido e estruturar de acordo com os objetivos' criada com sucesso!
+Tarefa 'Iniciar case Aeromot e passar draft escrito para cliente complementar' criada com sucesso!
+Tarefa 'Mapear cadeia comunicações/nutrição pipe Desenv. Negócios Púb.' criada com sucesso!
+Tarefa 'Desenho/revisao pipelines Desenv. Negócios Púb. na planilha' criada com sucesso!
+Tarefa 'Desenhar regras RR Desenv. Negócios Púb.' criada com sucesso!
+Tarefa 'Mapeamento processo/requisitos pipe Desenv. Negócios Púb.  e envio de template mapeamento' criada com sucesso!
+Tarefa 'Configurar atividades,left side bar e views para Execução de Projetos' criada com sucesso!
+Tarefa 'Implementar regras RR Comercial Execução de Projetos' criada com sucesso!
+Tarefa 'Implementar formulário criação Tickets Execução de Projetos' criada com sucesso!
+Tarefa 'Implementação pipelines Execução de Projetos: etapas, prop obrigatórias, Automações, nome card' criada com sucesso!
+Tarefa 'Analise crítica pipeline Execução de Projetos e dúvidas' criada com sucesso!
+Tarefa 'Realizar integração Pipe Manutenção vs IFS' criada com sucesso!
+Tarefa 'Revisão fluxos RR Pipe Manutenção' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Desenhar regras RR Comercial Proj. Eng' criada com sucesso!
+Tarefa 'Mapear cadeias de comunicação/sequência PIPE Projetos Eng e criar copys' criada com sucesso!
+Tarefa 'Desenho/revisao pipelines Projetos Eng na planilha' criada com sucesso!
+Tarefa 'Mapear cadeias de comunicação/sequência PIPE Manutenção e criar copys' criada com sucesso!
+Tarefa 'Mapear cadeias de nutricao nos pipelines Onboarding e criar copys' criada com sucesso!
+Tarefa 'Apoios diversos' criada com sucesso!
+Tarefa 'Revisão de propriedades "became a (lc stage) date": avaliar impacto da mudança e eventuais correções' criada com sucesso!
+Tarefa 'Apoios diversos' criada com sucesso!
+Tarefa 'Book handover processo Vendas Novas: CONT criação documentação' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Entendimento As Is gestao contratos no Foconet e Power BI' criada com sucesso!
+Tarefa 'Importar base de contatos dos clientes ativos' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Adaptações dash relatórios comerciais e validação' criada com sucesso!
+Tarefa 'Adaptações nos dashboards de pré-venda e validação' criada com sucesso!
+Tarefa 'Criar caixa de email geral de pré-venda' criada com sucesso!
+Tarefa 'Testar inbox com Whatsapp e validar fluxo criação registro' criada com sucesso!
+Tarefa 'Mapa atualizado de canais de entrada inbox (WA e MAIL)' criada com sucesso!
+Tarefa 'Revisão configurações de mkt e relatório de verificação e pendências' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Go live pipe Suporte' criada com sucesso!
+Tarefa 'Execução treinamento Pipe Suporte' criada com sucesso!
+Tarefa 'Dry run com cliente' criada com sucesso!
+Tarefa 'Testes integração pipeline Editora e ajustes' criada com sucesso!
+Tarefa 'Configurações pipeline editora: LSB, views, cards' criada com sucesso!
+Tarefa 'Iniciar case CDB e passar draft escrito para cliente complementar' criada com sucesso!
+Tarefa 'Realizar proposta de segmentação da base para cada um das 4 bus: Ecommerce (infantil/oratorio e não infantil), Membros, Editora, Eventos' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Criar templates de email para comunicações pipe Membros' criada com sucesso!
+Tarefa 'Realizar integrações com plataforma Membros' criada com sucesso!
+Tarefa 'Contrução de copys de emails e comunicações Régua PV e IM' criada com sucesso!
+Tarefa 'PV: ajustes parametrizações pipeline' criada com sucesso!
+Tarefa 'Organizar formulários (criar, alterar e excluir)' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Inbound: conexão formulários entrada no pipeline' criada com sucesso!
+Tarefa 'Validação propriedades de para Hub e SGA com time de DTI: reunião' criada com sucesso!
+Tarefa 'Testes integração SGA Pipe Novo' criada com sucesso!
+Tarefa 'Retroaliementação do SGA pelo Hubspot' criada com sucesso!
+Tarefa 'Alinhamento governaça, rotinas e ferramentas para Pós-Go Live Expansão de Polos' criada com sucesso!
+Tarefa 'Go Live Pipe Expansão Polos' criada com sucesso!
+Tarefa 'Executar treinamento Pipe Exp Polo' criada com sucesso!
+Tarefa 'Arquitetura fontes: Dash e análises' criada com sucesso!
+Tarefa 'Apoio com organização de formulários e LPs (foco Polos)' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Implementação de automações e tarefas da régua de comunicações PV e IM' criada com sucesso!
+Tarefa 'Limpeza periodica de leads do Pipeline' criada com sucesso!
+Tarefa 'Desenvolvimento ajustes SGA formulario inicial (cpf 1a tela e integração propriedades)' criada com sucesso!
+Tarefa 'Criar LP Captação Leads e LP Eventos e arquivar em pasta correta' criada com sucesso!
+Tarefa 'Contrução de copys de emails das sequencias de comunicação. POLOS' criada com sucesso!
+Tarefa 'Criar LP para captação polo' criada com sucesso!
+Tarefa 'Preencher template intake 1' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: apoio técnico DEV' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: testes conjuntos após implementar automações (war room)' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: implementar automações do processo' criada com sucesso!
+Tarefa 'Implementação melhorias de vendas: ajuste dashboard e treinamento Hubspot + Processo' criada com sucesso!
+Tarefa 'Implementação melhorias de vendas: criar e explicar template de nutrição' criada com sucesso!
+Tarefa 'Fluxo de Cadastro de Parceiro: finalização do pipeline de cadastro parceiro' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: definir regras e gatilhos carrinho abandonado para criação de tags' criada com sucesso!
+Tarefa 'Fluxo de Cadastro de Parceiro: envio de copys para fluxos de sequencias e sla etapas' criada com sucesso!
+Tarefa 'Sustentação - Solicitações de Suporte' criada com sucesso!
+Tarefa 'Sustentação - Solicitações de Suporte' criada com sucesso!
+Tarefa 'Painel de auditoria: solicitar cliente correções de X inconsistências no painel. Realizar Fups' criada com sucesso!
+Tarefa 'Correção Workflows com erros diagnósticados' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Averbação - Mapeamento AS IS' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente (Toda Semana)' criada com sucesso!
+Tarefa 'Relatórios - Cleanup & Refactoring ' criada com sucesso!
+Tarefa 'Assessorias - Desenvolver painel de Relatórios' criada com sucesso!
+Tarefa 'Assessorias - Definição de KPIs' criada com sucesso!
+Tarefa 'Emissão Demais Ramos - Mapeamento AS IS' criada com sucesso!
+Tarefa 'Corporate - Definição Fluxo de Cobrança de Corretores' criada com sucesso!
+Tarefa 'Base de Conhecimento - Apresentação e Validação do desenvolvimento inicial' criada com sucesso!
+Tarefa 'Base de Conhecimento - Desenvolvimento de Estrutura Inicial' criada com sucesso!
+Tarefa 'Corretores - Sustentação do Go Live: Execução de Ajustes e Mapeamento das Melhorias' criada com sucesso!
+Tarefa 'Corporate - Revisão do Fluxo de Atribuição de Proprietários' criada com sucesso!
+Tarefa 'Ajustar Base de Dados Completa - Grupo Econômico, Matriz e Filial' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente (Toda Semana)' criada com sucesso!
+Tarefa 'Caixa Direcional e Atendimento Telefônico - Otimização dos processos' criada com sucesso!
+Tarefa 'Corretores - Enriquecimento de dado das bases' criada com sucesso!
+Tarefa 'Assessorias - Documentação POP' criada com sucesso!
+Tarefa 'Corretores - Documentação POP' criada com sucesso!
+Tarefa 'Validação Externa dos Relatórios de QA - Processos de Sinistro, Atendimento, Prorroga, Cadastro e Service Desk' criada com sucesso!
+Tarefa 'Refatorar propriedades em Inglês para Português' criada com sucesso!
+Tarefa 'Corretores - Treinamento e Go Live Assistido' criada com sucesso!
+Tarefa 'Discovery de possíveis otimizações das Caixas já Live' criada com sucesso!
+Tarefa 'Deploy das Nutrições + Criação de Campanha de Acompanhamento de Performance' criada com sucesso!
+Tarefa 'OGGI - Deploy do Formulário' criada com sucesso!
+Tarefa 'Nutrições MVP - Subir os e-mails marketing no Hubspot' criada com sucesso!
+Tarefa 'Demo novo processo orçamento Cloud Enterprise com Tiago' criada com sucesso!
+Tarefa 'Criar e testar link de pesquisa de satisfação treinamentos processos Go Live' criada com sucesso!
+Tarefa 'Implementação novo processo Orçamento com cloud Enterprise' criada com sucesso!
+Tarefa 'Ajustes e automações para configuração Campanha' criada com sucesso!
+Tarefa 'Correção de erro IPI zerado' criada com sucesso!
+Tarefa 'Configuraçãoes templates orçamentos' criada com sucesso!
+Tarefa 'Execução de treinamento introdutório ao Hubspot para o time de marketing' criada com sucesso!
+Tarefa 'Deploy- DE Homologação PARA Produção' criada com sucesso!
+Tarefa 'Ajuste em forma e formatação do material final treinamento' criada com sucesso!
+Tarefa 'Testes impostos' criada com sucesso!
+Tarefa 'Testes impostos' criada com sucesso!
+Tarefa 'Ajuste para substituir tarefas por tickets (upgrade cloud)' criada com sucesso!
+Tarefa 'Navegação guiada com cliente e ajustes. Licitação (cont)' criada com sucesso!
+Tarefa 'Configuração do domínio principal' criada com sucesso!
+Tarefa 'Criação material de treinamento Remessa. POP' criada com sucesso!
+Tarefa 'Reunião para conjuntamente conectar canais de entrada pré-go live' criada com sucesso!
+Tarefa 'Execução treinamento MKT' criada com sucesso!
+Tarefa 'Criação das Listas de QA' criada com sucesso!
+Tarefa 'Revisão e ajustes equipes e permissionamentos' criada com sucesso!
+Tarefa 'Criação material de treinamento Pedidos Contratualizado (POP)' criada com sucesso!
+Tarefa 'Testes e material treinamento (video) Pipe Remessa' criada com sucesso!
+Tarefa 'Execução treinamento PV' criada com sucesso!
+Tarefa 'Criação material de treinamento Ped. Cont. VIDEO' criada com sucesso!
+Tarefa 'Criação material de treinamento Obj Contrato VIDEO e POP' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Construir LP no Hub' criada com sucesso!
+Tarefa 'Testar incorporação de formulários Hub em LP RD' criada com sucesso!
+Tarefa 'Import de imagens dos produtos na biblioteca' criada com sucesso!
+Tarefa 'Criação material de treinamento Licitação. POP' criada com sucesso!
+Tarefa 'Criação material de treinamento Licitação. VIDEO' criada com sucesso!
+Tarefa 'Desenvolvimento Fallback/redundancia' criada com sucesso!
+Tarefa 'Preenchimento template de importação' criada com sucesso!
+Tarefa 'Configuração Campanha ' criada com sucesso!
+Tarefa 'Processo de Venda V1.0 - Go-live e Sustentação' criada com sucesso!
+Tarefa 'Marketing -  Suporte para a Definição de Nutrições' criada com sucesso!
+Tarefa 'Definir as regas de comunicação de reativação' criada com sucesso!
+Tarefa 'Correção da propriedade CLIENTE (SAP) no Hubspot' criada com sucesso!
+Tarefa 'Higienização da base de empresas duplicadas' criada com sucesso!
+Tarefa 'Integração - Acompanhamento técnico dos Testes da Axe' criada com sucesso!
+Tarefa 'Processo de Venda V1.0 - Sustentação do Go Live' criada com sucesso!
+Tarefa 'Processo de Venda V1.0 - Treinamento e Go Live Assistido' criada com sucesso!
+Tarefa 'Criar fluxo para copiar VENDEDOR (SAP) para Deal Owner' criada com sucesso!
+Tarefa 'Processo de Vendas V2.0 - Detalhamento do AS IS' criada com sucesso!
+Tarefa 'Pipeline de Cotações - Documentação POP' criada com sucesso!
+Tarefa 'WhatsApp - Escolha da Ferramenta complementar ao Hubspot' criada com sucesso!
+Tarefa 'Integração Hubspot <> SAP B1' criada com sucesso!
+Tarefa 'Inside Sales - Higienizar os proprietários dos clientes (Vendedores ou proprietário de marketing)' criada com sucesso!
+Tarefa 'Inside Sales - Revisão das regras do que é aquisição de Inside Sales e o que é Aquisição No Touch' criada com sucesso!
+Tarefa 'Inside Sales - Onboarding das Regras de Negócio da Upik e processos de Inside Sales para a Tati' criada com sucesso!
+Tarefa 'Configurar forms de Facebook Lead Ads com os campos customizados' criada com sucesso!
+Tarefa 'Validação das mudanças dos relatórios e painéis' criada com sucesso!
+Tarefa 'Integração AB e HubSpot - Diagnóstico e definição de um plano de ação' criada com sucesso!
+Tarefa 'Dados - Mapeamento dos Relatórios e Direcionamento interno de execução' criada com sucesso!
+Tarefa 'Dados - Construção dos Novos relatórios' criada com sucesso!
+Tarefa 'Higienização e Refatoração dos Relatórios' criada com sucesso!
+Tarefa 'Higienização de Objetos Customizado Compromissos - Tarefa Recorrente' criada com sucesso!
+Tarefa 'SDR's - Definição TO BE das nutrições pelo Whatsapp' criada com sucesso!
+Tarefa 'Deploy das Pesquisas de Sucesso do Cliente' criada com sucesso!
+Tarefa 'Desenvolvimento dos fluxos das Pesquisas de Sucesso do Cliente' criada com sucesso!
+Tarefa 'SDR's - Criação da Regra de Abertura de Leads Qualificados sem atuação do Corretor no Negócio' criada com sucesso!
+Tarefa 'Pesquisas de Sucesso do Cliente - Relatórios e Painéis + Análise' criada com sucesso!
+Tarefa 'Integração SF<>HS - Análise e Diagnóstico do AS IS da integração dentro do SF' criada com sucesso!
+Tarefa 'Suporte para a Correção da integração do Salesforce com o Hubspot' criada com sucesso!
+Tarefa 'Integração - Mapear todos os campos utilizados no Salesforce e realizar de/para com propriedades HubSpot' criada com sucesso!
+Tarefa 'Levantamento de dados necessário para construção do Dashboard de Vendas' criada com sucesso!
+Tarefa 'Apresentação da V1.0 do Dashboard' criada com sucesso!
+Tarefa 'Dash & Painéis - Análise da Viabilidade Técnica dos relatórios de análise histórica do funil' criada com sucesso!
+Tarefa 'Dash Quick Soft - Criação dos Relatórios' criada com sucesso!
+Tarefa '[Desenvolvimento] Pipelines de suporte e automações de record owner' criada com sucesso!
+Tarefa 'Adição da etapa "Primeiro Pedido" em aquisição' criada com sucesso!
+Tarefa 'Correção de erros de dry-run em métricas' criada com sucesso!
+Tarefa 'Correção de workflows de Record Owner' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'MBR - Novembro (Desempenho Outubro)' criada com sucesso!
+Tarefa 'Agendar o office hours, diariamente por 20min por duas semanas para tirar dúvidas dos usuários' criada com sucesso!
+Tarefa 'Realizar um teste de dry- run com os stakeholders' criada com sucesso!
+Tarefa 'Realizar um teste de dry-run interno' criada com sucesso!
+Tarefa 'Identificação de dados a serem migrados' criada com sucesso!
+Tarefa 'Reunião 2' criada com sucesso!
+Tarefa 'Reunião 1' criada com sucesso!
+Tarefa '[RT] Chatbot e CSAT' criada com sucesso!
+Tarefa 'Atualizar processo de atendimento' criada com sucesso!
+Tarefa 'Corrigir e importar a base' criada com sucesso!
+Tarefa 'Criar automações do briefing' criada com sucesso!
+Tarefa 'Adaptar e testar workflows de Lead Status e Lifecycle' criada com sucesso!
+Tarefa 'Criar produtos' criada com sucesso!
+Tarefa 'Desenvolver forms campanha e e-mail' criada com sucesso!
+Tarefa '[RT] Briefing' criada com sucesso!
+Tarefa 'Customizar processo e workflows de Lead status e Lifecycle' criada com sucesso!
+Tarefa 'Treinamento: processo geral' criada com sucesso!
+Tarefa 'Testes end-to-end' criada com sucesso!
+Tarefa 'Passo a passo de migração de Artigo da Knowledge Base' criada com sucesso!
+Tarefa 'Treinamento Inicial Hubspot Marketing' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Vendas no Site' criada com sucesso!
+Tarefa 'Desenvolver as automações de regras para Marketing e Non Marketing Contact' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Support' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: BPMN - Objetos, Pipes e Etapas' criada com sucesso!
+Tarefa 'Avaliar a base de contatos e criar um Passo a passo e treinamento de como importar base' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de relacionamento entre objetos' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Integrações e Dados' criada com sucesso!
+Tarefa 'Investigar possibilidades de formulário' criada com sucesso!
+Tarefa 'Treinamento: processo geral' criada com sucesso!
+Tarefa 'Realizar o Onboarding nos Sistemas e Ferramentas' criada com sucesso!
+Tarefa 'Realizar a Reunião Success Plan com o Cliente' criada com sucesso!
+Tarefa 'Realizar a Reunião de Passagem de Bastão com o Comercial' criada com sucesso!
+Tarefa 'Realizar configuração (Nexbot) + Briefing' criada com sucesso!
+Tarefa 'Automações: Lifecycle' criada com sucesso!
+Tarefa 'Automações acessórias' criada com sucesso!
+Tarefa 'CRM: Listas' criada com sucesso!
+Tarefa 'Ferramentas: Conteúdo' criada com sucesso!
+Tarefa 'Ferramentas: Marketing' criada com sucesso!
+Tarefa 'Ferramentas: Reuniões e Chamadas' criada com sucesso!
+Tarefa 'Gerenciamento de dados: Objetos' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Privacidade e Consentimento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Código de rastreamento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Integrações & Marketplace' criada com sucesso!
+Tarefa 'Gerenciamento da conta: usuários e equipes' criada com sucesso!
+Tarefa 'Gerenciamento da conta: padrões da conta' criada com sucesso!
+Tarefa 'Suas preferências: Geral e Notificações' criada com sucesso!
+Tarefa 'CRM: Listas' criada com sucesso!
+Tarefa 'Realizar o Onboarding nos Sistemas e Ferramentas' criada com sucesso!
+Tarefa 'Realizar a Reunião Success Plan com o Cliente' criada com sucesso!
+Tarefa 'Realizar a Reunião de Passagem de Bastão com o Comercial' criada com sucesso!
+Tarefa 'Ferramentas: Conteúdo' criada com sucesso!
+Tarefa 'Ferramentas: Marketing' criada com sucesso!
+Tarefa 'Ferramentas: Reuniões e Chamadas' criada com sucesso!
+Tarefa 'Gerenciamento de dados: Objetos' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Privacidade e Consentimento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Código de rastreamento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Integrações & Marketplace' criada com sucesso!
+Tarefa 'Gerenciamento da conta: usuários e equipes' criada com sucesso!
+Tarefa 'Gerenciamento da conta: padrões da conta' criada com sucesso!
+Tarefa 'Suas preferências: Geral e Notificações' criada com sucesso!
+Tarefa '[Desenvolvimento] - Automação de cópia de propriedades utilizadas na integração' criada com sucesso!
+Tarefa '[Solicitação] -  Limpar as tarefas do Rogerio Kurussu de 01/10/2024 para trás' criada com sucesso!
+Tarefa '[Desenvolvimento] - Ajustar permissões para Mesa Agro e Assessoria' criada com sucesso!
+Tarefa '[Desenvolvimento] - Adaptação das automações para Mesa Agro' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'MBR - Novembro (Desempenho Outubro)' criada com sucesso!
+Tarefa '[Desenvolvimento] - Métricas para JCP/Dividendos/Rendimento/Campanhas' criada com sucesso!
+Tarefa '[Análise] - Issue - Limite de associação E-mail/Company' criada com sucesso!
+Tarefa '[Solicitação] Cobertura de Base- Geração de tarefas - 90 dias sem aportar' criada com sucesso!
+Tarefa '[Analise] - Alterações necessárias por saída de assessores (Workflows e proprietários)' criada com sucesso!
+Tarefa '[Configuração] Left side bar para o time de Assessores (Mesa Agro)' criada com sucesso!
+Tarefa 'Agendamento das office hours' criada com sucesso!
+Tarefa 'Realizar treinamentos pré-go live' criada com sucesso!
+Tarefa 'Garantir que todos os usuários estão alocados nos times e permissões corretas' criada com sucesso!
+Tarefa 'Realizar correção de erros críticos' criada com sucesso!
+Tarefa 'Dry-run com stakeholders da Mesa Agro' criada com sucesso!
+Tarefa 'Dry-run interno' criada com sucesso!
+Tarefa 'Garantir que todos os usuários tem acesso a conta' criada com sucesso!
+Tarefa 'MBR Novembro (Performance Outubro)' criada com sucesso!
+Tarefa '[Solicitação] Máscara do CNPJ (ou CPF) do lead/cliente igual a adotada pelo CEPEL' criada com sucesso!
+Tarefa '[Solicitação] Criar/refazer o modelo de proposta que será utilizado para software ou treinamento.' criada com sucesso!
+Tarefa '[Solicitação] Criar um modelo de proposta que será utilizado para serviços e P&D seguindo o modelo de arte da proposta de serviços existente.' criada com sucesso!
+Tarefa '[Solicitação] Criar mecanismo de "Aceite do orçamento/proposta pelo cliente"' criada com sucesso!
+Tarefa '[Solicitação] Ajustar a geração automática de um número (ID) para o orçamento - respeitando os prefixos e sufixos' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Arquitetura de Integração [Tecnologia]' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Configurar as caixas de entrada de contatos de Support' criada com sucesso!
+Tarefa 'Desenvolver documentação dos processos' criada com sucesso!
+Tarefa 'Adaptar processo com stage "Transferido"' criada com sucesso!
+Tarefa 'Corrigir base de Tickets' criada com sucesso!
+Tarefa 'Ajuste round robin' criada com sucesso!
+Tarefa 'Desenvolver workflows de datas e taxas pro pipe de Expansão' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa '[RT] Alterações no Briefing' criada com sucesso!
+Tarefa '[RT] Briefing' criada com sucesso!
+Tarefa 'Customizar processo e workflows de Lead Status e Lifecycle' criada com sucesso!
+Tarefa 'Ajustes Processo HVendas - lifecycle, taxas, datas, etapas e propriedades' criada com sucesso!
+Tarefa 'Mudança etapas pipe Decor' criada com sucesso!
+Tarefa 'Tratar a base de registros pra importação - HVendas' criada com sucesso!
+Tarefa 'Tratar a base para importação dos registros - Plataforma' criada com sucesso!
+Tarefa 'Housi Plataforma - Ticket de conversas e migração Octadesk' criada com sucesso!
+Tarefa 'Apresentar e ter a validação de todo processo PLATAFORMA com lideres' criada com sucesso!
+Tarefa 'Desenvolver workflows de datas, tempos e taxas pra etapas e lifecycle' criada com sucesso!
+Tarefa 'TO BE Arquitetura de fontes Plataforma' criada com sucesso!
+Tarefa 'Apresentar e ter a validação de todo processo HVendas com a liderança' criada com sucesso!
+Tarefa 'Desenvolver workflows de datas, taxas e tempo de todo o funil (etapas e lifecycle)' criada com sucesso!
+Tarefa 'Desenvolver workflows de arquitetura de fonte pra HVendas' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Conferir Left e Right side bar de todos os objetos' criada com sucesso!
+Tarefa 'Analise de qualidade do processo HVendas' criada com sucesso!
+Tarefa 'Garantir que todos os usuários tem acesso a conta' criada com sucesso!
+Tarefa 'Realizar testes internos do processo de HVendas de ponta a ponta' criada com sucesso!
+Tarefa 'Desenvolver Left e Right Side bar de todos os objetos [Plataforma]' criada com sucesso!
+Tarefa 'Garantir que todos os usuários tem acesso a conta' criada com sucesso!
+Tarefa 'Desenvolver workflows de copias de propriedades' criada com sucesso!
+Tarefa 'Desenvolver as automações de distribuição de registros de Leads, Contatos e Empresas' criada com sucesso!
+Tarefa 'Analise de Objeto Personalizado: Cidades -> Blueprint To Be de [Propriedades Cidades]' criada com sucesso!
+Tarefa 'Migração Objeto Grupo Economico' criada com sucesso!
+Tarefa 'Desenvolver workflows de ligação pro pipeline Parceiro, Ticket e AR' criada com sucesso!
+Tarefa 'Ajustar workflows de Arquitetura de Fontes' criada com sucesso!
+Tarefa 'Desenvolver as automações para registro de métricas e datas em Negócio (uma pra cada estágio do pipeline de Revenue Acquisition)' criada com sucesso!
+Tarefa 'Mapeamento AS IS - Pòs venda VDI' criada com sucesso!
+Tarefa 'Rates e dates pra negocio (growth formula) - B2B' criada com sucesso!
+Tarefa 'Mapeamento workflows e propriedades existentes - VDI' criada com sucesso!
+Tarefa 'Criar relatórios personalizados - VDI' criada com sucesso!
+Tarefa 'TO BE: Definições de métricas | VDI' criada com sucesso!
+Tarefa 'Desenvolver as automações para registro de métricas e datas em Lead (uma pra cada stage do pipeline) | VDI' criada com sucesso!
+Tarefa 'Desenvolver workflows de lead status | VDI' criada com sucesso!
+Tarefa 'Desenvolver as automações de round robin | VDI' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Apresentação + ajustes Dashboard Mkt B2C' criada com sucesso!
+Tarefa 'Auxilio na criação de e-mails e formulários de NPS' criada com sucesso!
+Tarefa 'Estruturação de Pipelines Onboarding e Ongoing B2B' criada com sucesso!
+Tarefa 'Dashboard dados NPS' criada com sucesso!
+Tarefa 'Dashboard Growth Formula e Analise Aquisição B2C' criada com sucesso!
+Tarefa 'Dashboard Growth Formula Aquisição B2B' criada com sucesso!
+Tarefa '[Pós Win - B2C] Garantir que itens críticos para o go live estejam finalizados' criada com sucesso!
+Tarefa '[Pós win - B2C] Dry run com o cliente + Go Live' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Todas as etapas concluídas em 682.40 segundos.
+Execução finalizada, desligando a instância...
+  File "/home/ricardo_semerene/etl_prod/main.py", line 124
+    print(service)
+IndentationError: unexpected indent
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 53.41 segundos.
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    Active
+1   14963146054                 Magis5  ...         <NA>    Active
+2   14963311801                 MKraft  ...         <NA>    Active
+3   14963311872      Bluepay Solutions  ...         <NA>    Active
+4   14963846170             Fechometal  ...         <NA>  Inactive
+5   14964660517                Sellers  ...         <NA>    Active
+6   14965086309                  Cepel  ...         <NA>    Active
+7   14966965592                  Okena  ...         <NA>    Active
+8   14987437892             Quick Soft  ...         <NA>    Active
+9   14987437893                  Hurst  ...         <NA>    Active
+10  14987437894                 Printi  ...         <NA>  Inactive
+11  14990716536           Cubo Network  ...         <NA>  inactive
+12  14991174554                   Upik  ...         <NA>    Active
+13  14992263052  Todos Empreendimentos  ...         <NA>    Active
+14  14995201557             Rocketseat  ...         <NA>    Active
+15  14995944007                     DM  ...         <NA>    Active
+16  14995944008                Aeromot  ...         <NA>  inactive
+17  14995952174    Terra Investimentos  ...         <NA>    Active
+18  14995990707         W1 Consultoria  ...         <NA>    Active
+19  14996006433                   Bagy  ...         <NA>  Inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    Active
+21  14996014991                  Housi  ...         <NA>    Active
+22  14996176981                   Oobj  ...         <NA>    Active
+23  14996339362           Ecom Energia  ...         <NA>    Active
+24  14996354114                Plugify  ...         <NA>    Active
+25  14996698917          MA Hospitalar  ...         <NA>    Active
+26  14996849766                   Cora  ...         <NA>    Active
+27  14997048701           Santo Inacio  ...         <NA>    Active
+28  14997055532           Partido Novo  ...         <NA>    Active
+29  14997215284                 Uniube  ...         <NA>    Active
+30  14997215285         Remessa Online  ...         <NA>  inactive
+31  14997223812              Metadados  ...         <NA>  inactive
+32  14997232046                  Frete  ...         <NA>    Active
+33  14997410635       Centro Dom Bosco  ...         <NA>    Active
+34  14997428652    Seguralta Corretora  ...         <NA>  inactive
+35  14997433524         Soluti Digital  ...         <NA>    Active
+36  14997433525                  Payfy  ...         <NA>  inactive
+37  14997627566           Akad Seguros  ...         <NA>  inactive
+38  14997685110             Data Guide  ...         <NA>  Inactive
+39  14997692830               Poder360  ...         <NA>    Active
+40  15644325166              Allied IT  ...         <NA>    Active
+41  16279965720          Phytoterapica  ...         <NA>    Active
+42  16279965721       Gifted Education  ...         <NA>    Active
+43  16279965746               Inchurch  ...         <NA>    Active
+44  16279965751                  Jusfy  ...         <NA>    Active
+45  16286521388            MEI Digital  ...         <NA>    Active
+46  17145705272             Unicidades  ...         <NA>    Active
+47  19188266757           On Projeções  ...         <NA>    Active
+48  19188266833                   Reag  ...         <NA>    Active
+49  19245198172          Pris Software  ...         <NA>    Active
+50  19459774991                 Lastro  ...         <NA>    Active
+51  19649057892                  Konsi  ...         <NA>    Active
+52  19840256596                Beetech  ...         <NA>    Active
+53  19970189975                   Bene  ...         <NA>    Active
+
+[54 rows x 23 columns]
+             id       customer  ... service_end_date service_due_date
+0   14996849766           Cora  ...              NaN       19/01/2024
+1   14997215284         Uniube  ...              NaN       29/05/2025
+2   14959515507           Sasi  ...              NaN       29/12/2023
+3   14963311801         MKraft  ...              NaN       22/09/2024
+4   14966965592          Okena  ...              NaN       04/09/2025
+..          ...            ...  ...              ...              ...
+56  19245198172  Pris Software  ...              NaN       01/10/2025
+57  19459774991         Lastro  ...              NaN       01/06/2025
+58  19649057892          Konsi  ...              NaN       26/03/2025
+59  19840256596        Beetech  ...              NaN       05/05/2025
+60  19970189975           Bene  ...              NaN       02/04/2025
+
+[61 rows x 14 columns]
+Etapa 2/5 concluída em 53.63 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Etapa 3/5 concluída em 64.08 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 89.70 segundos.
+Todas as etapas concluídas em 89.70 segundos.
+Execução finalizada, desligando a instância...
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 51.88 segundos.
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    active
+1   14963146054                 Magis5  ...         <NA>    active
+2   14963311801                 MKraft  ...         <NA>    active
+3   14963311872      Bluepay Solutions  ...         <NA>    active
+4   14963846170             Fechometal  ...         <NA>  inactive
+5   14964660517                Sellers  ...         <NA>    active
+6   14965086309                  Cepel  ...         <NA>    active
+7   14966965592                  Okena  ...         <NA>    active
+8   14987437892             Quick Soft  ...         <NA>    active
+9   14987437893                  Hurst  ...         <NA>    active
+10  14987437894                 Printi  ...         <NA>  inactive
+11  14990716536           Cubo Network  ...         <NA>    active
+12  14991174554                   Upik  ...         <NA>    active
+13  14992263052  Todos Empreendimentos  ...         <NA>    active
+14  14995201557             Rocketseat  ...         <NA>    active
+15  14995944007                     DM  ...         <NA>    active
+16  14995944008                Aeromot  ...         <NA>    active
+17  14995952174    Terra Investimentos  ...         <NA>    active
+18  14995990707         W1 Consultoria  ...         <NA>    active
+19  14996006433                   Bagy  ...         <NA>  inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    active
+21  14996014991                  Housi  ...         <NA>    active
+22  14996176981                   Oobj  ...         <NA>    active
+23  14996339362           Ecom Energia  ...         <NA>    active
+24  14996354114                Plugify  ...         <NA>    active
+25  14996698917          MA Hospitalar  ...         <NA>    active
+26  14996849766                   Cora  ...         <NA>    active
+27  14997048701           Santo Inacio  ...         <NA>  inactive
+28  14997055532           Partido Novo  ...         <NA>    active
+29  14997215284                 Uniube  ...         <NA>    active
+30  14997215285         Remessa Online  ...         <NA>    active
+31  14997223812              Metadados  ...         <NA>    active
+32  14997232046                  Frete  ...         <NA>    active
+33  14997410635       Centro Dom Bosco  ...         <NA>    active
+34  14997428652    Seguralta Corretora  ...         <NA>    active
+35  14997433524         Soluti Digital  ...         <NA>    active
+36  14997433525                  Payfy  ...         <NA>    active
+37  14997627566           Akad Seguros  ...         <NA>    active
+38  14997685110             Data Guide  ...         <NA>  inactive
+39  14997692830               Poder360  ...         <NA>    active
+40  15644325166              Allied IT  ...         <NA>    active
+41  16279965720          Phytoterapica  ...         <NA>    active
+42  16279965721       Gifted Education  ...         <NA>    active
+43  16279965746               Inchurch  ...         <NA>    active
+44  16279965751                  Jusfy  ...         <NA>    active
+45  16286521388            MEI Digital  ...         <NA>    active
+46  17145705272             Unicidades  ...         <NA>    active
+47  19188266757           On Projeções  ...         <NA>    active
+48  19188266833                   Reag  ...         <NA>    active
+49  19245198172          Pris Software  ...         <NA>    active
+50  19459774991                 Lastro  ...         <NA>    active
+51  19649057892                  Konsi  ...         <NA>    active
+52  19840256596                Beetech  ...         <NA>    active
+53  19970189975                   Bene  ...         <NA>    active
+
+[54 rows x 23 columns]
+             id       customer  ... service_end_date service_due_date
+0   14996849766           Cora  ...              NaN       19/01/2024
+1   14997215284         Uniube  ...              NaN       29/05/2025
+2   14959515507           Sasi  ...              NaN       29/12/2023
+3   14963311801         MKraft  ...              NaN       22/09/2024
+4   14966965592          Okena  ...              NaN       04/09/2025
+..          ...            ...  ...              ...              ...
+56  19245198172  Pris Software  ...              NaN       01/10/2025
+57  19459774991         Lastro  ...              NaN       01/06/2025
+58  19649057892          Konsi  ...              NaN       26/03/2025
+59  19840256596        Beetech  ...              NaN       05/05/2025
+60  19970189975           Bene  ...              NaN       02/04/2025
+
+[61 rows x 14 columns]
+Etapa 2/5 concluída em 52.09 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Etapa 3/5 concluída em 61.64 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 76.06 segundos.
+Todas as etapas concluídas em 76.06 segundos.
+Execução finalizada, desligando a instância...
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 53.65 segundos.
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    active
+1   14963146054                 Magis5  ...         <NA>    active
+2   14963311801                 MKraft  ...         <NA>    active
+3   14963311872      Bluepay Solutions  ...         <NA>    active
+4   14963846170             Fechometal  ...         <NA>  inactive
+5   14964660517                Sellers  ...         <NA>    active
+6   14965086309                  Cepel  ...         <NA>    active
+7   14966965592                  Okena  ...         <NA>    active
+8   14987437892             Quick Soft  ...         <NA>    active
+9   14987437893                  Hurst  ...         <NA>    active
+10  14987437894                 Printi  ...         <NA>  inactive
+11  14990716536           Cubo Network  ...         <NA>    active
+12  14991174554                   Upik  ...         <NA>    active
+13  14992263052  Todos Empreendimentos  ...         <NA>    active
+14  14995201557             Rocketseat  ...         <NA>    active
+15  14995944007                     DM  ...         <NA>    active
+16  14995944008                Aeromot  ...         <NA>    active
+17  14995952174    Terra Investimentos  ...         <NA>    active
+18  14995990707         W1 Consultoria  ...         <NA>    active
+19  14996006433                   Bagy  ...         <NA>  inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    active
+21  14996014991                  Housi  ...         <NA>    active
+22  14996176981                   Oobj  ...         <NA>    active
+23  14996339362           Ecom Energia  ...         <NA>    active
+24  14996354114                Plugify  ...         <NA>    active
+25  14996698917          MA Hospitalar  ...         <NA>    active
+26  14996849766                   Cora  ...         <NA>    active
+27  14997048701           Santo Inacio  ...         <NA>  inactive
+28  14997055532           Partido Novo  ...         <NA>    active
+29  14997215284                 Uniube  ...         <NA>    active
+30  14997215285         Remessa Online  ...         <NA>    active
+31  14997223812              Metadados  ...         <NA>    active
+32  14997232046                  Frete  ...         <NA>    active
+33  14997410635       Centro Dom Bosco  ...         <NA>    active
+34  14997428652    Seguralta Corretora  ...         <NA>    active
+35  14997433524         Soluti Digital  ...         <NA>    active
+36  14997433525                  Payfy  ...         <NA>    active
+37  14997627566           Akad Seguros  ...         <NA>    active
+38  14997685110             Data Guide  ...         <NA>  inactive
+39  14997692830               Poder360  ...         <NA>    active
+40  15644325166              Allied IT  ...         <NA>    active
+41  16279965720          Phytoterapica  ...         <NA>    active
+42  16279965721       Gifted Education  ...         <NA>    active
+43  16279965746               Inchurch  ...         <NA>    active
+44  16279965751                  Jusfy  ...         <NA>    active
+45  16286521388            MEI Digital  ...         <NA>    active
+46  17145705272             Unicidades  ...         <NA>    active
+47  19188266757           On Projeções  ...         <NA>    active
+48  19188266833                   Reag  ...         <NA>    active
+49  19245198172          Pris Software  ...         <NA>    active
+50  19459774991                 Lastro  ...         <NA>    active
+51  19649057892                  Konsi  ...         <NA>    active
+52  19840256596                Beetech  ...         <NA>    active
+53  19970189975                   Bene  ...         <NA>    active
+
+[54 rows x 23 columns]
+             id       customer  ... service_end_date service_due_date
+0   14996849766           Cora  ...              NaN       19/01/2024
+1   14997215284         Uniube  ...              NaN       29/05/2025
+2   14959515507           Sasi  ...              NaN       29/12/2023
+3   14963311801         MKraft  ...              NaN       22/09/2024
+4   14966965592          Okena  ...              NaN       04/09/2025
+..          ...            ...  ...              ...              ...
+56  19245198172  Pris Software  ...              NaN       01/10/2025
+57  19459774991         Lastro  ...              NaN       01/06/2025
+58  19649057892          Konsi  ...              NaN       26/03/2025
+59  19840256596        Beetech  ...              NaN       05/05/2025
+60  19970189975           Bene  ...              NaN       02/04/2025
+
+[61 rows x 14 columns]
+Etapa 2/5 concluída em 53.83 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Etapa 3/5 concluída em 63.59 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 79.49 segundos.
+Todas as etapas concluídas em 79.49 segundos.
+Execução finalizada, desligando a instância...
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 52.62 segundos.
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    active
+1   14963146054                 Magis5  ...         <NA>    active
+2   14963311801                 MKraft  ...         <NA>    active
+3   14963311872      Bluepay Solutions  ...         <NA>    active
+4   14963846170             Fechometal  ...         <NA>  inactive
+5   14964660517                Sellers  ...         <NA>    active
+6   14965086309                  Cepel  ...         <NA>    active
+7   14966965592                  Okena  ...         <NA>    active
+8   14987437892             Quick Soft  ...         <NA>    active
+9   14987437893                  Hurst  ...         <NA>    active
+10  14987437894                 Printi  ...         <NA>  inactive
+11  14990716536           Cubo Network  ...         <NA>    active
+12  14991174554                   Upik  ...         <NA>    active
+13  14992263052  Todos Empreendimentos  ...         <NA>    active
+14  14995201557             Rocketseat  ...         <NA>    active
+15  14995944007                     DM  ...         <NA>    active
+16  14995944008                Aeromot  ...         <NA>    active
+17  14995952174    Terra Investimentos  ...         <NA>    active
+18  14995990707         W1 Consultoria  ...         <NA>    active
+19  14996006433                   Bagy  ...         <NA>  inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    active
+21  14996014991                  Housi  ...         <NA>    active
+22  14996176981                   Oobj  ...         <NA>    active
+23  14996339362           Ecom Energia  ...         <NA>    active
+24  14996354114                Plugify  ...         <NA>    active
+25  14996698917          MA Hospitalar  ...         <NA>    active
+26  14996849766                   Cora  ...         <NA>    active
+27  14997048701           Santo Inacio  ...         <NA>  inactive
+28  14997055532           Partido Novo  ...         <NA>    active
+29  14997215284                 Uniube  ...         <NA>    active
+30  14997215285         Remessa Online  ...         <NA>    active
+31  14997223812              Metadados  ...         <NA>    active
+32  14997232046                  Frete  ...         <NA>    active
+33  14997410635       Centro Dom Bosco  ...         <NA>    active
+34  14997428652    Seguralta Corretora  ...         <NA>    active
+35  14997433524         Soluti Digital  ...         <NA>    active
+36  14997433525                  Payfy  ...         <NA>    active
+37  14997627566           Akad Seguros  ...         <NA>    active
+38  14997685110             Data Guide  ...         <NA>  inactive
+39  14997692830               Poder360  ...         <NA>    active
+40  15644325166              Allied IT  ...         <NA>    active
+41  16279965720          Phytoterapica  ...         <NA>    active
+42  16279965721       Gifted Education  ...         <NA>    active
+43  16279965746               Inchurch  ...         <NA>    active
+44  16279965751                  Jusfy  ...         <NA>    active
+45  16286521388            MEI Digital  ...         <NA>    active
+46  17145705272             Unicidades  ...         <NA>    active
+47  19188266757           On Projeções  ...         <NA>    active
+48  19188266833                   Reag  ...         <NA>    active
+49  19245198172          Pris Software  ...         <NA>    active
+50  19459774991                 Lastro  ...         <NA>    active
+51  19649057892                  Konsi  ...         <NA>    active
+52  19840256596                Beetech  ...         <NA>    active
+53  19970189975                   Bene  ...         <NA>    active
+
+[54 rows x 23 columns]
+             id       customer  ... service_end_date service_due_date
+0   14996849766           Cora  ...              NaN       19/01/2024
+1   14997215284         Uniube  ...              NaN       29/05/2025
+2   14959515507           Sasi  ...              NaN       29/12/2023
+3   14963311801         MKraft  ...              NaN       22/09/2024
+4   14966965592          Okena  ...              NaN       04/09/2025
+..          ...            ...  ...              ...              ...
+56  19245198172  Pris Software  ...              NaN       01/10/2025
+57  19459774991         Lastro  ...              NaN       01/06/2025
+58  19649057892          Konsi  ...              NaN       26/03/2025
+59  19840256596        Beetech  ...              NaN       05/05/2025
+60  19970189975           Bene  ...              NaN       02/04/2025
+
+[61 rows x 14 columns]
+Etapa 2/5 concluída em 52.83 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Etapa 3/5 concluída em 62.05 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 77.03 segundos.
+Todas as etapas concluídas em 77.03 segundos.
+Execução finalizada, desligando a instância...
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 51.37 segundos.
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    active
+1   14963146054                 Magis5  ...         <NA>    active
+2   14963311801                 MKraft  ...         <NA>    active
+3   14963311872      Bluepay Solutions  ...         <NA>    active
+4   14963846170             Fechometal  ...         <NA>  inactive
+5   14964660517                Sellers  ...         <NA>    active
+6   14965086309                  Cepel  ...         <NA>    active
+7   14966965592                  Okena  ...         <NA>    active
+8   14987437892             Quick Soft  ...         <NA>    active
+9   14987437893                  Hurst  ...         <NA>    active
+10  14987437894                 Printi  ...         <NA>  inactive
+11  14990716536           Cubo Network  ...         <NA>    active
+12  14991174554                   Upik  ...         <NA>    active
+13  14992263052  Todos Empreendimentos  ...         <NA>    active
+14  14995201557             Rocketseat  ...         <NA>    active
+15  14995944007                     DM  ...         <NA>    active
+16  14995944008                Aeromot  ...         <NA>    active
+17  14995952174    Terra Investimentos  ...         <NA>    active
+18  14995990707         W1 Consultoria  ...         <NA>    active
+19  14996006433                   Bagy  ...         <NA>  inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    active
+21  14996014991                  Housi  ...         <NA>    active
+22  14996176981                   Oobj  ...         <NA>    active
+23  14996339362           Ecom Energia  ...         <NA>    active
+24  14996354114                Plugify  ...         <NA>    active
+25  14996698917          MA Hospitalar  ...         <NA>    active
+26  14996849766                   Cora  ...         <NA>    active
+27  14997048701           Santo Inacio  ...         <NA>  inactive
+28  14997055532           Partido Novo  ...         <NA>    active
+29  14997215284                 Uniube  ...         <NA>    active
+30  14997215285         Remessa Online  ...         <NA>    active
+31  14997223812              Metadados  ...         <NA>    active
+32  14997232046                  Frete  ...         <NA>    active
+33  14997410635       Centro Dom Bosco  ...         <NA>    active
+34  14997428652    Seguralta Corretora  ...         <NA>    active
+35  14997433524         Soluti Digital  ...         <NA>    active
+36  14997433525                  Payfy  ...         <NA>    active
+37  14997627566           Akad Seguros  ...         <NA>    active
+38  14997685110             Data Guide  ...         <NA>  inactive
+39  14997692830               Poder360  ...         <NA>    active
+40  15644325166              Allied IT  ...         <NA>    active
+41  16279965720          Phytoterapica  ...         <NA>    active
+42  16279965721       Gifted Education  ...         <NA>    active
+43  16279965746               Inchurch  ...         <NA>    active
+44  16279965751                  Jusfy  ...         <NA>    active
+45  16286521388            MEI Digital  ...         <NA>    active
+46  17145705272             Unicidades  ...         <NA>    active
+47  19188266757           On Projeções  ...         <NA>    active
+48  19188266833                   Reag  ...         <NA>    active
+49  19245198172          Pris Software  ...         <NA>    active
+50  19459774991                 Lastro  ...         <NA>    active
+51  19649057892                  Konsi  ...         <NA>    active
+52  19840256596                Beetech  ...         <NA>    active
+53  19970189975                   Bene  ...         <NA>    active
+
+[54 rows x 23 columns]
+             id       customer  ... service_end_date service_due_date
+0   14996849766           Cora  ...              NaN       19/01/2024
+1   14997215284         Uniube  ...              NaN       29/05/2025
+2   14959515507           Sasi  ...              NaN       29/12/2023
+3   14963311801         MKraft  ...              NaN       22/09/2024
+4   14966965592          Okena  ...              NaN       04/09/2025
+..          ...            ...  ...              ...              ...
+56  19245198172  Pris Software  ...              NaN       01/10/2025
+57  19459774991         Lastro  ...              NaN       01/06/2025
+58  19649057892          Konsi  ...              NaN       26/03/2025
+59  19840256596        Beetech  ...              NaN       05/05/2025
+60  19970189975           Bene  ...              NaN       02/04/2025
+
+[61 rows x 14 columns]
+Etapa 2/5 concluída em 51.57 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Etapa 3/5 concluída em 61.70 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 78.09 segundos.
+Todas as etapas concluídas em 78.09 segundos.
+Execução finalizada, desligando a instância...

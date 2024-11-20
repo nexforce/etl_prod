@@ -104,7 +104,7 @@ def transform_customers_data(customer):
     customer = customer[['id','customer_name','customer_name','plan','sprint_points_plan','service_currency','amount','term',
                         'service_start_date','go_live_date', 'last_renew_date','due_date', 'growth_formula_implemented','slack_channel',
                         'squad_name', 'subscription_crm_id','list', 'temperature','createdAt','updatedAt','chances_to_renew',
-                        'renewal_term','customer_status'
+                        'renewal_term','service_status'
                         ]]
 
     new_columns = ['task_id', 'task_name', 'customer','plan','plan_points','currency', 'monthly_revenue','term','start_date',

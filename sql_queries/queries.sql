@@ -70,7 +70,7 @@ SELECT
     --,DIM.chances_to_renew
     ,DIM.status
 FROM `starry-compiler-387319.Stage.stg_customer` AS STG
-INNER JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS DIM ON DIM.customer = STG.task_id -- alterado
+INNER JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS DIM ON DIM.customer = STG.task_name -- alterado
 WHERE STG.customer IS NOT NULL
   AND DIM.is_active_register = true
   AND DIM.date_updated <> STG.date_updated;
@@ -90,7 +90,7 @@ INSERT INTO `starry-compiler-387319.Clickup_Source.dim_customer` (
    ,plan_points
    --,currency
    --,monthly_revenue
-   --,term
+	   --,term
    ,start_date
    --,go_live_date 
    --,last_renew_date
@@ -133,7 +133,7 @@ INSERT INTO `starry-compiler-387319.Clickup_Source.dim_customer` (
      --,STG.chances_to_renew
      ,INITCAP(STG.status) AS status  
     FROM `starry-compiler-387319.Stage.stg_customer` AS STG 
-    INNER JOIN `starry-compiler-387319.Stage.stg_customer_need_updates` AS UPD ON UPD.external_id = STG.task_id;
+    INNER JOIN `starry-compiler-387319.Stage.stg_customer_need_updates` AS UPD ON UPD.customer = STG.task_name;
 
 -----------------------------------------------------------------------------------------------------------------------
 
