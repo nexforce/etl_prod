@@ -218,7 +218,19 @@ Cuidado ao tentar abrir este arquivo completo, pois ele é muito grande e pode �
 
 `cat log.txt`
 
+## COMO EXECUTAR E INTERROMPER O SCRIPT MANUALMENTE
 
+Para executar o código manualmente, basta abrir a instância e abrir a janela do navegador. Para fazer isso, é só localizar no canto direito em “conectar” e clicar em cima de “SSH”. Dentro do prompt da VM, digite o comando 
+
+`python3 /home/ricardo_semerene/etl_prod/main.py`
+
+Para interromper o código manualmente, no mesmo lugar que se digita o comando acima, execute o comando:
+
+`ps aux | grep main.py`
+
+Vai aparecer um número do processo que está sendo executado. Desse modo, basta digitar um último comando:
+
+`kill <number>`
 
 
 
