@@ -38,192 +38,136 @@ INSERT INTO `starry-compiler-387319.Clickup_Source.dim_service` (
 
 -- Nome da query: tl_dim_customer
 
---CRIA TABELA COM CLIENTES EXISTENTES QUE SOFRERAM ALGUMA ATUALIZAÇÃO
-CREATE OR REPLACE TABLE 
+-- CRIA TABELA COM CLIENTES EXISTENTES QUE SOFRERAM ALGUMA ATUALIZAÇÃO
+CREATE OR REPLACE TABLE
    `starry-compiler-387319.Stage.stg_customer_need_updates`
 OPTIONS(
   expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 1 DAY)
-) AS 
+) AS
 SELECT
      DIM.uuid
     ,DIM.external_id
-    ,DIM.customer 
-    --,DIM.plan_category
+    ,DIM.customer
     ,DIM.plan_points
-    --,DIM.currency
-    --,DIM.monthly_revenue
-    --,DIM.term
     ,DIM.start_date
-    --,DIM.go_live_date
-    --,DIM.last_renew_date
     ,DIM.due_date
     ,DIM.has_growth_formula
     ,DIM.slack_channel
     ,DIM.team
-    --,DIM.crm_id
-    --,DIM.list
-    --,DIM.temperature
-    --,DIM.renewal_term
     ,DIM.date_created
     ,DIM.date_updated
     ,DIM.is_active_register
-    --,DIM.chances_to_renew
     ,DIM.status
+    ,DIM.service_name -- nova coluna
+    ,DIM.monthly_revenue -- nova coluna
 FROM `starry-compiler-387319.Stage.stg_customer` AS STG
-INNER JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS DIM ON DIM.customer = STG.task_name -- alterado
+INNER JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS DIM
+  ON DIM.service_name = STG.service_name --MUDOU PARA O SERVICE NAME
 WHERE STG.customer IS NOT NULL
   AND DIM.is_active_register = true
   AND DIM.date_updated <> STG.date_updated;
-
---ATUALIZA O REGISTRO ATUAL COMO OBSOLETO
+-- ATUALIZA O REGISTRO ATUAL COMO OBSOLETO
 UPDATE `starry-compiler-387319.Clickup_Source.dim_customer` AS DIM
 SET DIM.is_active_register = false
 FROM `starry-compiler-387319.Stage.stg_customer_need_updates` AS STG
 WHERE DIM.uuid = STG.uuid;
-
---INSERE O REGISTRO MAIS NOVO
+-- INSERE O REGISTRO MAIS NOVO
 INSERT INTO `starry-compiler-387319.Clickup_Source.dim_customer` (
    uuid
-   ,external_id
+   ,external_id -- MUDAR PARA O EXTERNAL ID DE PURCHASED SERVICES? VERIFICAR DEPOIS
    ,customer
-   --,plan_category
    ,plan_points
-   --,currency
-   --,monthly_revenue
-	   --,term
    ,start_date
-   --,go_live_date 
-   --,last_renew_date
    ,due_date
    ,has_growth_formula
    ,slack_channel
    ,team
-   --,crm_id
-   --,list
-   --,temperature
-   --,renewal_term
    ,date_created
    ,date_updated
    ,is_active_register
-   --,chances_to_renew
-   ,status 
-  ) SELECT
+   ,status
+   ,service_name  -- nova coluna
+   ,monthly_revenue -- nova coluna
+) SELECT
       GENERATE_UUID() AS uuid
-     ,STG.task_id 
+     ,STG.task_id
      ,STG.customer
-     --,STG.plan
      ,STG.plan_points
-     --,STG.currency
-     --,STG.monthly_revenue
-     --,STG.term
      ,STG.start_date
-     --,STG.go_live_date
-     --,STG.last_renew_date
      ,STG.due_date
-     ,IFNULL(STG.has_growth_formula,false) AS has_growth_formula
+     ,IFNULL(STG.has_growth_formula, false) AS has_growth_formula
      ,STG.slack_channel
      ,STG.team
-     --,CAST(STG.crm_id AS STRING) AS crm_id
-     --,STG.list
-     --,INITCAP(STG.temperature) AS temperature
-     --,STG.renewal_term
      ,STG.date_created
      ,STG.date_updated
      ,true AS is_active_register
-     --,STG.chances_to_renew
-     ,INITCAP(STG.status) AS status  
-    FROM `starry-compiler-387319.Stage.stg_customer` AS STG 
-    INNER JOIN `starry-compiler-387319.Stage.stg_customer_need_updates` AS UPD ON UPD.customer = STG.task_name;
-
------------------------------------------------------------------------------------------------------------------------
-
---CRIA TABELA COM OS CLIENTES NOVOS QUE NÃO EXISTEM NA BASE
-CREATE OR REPLACE TABLE 
+     ,INITCAP(STG.status) AS status
+     ,STG.service_name  -- nova coluna
+     ,STG.monthly_revenue -- nova coluna
+FROM `starry-compiler-387319.Stage.stg_customer` AS STG
+INNER JOIN `starry-compiler-387319.Stage.stg_customer_need_updates` AS UPD
+  ON UPD.service_name = STG.service_name; --MUDOU PARA O SERVICE NAME
+-- CRIA TABELA COM OS CLIENTES NOVOS QUE NÃO EXISTEM NA BASE
+CREATE OR REPLACE TABLE
    `starry-compiler-387319.Stage.stg_customer_new`
 OPTIONS(
   expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 1 DAY)
-) AS 
+) AS
 SELECT
      STG.task_id
     ,STG.customer
-    --,STG.plan
-    ,STG.plan_points
-    --,STG.currency
-    --,STG.monthly_revenue
-    --,STG.term
+    ,STG.plan_points AS plan_points
     ,STG.start_date
-    --,STG.go_live_date
-    --,STG.last_renew_date
     ,STG.due_date
-    ,IFNULL(STG.has_growth_formula,false) AS has_growth_formula
+    ,IFNULL(STG.has_growth_formula, false) AS has_growth_formula
     ,STG.slack_channel
     ,STG.team
-    --,CAST(STG.crm_id AS STRING) AS crm_id
-    --,STG.list
-    --,INITCAP(STG.temperature) AS temperature
-    --,STG.renewal_term
     ,STG.date_created
     ,STG.date_updated
-    ,true AS is_active_register 
-    --,STG.chances_to_renew
+    ,true AS is_active_register
     ,INITCAP(STG.status) AS status
+    ,STG.service_name -- nova coluna
+    ,STG.monthly_revenue -- nova coluna
 FROM `starry-compiler-387319.Stage.stg_customer` AS STG
-LEFT JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS DIM ON DIM.external_id = STG.task_id
-WHERE STG.customer IS NOT NULL
-  AND DIM.customer IS NULL;
-
---INSERE O REGISTRO NOVO NA BASE
+LEFT JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS DIM
+  ON DIM.external_id = STG.task_id --VERIFICAR SE PODE DAR MERDA NO FUTURO
+WHERE STG.service_name IS NOT NULL -- MUDOU PARA O SERVICE NAME
+  AND DIM.service_name IS NULL;
+-- INSERE O REGISTRO NOVO NA BASE
 INSERT INTO `starry-compiler-387319.Clickup_Source.dim_customer` (
      uuid
     ,external_id
     ,customer
-    --,plan_category
     ,plan_points
-    --,currency
-    --,monthly_revenue
-    --,term
     ,start_date
-    --,go_live_date
-    --,last_renew_date
     ,due_date
     ,has_growth_formula
     ,slack_channel
     ,team
-    --,crm_id
-    --,list
-    --,temperature
-    --,renewal_term
     ,date_created
     ,date_updated
-    ,is_active_register 
-    --,chances_to_renew
+    ,is_active_register
     ,status
-  ) SELECT
+    ,service_name  -- nova coluna
+    ,monthly_revenue -- nova coluna
+) SELECT
      GENERATE_UUID() AS uuid
     ,STG.task_id
     ,STG.customer
-    --,STG.plan
-    ,STG.plan_points
-    --,STG.currency
-    --,STG.monthly_revenue
-    --,STG.term
+    ,STG.plan_points AS plan_points
     ,STG.start_date
-    --,STG.go_live_date
-    --,STG.last_renew_date
     ,STG.due_date
-    ,IFNULL(STG.has_growth_formula,false) AS has_growth_formula
+    ,IFNULL(STG.has_growth_formula, false) AS has_growth_formula
     ,STG.slack_channel
     ,STG.team
-    --,CAST(STG.crm_id AS STRING) AS crm_id
-    --,STG.list
-    --,INITCAP(STG.temperature) AS temperature
-    --,STG.renewal_term
     ,STG.date_created
     ,STG.date_updated
     ,true AS is_active_register
-    --,STG.chances_to_renew
     ,INITCAP(STG.status) AS status
-    FROM `starry-compiler-387319.Stage.stg_customer_new` AS STG
+    ,STG.service_name  -- nova coluna
+    ,STG.monthly_revenue -- nova coluna
+FROM `starry-compiler-387319.Stage.stg_customer_new` AS STG;
+
 
 -- Nome da query: tl_dim_squad
 
@@ -554,53 +498,50 @@ INSERT INTO `starry-compiler-387319.Clickup_Source.dim_task` (
 
 -- Nome da query: tl_fat_sprint_detail
 
--- CRIA TABELA COM OS REGISTROS CLIENTES EXISTENTES QUE SOFRERAM ALGUMA ATUALIZAÇÃO
-CREATE OR REPLACE TABLE 
+--CRIA TABELA COM OS REGISTROS CLIENTES EXISTENTES QUE SOFRERAM ALGUMA ATUALIZAÇÃO
+CREATE OR REPLACE TABLE
    `starry-compiler-387319.Stage.stg_fat_new`
 OPTIONS(
   expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 1 DAY)
-) AS 
+) AS
 SELECT
-   SPR.uuid AS sprint_uuid,
-   TAS.uuid AS task_uuid,
-   CUS.uuid AS customer_uuid,
-   SQD.uuid AS squad_uuid,
-   TAS.points_estimate,
-   TAS.points_estimated_rolled_up,
-   SUM(CASE WHEN TAS.status = "Done" THEN TAS.points_estimate ELSE 0 END) AS points_done
+   SPR.uuid AS sprint_uuid
+  ,TAS.uuid AS task_uuid
+  ,CUS.uuid AS customer_uuid
+  ,SQD.uuid AS squad_uuid
+  ,TAS.points_estimate
+  ,TAS.points_estimated_rolled_up
+  ,SUM(CASE WHEN TAS.status = "Done" THEN TAS.points_estimate ELSE 0 END) AS points_done
 FROM
-  `starry-compiler-387319.Clickup_Source.dim_task` AS TAS 
-  INNER JOIN `starry-compiler-387319.Clickup_Source.dim_sprint` AS SPR 
-    ON SPR.sprint = CONCAT('2024 - ', TAS.sprint) -- SUBSTITUIR PARA O ANO CORRESPONDENTE
-  INNER JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS CUS 
-    ON TAS.customer = CUS.customer 
-  INNER JOIN `starry-compiler-387319.Clickup_Source.dim_squad` AS SQD 
-    ON TAS.assignee_email = SQD.email -- GARANTIR QUE FUNCIONOU!!!!!!!!!  
+  `starry-compiler-387319.Clickup_Source.dim_task` AS TAS
+  INNER JOIN `starry-compiler-387319.Clickup_Source.dim_sprint` AS SPR ON SPR.sprint = CONCAT('2025 - ', TAS.sprint) --SUBSTITUIR PARA O ANO CORRESPONDENTE
+  INNER JOIN `starry-compiler-387319.Clickup_Source.dim_customer` AS CUS ON TAS.customer = CUS.service_name --ALTERAR PARA SERVICE NAME
+  INNER JOIN `starry-compiler-387319.Clickup_Source.dim_squad` AS SQD ON TAS.assignee_email = SQD.email --GARANTIR QUE FUNCIONOU!!!!!!!!!
 WHERE
-  TAS.uuid NOT IN(SELECT task_uuid FROM `starry-compiler-387319.Clickup_Source.fat_sprint_detail`)
+  TAS.uuid NOT IN(SELECT task_uuid from `starry-compiler-387319.Clickup_Source.fat_sprint_detail`)
   AND CUS.is_active_register = true
   AND SQD.is_active_register = true
   AND TAS.is_active_register = true
 GROUP BY
-   SPR.uuid,
-   TAS.uuid,
-   CUS.uuid,
-   SQD.uuid,
-   TAS.points_estimate,
-   TAS.points_estimated_rolled_up
-ORDER BY 
+   SPR.uuid
+  ,TAS.uuid
+  ,CUS.uuid
+  ,SQD.uuid
+  ,TAS.points_estimate
+  ,TAS.points_estimated_rolled_up
+ORDER BY
   SQD.uuid ASC;
 
 -- INSERE OS REGISTROS NA TABELA FAT_SPRINT_DETAIL
 INSERT INTO `starry-compiler-387319.Clickup_Source.fat_sprint_detail`
 SELECT
-   GENERATE_UUID() AS uuid,
-   STG.sprint_uuid,
-   STG.task_uuid,
-   STG.customer_uuid,
-   STG.squad_uuid,
-   STG.points_estimate,
-   STG.points_estimated_rolled_up,
-   STG.points_done
+   GENERATE_UUID() AS uuid
+  ,STG.sprint_uuid 
+  ,STG.task_uuid
+  ,STG.customer_uuid
+  ,STG.squad_uuid
+  ,STG.points_estimate
+  ,STG.points_estimated_rolled_up
+  ,STG.points_done
 FROM
-  `starry-compiler-387319.Stage.stg_fat_new` AS STG;
+  `starry-compiler-387319.Stage.stg_fat_new` AS STG 

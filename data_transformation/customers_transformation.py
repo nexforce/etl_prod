@@ -101,15 +101,15 @@ def transform_customers_data(customer):
     for col in cols_to_add:
         customer[col] = None
 
-    customer = customer[['id','customer_name','customer_name','plan','sprint_points_plan','service_currency','amount','term',
+    customer = customer[['id','customer_name','customer_name','plan','sprint_points_plan','service_currency','mrr','term',
                         'service_start_date','go_live_date', 'last_renew_date','due_date', 'growth_formula_implemented','slack_channel',
                         'squad_name', 'subscription_crm_id','list', 'temperature','createdAt','updatedAt','chances_to_renew',
-                        'renewal_term','service_status'
+                        'renewal_term','service_status','service_name'
                         ]]
 
     new_columns = ['task_id', 'task_name', 'customer','plan','plan_points','currency', 'monthly_revenue','term','start_date',
                     'go_live_date', 'last_renew_date','due_date','has_growth_formula','slack_channel','team','crm_id',
-                    'list', 'temperature','date_created', 'date_updated','chances_to_renew','renewal_term','status'
+                    'list', 'temperature','date_created', 'date_updated','chances_to_renew','renewal_term','status','service_name'
                 ]
 
     customer.columns = new_columns
@@ -128,7 +128,7 @@ def transform_customers_data(customer):
     df_non_duplicates = customer.drop_duplicates('task_id', keep=False)
 
     # Combinar o DataFrame de linhas únicas com o DataFrame consolidado
-    df_final = pd.concat([df_non_duplicates, df_consolidated], ignore_index=True).sort_values('task_id').reset_index(drop=True)
+    df_final = pd.concat([df_non_duplicates, df_duplicates], ignore_index=True).sort_values('task_id').reset_index(drop=True)
 
     df_final['monthly_revenue'] = df_final['monthly_revenue'].round(2)
 

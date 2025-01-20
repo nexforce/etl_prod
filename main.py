@@ -145,11 +145,11 @@ def main():
     print(f"Etapa {current_step}/{total_steps} concluída em {elapsed_time:.2f} segundos.")
 
     # 4. Executar queries SQL
-    #query_tl_dim_customer = load_query_from_file("tl_dim_customer")
-    #query_tl_dim_service = load_query_from_file("tl_dim_service")
-    #query_tl_dim_squad = load_query_from_file("tl_dim_squad")
+   # query_tl_dim_customer = load_query_from_file("tl_dim_customer")
+   # query_tl_dim_service = load_query_from_file("tl_dim_service")
+   # query_tl_dim_squad = load_query_from_file("tl_dim_squad")
     #query_tl_dim_task = load_query_from_file("tl_dim_task")
-    #query_tl_fat_sprint_detail = load_query_from_file("tl_fat_sprint_detail")
+   # query_tl_fat_sprint_detail = load_query_from_file("tl_fat_sprint_detail")
 
     #CÓDIGO NUVEM
     query_tl_dim_customer = load_query_from_file("tl_dim_customer", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
@@ -176,7 +176,7 @@ def main():
     elapsed_time = time.time() - start_time
     print(f"Todas as etapas concluídas em {elapsed_time:.2f} segundos.")
 
-      # Após a execução do código
+    # Após a execução do código
     print("Execução finalizada, desligando a instância...")
     subprocess.run(["sudo", "shutdown", "-h", "now"])
 

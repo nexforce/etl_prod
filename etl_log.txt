@@ -3554,3 +3554,2139 @@ Query executada com sucesso
 Etapa 4/5 concluída em 78.09 segundos.
 Todas as etapas concluídas em 78.09 segundos.
 Execução finalizada, desligando a instância...
+INFO:data_extraction.tasks_extraction:O sprint atual é: Sprint 24 - 2024
+Fetching tasks:   0%|          | 0/96 [00:00<?, ?it/s]Fetching tasks:  34%|███▍      | 33/96 [00:00<00:00, 225.59it/s]Fetching tasks:  58%|█████▊    | 56/96 [00:18<00:16,  2.50it/s] Fetching tasks:  59%|█████▉    | 57/96 [00:21<00:18,  2.05it/s]Fetching tasks:  70%|██████▉   | 67/96 [00:28<00:15,  1.87it/s]Fetching tasks:  76%|███████▌  | 73/96 [00:36<00:16,  1.43it/s]Fetching tasks:  80%|████████  | 77/96 [00:41<00:14,  1.27it/s]Fetching tasks:  83%|████████▎ | 80/96 [00:42<00:11,  1.40it/s]Fetching tasks:  85%|████████▌ | 82/96 [00:42<00:09,  1.54it/s]Fetching tasks:  88%|████████▊ | 84/96 [00:42<00:06,  1.72it/s]Fetching tasks:  89%|████████▊ | 85/96 [00:43<00:06,  1.63it/s]Fetching tasks:  90%|████████▉ | 86/96 [00:44<00:06,  1.58it/s]Fetching tasks:  91%|█████████ | 87/96 [00:44<00:05,  1.67it/s]Fetching tasks:  92%|█████████▏| 88/96 [00:45<00:05,  1.57it/s]Fetching tasks:  94%|█████████▍| 90/96 [00:49<00:05,  1.04it/s]Fetching tasks:  95%|█████████▍| 91/96 [00:49<00:04,  1.05it/s]Fetching tasks:  96%|█████████▌| 92/96 [00:50<00:03,  1.12it/s]Fetching tasks:  98%|█████████▊| 94/96 [00:51<00:01,  1.46it/s]Fetching tasks:  99%|█████████▉| 95/96 [00:51<00:00,  1.68it/s]Fetching tasks: 100%|██████████| 96/96 [00:55<00:00,  1.48s/it]Fetching tasks: 100%|██████████| 96/96 [00:55<00:00,  1.72it/s]
+INFO:data_extraction.tasks_extraction:Tarefas obtidas com sucesso!
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/task_management/tasks_creation.py:155: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  task_history = task_history.fillna(0)
+Etapa 1/5 concluída em 161.68 segundos.
+        task_id           task_name  ... date_created date_updated
+0   14220340285    Willian Teodosio  ...   2024-07-23   2024-12-02
+1   14220274509     Leonardo Mendes  ...   2024-07-23   2024-12-02
+2   14220338820        Heitor Saadj  ...   2024-07-23   2024-12-02
+3   14221010233   Gabriel Possomato  ...   2024-07-23   2024-12-02
+4   14221064469  Guilherme Katayose  ...   2024-07-23   2024-12-02
+..          ...                 ...  ...          ...          ...
+60  18835764653      Giovanna Ayoub  ...   2024-10-21   2024-12-02
+61  19312204151      Bruno Pancotto  ...   2024-11-04   2024-12-02
+62  19314517848    Eduardo Baldoino  ...   2024-11-04   2024-12-02
+63  19329566603     Thiago Oliveira  ...   2024-11-05   2024-12-02
+64  19414340759     Isabella Pecula  ...   2024-11-06   2024-12-02
+
+[65 rows x 14 columns]
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    active
+1   14963146054                 Magis5  ...         <NA>    active
+2   14963311801                 MKraft  ...         <NA>    active
+3   14963311872      Bluepay Solutions  ...         <NA>    active
+4   14963846170             Fechometal  ...         <NA>  inactive
+5   14964660517                Sellers  ...         <NA>    active
+6   14965086309                  Cepel  ...         <NA>    active
+7   14966965592                  Okena  ...         <NA>    active
+8   14987437892             Quick Soft  ...         <NA>    active
+9   14987437893                  Hurst  ...         <NA>    active
+10  14987437894                 Printi  ...         <NA>  inactive
+11  14990716536           Cubo Network  ...         <NA>    active
+12  14991174554                   Upik  ...         <NA>    active
+13  14992263052  Todos Empreendimentos  ...         <NA>    active
+14  14995201557             Rocketseat  ...         <NA>    active
+15  14995944007                     DM  ...         <NA>    active
+16  14995944008                Aeromot  ...         <NA>    active
+17  14995952174    Terra Investimentos  ...         <NA>    active
+18  14995990707         W1 Consultoria  ...         <NA>    active
+19  14996006433                   Bagy  ...         <NA>  inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    active
+21  14996014991                  Housi  ...         <NA>    active
+22  14996176981                   Oobj  ...         <NA>    active
+23  14996339362           Ecom Energia  ...         <NA>    active
+24  14996354114                Plugify  ...         <NA>    active
+25  14996698917          MA Hospitalar  ...         <NA>    active
+26  14996849766                   Cora  ...         <NA>    active
+27  14997048701           Santo Inacio  ...         <NA>  inactive
+28  14997055532           Partido Novo  ...         <NA>    active
+29  14997215284                 Uniube  ...         <NA>    active
+30  14997215285         Remessa Online  ...         <NA>    active
+31  14997223812              Metadados  ...         <NA>    active
+32  14997232046                  Frete  ...         <NA>    active
+33  14997410635       Centro Dom Bosco  ...         <NA>    active
+34  14997428652    Seguralta Corretora  ...         <NA>    active
+35  14997433524         Soluti Digital  ...         <NA>    active
+36  14997433525                  Payfy  ...         <NA>    active
+37  14997627566           Akad Seguros  ...         <NA>    active
+38  14997685110             Data Guide  ...         <NA>  inactive
+39  14997692830               Poder360  ...         <NA>    active
+40  15644325166              Allied IT  ...         <NA>    active
+41  16279965720          Phytoterapica  ...         <NA>    active
+42  16279965721       Gifted Education  ...         <NA>    active
+43  16279965746               Inchurch  ...         <NA>    active
+44  16279965751                  Jusfy  ...         <NA>    active
+45  16286521388            MEI Digital  ...         <NA>    active
+46  17145705272             Unicidades  ...         <NA>    active
+47  19188266757           On Projeções  ...         <NA>    active
+48  19188266833                   Reag  ...         <NA>    active
+49  19245198172          Pris Software  ...         <NA>    active
+50  19459774991                 Lastro  ...         <NA>    active
+51  19649057892                  Konsi  ...         <NA>    active
+52  19840256596                Beetech  ...         <NA>    active
+53  19970189975                   Bene  ...         <NA>    active
+54  20344311065                New Way  ...         <NA>      None
+
+[55 rows x 23 columns]
+             id customer  ... service_end_date service_due_date
+0   14996849766     Cora  ...              NaN       19/01/2024
+1   14997215284   Uniube  ...              NaN       29/05/2025
+2   14959515507     Sasi  ...              NaN       29/12/2023
+3   14963311801   MKraft  ...              NaN       22/09/2024
+4   14966965592    Okena  ...              NaN       04/09/2025
+..          ...      ...  ...              ...              ...
+57  19459774991   Lastro  ...              NaN       01/06/2025
+58  19649057892    Konsi  ...              NaN       26/03/2025
+59  19840256596  Beetech  ...              NaN       05/05/2025
+60  19970189975     Bene  ...              NaN       02/04/2025
+61  20344311065  New Way  ...              NaN       14/11/2025
+
+[62 rows x 14 columns]
+       task_id  ...                         email
+0    86a5kqz9j  ...     mateus.amorim@nexforce.co
+1    86a5kqz8k  ...     mateus.amorim@nexforce.co
+2    86a5kqz71  ...     mateus.amorim@nexforce.co
+3    86a4a3h31  ...     mateus.amorim@nexforce.co
+4    86a5r1rvw  ...  gustavo.fagundes@nexforce.co
+..         ...  ...                           ...
+436  86a5gnn2y  ...   laiane.caroline@nexforce.co
+437  86a55xzue  ...     mayara.soares@nexforce.co
+438  86a2p8vu2  ...     mayara.soares@nexforce.co
+439  86a2p8u3j  ...    gabriela.hadid@nexforce.co
+440  86a5mpqda  ...     matheus.ecles@nexforce.co
+
+[441 rows x 21 columns]
+Etapa 2/5 concluída em 162.12 segundos.
+Tabela starry-compiler-387319.Stage.stg_squad foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_task foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_squad
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Dados carregados em starry-compiler-387319.Stage.stg_task
+Etapa 3/5 concluída em 183.85 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 226.85 segundos.
+Tarefa 'Refinar o Blueprint TO BE: Playbook e Sequences' criada com sucesso!
+Tarefa 'Refinar o Blueprint TO BE: Definições de distribuição de registros de Leads, Empresas, Contatos e Negócios' criada com sucesso!
+Tarefa 'Refinar o Blueprint TO BE: Atribuições de Objetos e Copyproperty' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de caixas de entrada de contatos e formulários de Revenue Acquisition' criada com sucesso!
+Tarefa 'Realizar o Onboarding nos Sistemas e Ferramentas' criada com sucesso!
+Tarefa 'Realizar a Reunião Success Plan com o Cliente' criada com sucesso!
+Tarefa 'Realizar a Reunião de Passagem de Bastão com o Comercial' criada com sucesso!
+Tarefa 'Criação da caixa de Entrada de telefone para DM Pag' criada com sucesso!
+Tarefa 'Relatórios e Painéis - Definição das priorizações' criada com sucesso!
+Tarefa 'Definir as regras de distribuição entre Inside Sales e Marketing' criada com sucesso!
+Tarefa 'Ajustar regras das branchs de lifecycle stage nos fluxos' criada com sucesso!
+Tarefa 'Construir dashboard de visualização de informações de Gestão de Carteira' criada com sucesso!
+Tarefa 'Calcular diferença de precificação no downgrade da Hubspot' criada com sucesso!
+Tarefa 'Desenhar novo processo de Tags one to many' criada com sucesso!
+Tarefa 'Realizar documentação do processo de Coraliados atual' criada com sucesso!
+Tarefa 'Sugerir assets para deleção a partir do mapeamento de Hunters' criada com sucesso!
+Tarefa 'Desenvolver TO BE Coraliados (Onboarding)' criada com sucesso!
+Tarefa 'Desenvolver vídeo e possibilidades sobre report de funil' criada com sucesso!
+Tarefa 'Apresentar ABM' criada com sucesso!
+Tarefa 'Gravar vídeo demonstrando views de tarefas' criada com sucesso!
+Tarefa 'Desenhar jornada simplificada com o uso do objeto Lead e informações vindas do spread.chat' criada com sucesso!
+Tarefa 'Construir jornada ideal do novo cliente Oobj e apresentação final para CEO' criada com sucesso!
+Tarefa 'Gerar propostas' criada com sucesso!
+Tarefa 'Desenvolver pesquisa CSAT' criada com sucesso!
+Tarefa 'Investigar caso de Eventos sem informações da Submissão' criada com sucesso!
+Tarefa 'Desenvolver processo de registro de tempo parado na etapa no Card (Eventos)' criada com sucesso!
+Tarefa 'Excluir criação de tarefas no processo de Eventos' criada com sucesso!
+Tarefa 'Investigar melhor forma de segmentar contatos engajados em assuntos de e-mail marketing' criada com sucesso!
+Tarefa 'Desenvolver processo de Consumo de produtos para Eventos' criada com sucesso!
+Tarefa 'Desenvolver processo TO BE de Ongoing Corporate' criada com sucesso!
+Tarefa 'Adicionar "Faturamento 2024" no One pager de Startups' criada com sucesso!
+Tarefa 'Desenvolver processo de "desassociação" a partir da propriedade Tipo' criada com sucesso!
+Tarefa 'Adaptar o processo para comunicações com pontos focais' criada com sucesso!
+Tarefa 'Realizar reunião de dúvidas 6' criada com sucesso!
+Tarefa 'Realizar reunião de dúvidas 5' criada com sucesso!
+Tarefa 'Realizar reunião de dúvidas 4' criada com sucesso!
+Tarefa 'Realizar testes end-to-end' criada com sucesso!
+Tarefa 'Desenvolver análise Executiva Magis 5 <> Nexforce' criada com sucesso!
+Tarefa 'Ajustar dashboard comercial (motivos de descarte)' criada com sucesso!
+Tarefa 'Desenvolver processo de Source remap 1/3' criada com sucesso!
+Tarefa 'Realizar a configuração da sequência de prospecção automática (e-mails)' criada com sucesso!
+Tarefa 'Realizar configuração da ferramenta de contrato escolhida' criada com sucesso!
+Tarefa 'Realizar go-live e acompanhamento' criada com sucesso!
+Tarefa 'Realizar treinamento da Operação' criada com sucesso!
+Tarefa 'Atualização dos goals' criada com sucesso!
+Tarefa 'Mapear todas as UTMs para o processo de Source Remap' criada com sucesso!
+Tarefa 'Analisar atraso nas automações de passagem de fase e implementar melhorias' criada com sucesso!
+Tarefa 'Direcionar time de tecnologia na implementação da arquitetura PLG' criada com sucesso!
+Tarefa 'Revisar gatilhos de entrada do fluxo de criação e roteamento de leads' criada com sucesso!
+Tarefa 'Refazer os gatilhos e automações baseados nas propriedades do Spread.chat' criada com sucesso!
+Tarefa 'Cerimônias da Sprint, reuniões e construção do roadmap (Sprint atual)' criada com sucesso!
+Tarefa 'Realizar go-live da nova régua de tentativa de comunicação 1 e 2' criada com sucesso!
+Tarefa 'Realizar discovery de performance do processo de pré vendas' criada com sucesso!
+Tarefa 'Cerimônias da Sprint, reuniões e construção do roadmap (Sprint anterior)' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de cópia de propriedades' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de regras de carteira de investimentos' criada com sucesso!
+Tarefa 'Criar os paineis táticos-estratégicos para gestão de Vendas' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de relacionamento entre objetos' criada com sucesso!
+Falha ao criar a tarefa '[INTERNAL] Dailies': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa '[INTERNAL] Reuniões e comunicação interna': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa '[Sprint 24-2024] Internal - Daily' criada com sucesso!
+Tarefa '[Sprint 24-2024] Internal - Cerimônias, reuniões, geral' criada com sucesso!
+Tarefa '[Sprint 24-2024] Monitoramento suporte para equipe' criada com sucesso!
+Tarefa '[Sprint 24-2024] Iniciar case Metadados e passar draft escrito para cliente complementars' criada com sucesso!
+Falha ao criar a tarefa '[Sprint 24-2024] Suporte Interno (reuniões, refinamento, revisões)': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Ajustar processo de Self Service' criada com sucesso!
+Tarefa 'Investigar taxa de abertura e reputação de envio de e-mails' criada com sucesso!
+Tarefa 'Desarquivar contatos MailChimp' criada com sucesso!
+Tarefa 'Investigar deal Etapa 8 - Pagamento - Erro' criada com sucesso!
+Tarefa 'Investigar como desarquivar contatos no MailChimp via automação' criada com sucesso!
+Tarefa 'Mapear set de marketing contact' criada com sucesso!
+Tarefa 'Discovery do processo Planos Premium' criada com sucesso!
+Tarefa 'Configurar processo de Planos Premium' criada com sucesso!
+Tarefa 'Desenvolver TO BE do pipeline de Planos Premium' criada com sucesso!
+Tarefa 'Criar cartão de rastreamento de fase e lista de propriedades' criada com sucesso!
+Tarefa 'Correção dos relatórios de Pré-Sales - Separação entre Inbound e Outbound' criada com sucesso!
+Tarefa 'Realizar as configurações finais para a Go-Live de Sales' criada com sucesso!
+Tarefa 'Migração de dados em Sales' criada com sucesso!
+Tarefa 'Documentar integração Slack e HubSpot - Abertura de Tickets' criada com sucesso!
+Tarefa 'Construir campanha de reativação de Leads Outbound' criada com sucesso!
+Tarefa 'Realizar o go live, oficialmente colocando o sistema em produção para uso em Sales' criada com sucesso!
+Tarefa 'Realizar os testes de stress internos da frente de Sales' criada com sucesso!
+Tarefa 'Realizar a verificação de qualidade da conta (workflows, views e etc..)' criada com sucesso!
+Tarefa 'Realizar um teste de estresse com um grupo de key users do cliente - Treinamentos' criada com sucesso!
+Tarefa 'Definir e aprovar a migração de dados entre os pipelines de Sales' criada com sucesso!
+Tarefa 'Construir e apresentar para o cliente a agenda e cronograma do go live com datas e horários de ações e treinamentos' criada com sucesso!
+Tarefa 'Construção do campo: Data da última visita no objeto loja' criada com sucesso!
+Tarefa 'Discovery da construção do objeto Contrato' criada com sucesso!
+Tarefa '[DM] Rodar manualmente "base_cadastro_loja"' criada com sucesso!
+Tarefa 'Bugs identificados no pré-go-live de pré-vendas e vendas' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Pipelines e estágios de Onboarding' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de métricas do processo de Onboarding' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de distribuição de registros de Onboarding' criada com sucesso!
+Tarefa 'Realizar o go live, oficialmente colocando o sistema em produção para uso' criada com sucesso!
+Tarefa 'Realizar a migração dos dados' criada com sucesso!
+Tarefa '[🛑Task Force🛑] Atualização de painel da distribuição de leads' criada com sucesso!
+Tarefa '[Contador de emails] Auditoria de e-mail da blackfriday' criada com sucesso!
+Tarefa '[Distribuição de leads] Atualizar painel de distribuição de leads' criada com sucesso!
+Tarefa '[Distribuição de leads] Criação das listas de disparo' criada com sucesso!
+Tarefa '[Contador de leads] Revisão do Workflow (MPV)' criada com sucesso!
+Tarefa '[Distribuição de leads] Desenho do Workflow (Entre Janeiro a Agosto) e implantação de sequences' criada com sucesso!
+Tarefa '[Distribuição de leads] Refinamento do workflow (Menor que 4 meses) - Montagem da sequencia de e-mails' criada com sucesso!
+Tarefa '[Higienização] Avaliar a mudança necessária no workflows que duplicam contatos' criada com sucesso!
+Tarefa '[Higienização] Identificar workflows que estão duplicando contato' criada com sucesso!
+Tarefa '[Origem do lead] Go live do lead score' criada com sucesso!
+Tarefa '[Contador de leads] Go live' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Alinhamento time técnico sobre integração pipe membros em custom object' criada com sucesso!
+Tarefa 'Aprovar novo objeto Membros' criada com sucesso!
+Tarefa 'Análise revops/auditoria' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Desenvolver codificação de SKU que identifique selo infantil. Prefixo ORT' criada com sucesso!
+Tarefa 'Executar treinamento Pipeline Editora' criada com sucesso!
+Tarefa 'Preparar POP Pipe Editora' criada com sucesso!
+Tarefa 'Preparar PPT treinamento Pipe Editora' criada com sucesso!
+Tarefa 'Criação etapas Pipe membros em Custom object e configuração de propriedades e LSB' criada com sucesso!
+Tarefa 'Ajustes automações e relatórios pipe membros em Custom Object' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Analise e PPT pipe cs para identificar insights (go live + 45d)' criada com sucesso!
+Tarefa 'Realizar integrações com plataforma Membros' criada com sucesso!
+Tarefa 'Dry run interno processo Execução de Projetos e ajustes' criada com sucesso!
+Tarefa 'Go Live Pipe Manutenção' criada com sucesso!
+Tarefa 'Revisão LC e automações após pipeline Manutenção criado' criada com sucesso!
+Tarefa 'Preparar planilha go live e governança e soltar invite dailys' criada com sucesso!
+Tarefa 'Execução treinamento Pipe Manutenção' criada com sucesso!
+Tarefa 'Criar ppt treinamento Manutenção' criada com sucesso!
+Tarefa 'Diagnostico de mudancas em WF com alterações de pipeline comercial solicitado pelo rodrigo. Correções eventuais' criada com sucesso!
+Tarefa 'Apresentação funcionalidade chatbot' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Mapear cadeias de comunicação/sequência PIPE Projetos Eng e criar copys' criada com sucesso!
+Tarefa 'Mapear cadeias de comunicação/sequência PIPE Manutenção e criar copys' criada com sucesso!
+Tarefa 'Mapear cadeias de nutricao nos pipelines Onboarding e criar copys' criada com sucesso!
+Tarefa 'Correções de erros apontados na auditoria revops: associação tickets x deals' criada com sucesso!
+Tarefa 'Preparação go live parceiros' criada com sucesso!
+Tarefa 'Preparar planilha go live e governança e soltar invite dailys - Fluxo cadastro parceiro' criada com sucesso!
+Tarefa 'Painel de auditoria: solicitar cliente correções de X inconsistências no painel. Realizar Fups' criada com sucesso!
+Tarefa 'Fluxo de Cadastro de Parceiro: desenvolvimento e deploy Risk 3' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: desenvolvimento ZapSign' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: apoio técnico DEV' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: ajustes e testes conjuntos' criada com sucesso!
+Tarefa 'Pipe pré-venda lead parceiro: POP, PPT e treinamento' criada com sucesso!
+Tarefa 'Implementação melhorias de vendas: preencher template nutrição' criada com sucesso!
+Tarefa 'Implementação melhorias de vendas: treinamento' criada com sucesso!
+Tarefa 'Apoio e estabilização dos processos de pré venda e venda' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Sustentação - Solicitações de Suporte' criada com sucesso!
+Tarefa 'Sustentação - Solicitações de Suporte' criada com sucesso!
+Tarefa 'Fluxo de Cadastro de Parceiro: envio de copys para fluxos de sequencias e sla etapas' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Book handover processo Pedidos: início da documentação' criada com sucesso!
+Tarefa 'Book handover processo Vendas Novas: FINALIZAÇÃO documentação' criada com sucesso!
+Tarefa 'Enviar variáveis/colunas mínimas para relatório de metas MVP' criada com sucesso!
+Tarefa 'Criar relatório para calculo de metas baseado no envio de informações dos requisitos' criada com sucesso!
+Tarefa 'Mapear relatórios mínimos necessários em Dashboards' criada com sucesso!
+Tarefa 'War room ambiente Prod: Testes conjuntos dos processos PV, faturamento e produto' criada com sucesso!
+Tarefa 'War room ambiente Prod: Testes conjuntos dos processos PV, faturamento e produto' criada com sucesso!
+Tarefa 'Testes fallback sandbox, deploy e testes em prod' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Suporte e estabilização' criada com sucesso!
+Tarefa 'Suporte e estabilização' criada com sucesso!
+Tarefa 'Suporte e estabilização' criada com sucesso!
+Tarefa 'Migração gradual de LPs do RD para Hubspot. Finalizando dia 20/11' criada com sucesso!
+Tarefa 'Revisar invites no outlook e realizar ajustes/realocações de participantes se necessário' criada com sucesso!
+Tarefa 'Execução treinamento intro hub: gestores' criada com sucesso!
+Tarefa 'Importação no Hubspot' criada com sucesso!
+Tarefa 'Execução de análises e correções de QA' criada com sucesso!
+Tarefa 'Execução treinamento intro hub' criada com sucesso!
+Tarefa 'Execução treinamento Licitação' criada com sucesso!
+Tarefa 'Execução treinamento BO' criada com sucesso!
+Tarefa 'Execução treinamento Spot' criada com sucesso!
+Tarefa 'Execução treinamento Consult Insumo' criada com sucesso!
+Tarefa 'Execução treinamento Consult Equip' criada com sucesso!
+Tarefa 'Execução treinamento Ped. Cont.' criada com sucesso!
+Tarefa 'Execução treinamento Obj. Contrato' criada com sucesso!
+Tarefa 'Criação material de treinamento Obj Contrato VIDEO e POP' criada com sucesso!
+Tarefa 'Cut Over Go Live integração' criada com sucesso!
+Tarefa 'Import de imagens dos produtos na biblioteca' criada com sucesso!
+Tarefa 'Tratamento dos dados para migração' criada com sucesso!
+Tarefa 'Analise da base enviada para higienização: demais abas' criada com sucesso!
+Tarefa 'Criação material de treinamento Licitação. POP' criada com sucesso!
+Tarefa 'Criação material de treinamento Licitação. VIDEO' criada com sucesso!
+Tarefa 'Preenchimento template de importação' criada com sucesso!
+Tarefa 'Governança: implementar permissionamentos' criada com sucesso!
+Tarefa 'Definição período de daily para soltar invite' criada com sucesso!
+Tarefa 'Ajustes pós-dry run pipe inscrição matricula' criada com sucesso!
+Tarefa 'Dry run interno processo inscrição matrícula' criada com sucesso!
+Tarefa 'Ajuste comunicações pipe expansão Polo' criada com sucesso!
+Tarefa 'Plano migração deals do pipe IM antigo do intake atual' criada com sucesso!
+Tarefa 'Criação das Listas de QA' criada com sucesso!
+Tarefa 'Criar material treinamento Introdução Hubspot para equipes comerciais' criada com sucesso!
+Tarefa 'Configurar views das equipes pipe IM' criada com sucesso!
+Tarefa 'Plano deploy do novo formulario simplifica' criada com sucesso!
+Tarefa 'Criação material treinamento PV (POP + PPT apresentação)' criada com sucesso!
+Tarefa 'Dry run com cliente e ajustes PV' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Contrução de copys de emails e comunicações Régua PV e IM' criada com sucesso!
+Tarefa 'Organizar formulários (criar, alterar e excluir)' criada com sucesso!
+Tarefa 'Testar Proposta de arquivamento registros pipe antigo' criada com sucesso!
+Tarefa 'Retroaliementação do SGA pelo Hubspot' criada com sucesso!
+Tarefa 'Go Live Pipe Expansão Polos' criada com sucesso!
+Tarefa 'Limpeza periodica de leads do Pipeline' criada com sucesso!
+Tarefa 'Criar LP Captação Leads e LP Eventos e arquivar em pasta correta' criada com sucesso!
+Tarefa 'Criar LP para captação polo' criada com sucesso!
+Tarefa 'Preencher template intake 1' criada com sucesso!
+Tarefa 'SDRs -  Vídeos curtos sobre o Processo de SDR e Correlação com o SF' criada com sucesso!
+Tarefa 'SDR's - Desenvolvimento, Validação e Deploy de nutrições pelo Whatsapp' criada com sucesso!
+Tarefa 'Validação do mapeamento de propriedades' criada com sucesso!
+Tarefa 'Higienização de Objetos Customizado Compromissos - Tarefa Recorrente' criada com sucesso!
+Tarefa 'Suporte para a Correção da integração do Salesforce com o Hubspot' criada com sucesso!
+Tarefa 'Integração - Mapear todos os campos utilizados no Salesforce e realizar de/para com propriedades HubSpot' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Processos de Atendimento - Mapeamento AS IS (CX e CS)' criada com sucesso!
+Tarefa 'Governança - Mapeamento AS IS (CS)' criada com sucesso!
+Tarefa 'Processos Macro - Mapeamento AS IS e Modelagem Macro dos Processos (CS)' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Integrações e Dados' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Corporate - Validação do fluxo de atribuição de proprietário' criada com sucesso!
+Tarefa 'Corretores - Sustentação & Suporte (Go-live)' criada com sucesso!
+Tarefa 'Chat Bot - Benchmark das ferramentas de Whatsapp com chatbot + IA' criada com sucesso!
+Tarefa 'Chat Bot - Discovery de Melhorias do Super Atendimento (Oráculo)' criada com sucesso!
+Tarefa 'Reclame Aqui - Discovery da Integração com Hubspot e Validação' criada com sucesso!
+Tarefa 'Relatórios & Painéis - Revisão Geral, implementação de melhorias e Plano de Ação para Higienização' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente (Toda Semana)' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente (Toda Semana)' criada com sucesso!
+Tarefa 'Reclame Aqui - Mapeamento AS IS' criada com sucesso!
+Tarefa 'Parceiros - Treinamento e Go Live Assistido' criada com sucesso!
+Tarefa 'Corretores - Enriquecimento de dado das bases' criada com sucesso!
+Tarefa 'Assessorias - Documentação POP' criada com sucesso!
+Tarefa 'OGGI - Deploy do Formulário' criada com sucesso!
+Tarefa 'Nutrições MVP - Subir os e-mails marketing no Hubspot' criada com sucesso!
+Tarefa 'Entendimento mudanças de processos solicitados em pre-vendas, vendas, pós venda e lifecycle' criada com sucesso!
+Tarefa 'Apresentar funcionalidades e tipos de pesquisa do Hub e mapear necessidade de pesquisas de satisfação' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Preencher planilha listando legado contratos' criada com sucesso!
+Tarefa 'Definição se cadastro de contrato será no HUB ou Foconet' criada com sucesso!
+Tarefa 'Alinhamento uso cx entrada pré-venda + adaptar automação de criação de registro Deal qdo receber email cx pré-venda' criada com sucesso!
+Tarefa 'Proposta de higienização de formularios as is' criada com sucesso!
+Tarefa 'Repassar com Gustavo e V4 pendências de mkt identificadas. Encaminhar definições de mapeamento de formulários.' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Higienização - Validação do Plano de Higienização' criada com sucesso!
+Tarefa 'Higienização - Levantamento de propriedades para higienização e Envio da planilha' criada com sucesso!
+Tarefa 'Apresentação da V1.0 do Dashboard' criada com sucesso!
+Tarefa 'WhatsApp e Telefonia - Reunião Técnica (Apresentação Blip)' criada com sucesso!
+Tarefa 'Go live - Sustentação & Suporte' criada com sucesso!
+Tarefa 'Envio de Copy dos E-mails | Clientes Sem Cotação > 30 dias E Se os Pedidos entregues chegaram corretamente.' criada com sucesso!
+Tarefa 'Definição de Tarefas de Perfil de Negócio' criada com sucesso!
+Tarefa 'WhatsApp e Telefonia - Escolha da Ferramenta complementar ao Hubspot' criada com sucesso!
+Tarefa 'Agendar o office hours, diariamente por 20min por duas semanas para tirar dúvidas dos usuários' criada com sucesso!
+Tarefa 'Realizar o go live, oficialmente colocando o sistema em produção para uso' criada com sucesso!
+Tarefa 'Realizar a verificação de qualidade da conta (workflows, APIs, views, testes)' criada com sucesso!
+Tarefa 'Apoiar os usuários na configuração do "Your Preferences", meeting links e afins' criada com sucesso!
+Tarefa 'Garantir que os usuários estão alocados nos times e permissões corretas' criada com sucesso!
+Tarefa 'Garantir que todos os usuários tem acesso a conta' criada com sucesso!
+Tarefa 'Garantir que os itens críticos para migração foram concluídos' criada com sucesso!
+Tarefa 'Realizar a migração dos dados' criada com sucesso!
+Tarefa 'Definir a data para realizar a migração da base de dados' criada com sucesso!
+Tarefa 'Definir e aprovar o plano de ação e cronograma para o go live' criada com sucesso!
+Tarefa 'Apresentar para o cliente a agenda e cronograma do go live com datas e horários de ações e treinamentos' criada com sucesso!
+Tarefa 'Agendamento das office hours' criada com sucesso!
+Tarefa 'Mapeamento das propriedades de Aquisição e Expansão a serem higienizadas em todos os objetos' criada com sucesso!
+Tarefa '[Desenvolver e Aprovar] Cronograma de Go-Live de Aquisição e Expansão de Receita' criada com sucesso!
+Tarefa '[Solicitação] Ajustar os itens de linha' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Migrar times, permissões e ajustar os dashboards e workflows que utilizam os times e usuários' criada com sucesso!
+Tarefa 'Aprovar a definição de governança' criada com sucesso!
+Tarefa 'Configurar as regras de times, permissões e alocação de usuários' criada com sucesso!
+Tarefa 'Vendas - Revisar as definições de lifecycle e regras de negócio' criada com sucesso!
+Tarefa 'Vendas - Entregar regras de aquisição e de distribuição' criada com sucesso!
+Tarefa 'Dados - Correção dos dados legados (Hubspot X Banco de Dados AB)' criada com sucesso!
+Tarefa 'Integração AB e HubSpot - Análise da Documentação e entrega do diagnóstico' criada com sucesso!
+Tarefa 'Dados e Painéis - Definição de Priorização' criada com sucesso!
+Tarefa 'Treinamento - Arquitetura, lifecycle e pipelines' criada com sucesso!
+Tarefa 'Inside Sales - Higienizar os proprietários dos clientes (Vendedores ou proprietário de marketing)' criada com sucesso!
+Tarefa 'Priorização dos relatórios e painéis' criada com sucesso!
+Tarefa 'Marketing - Revisar e Implementar o novo lead score com a nova proposta já configurada no Hubspot pelo time da Upik' criada com sucesso!
+Falha ao criar a tarefa 'Agenda pra demonstrar Indicadores': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Documentar TO BE: Criação dos planos Customizáveis' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Desenvolver as automações de Source Remap' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE:  Arquitetura de fontes' criada com sucesso!
+Tarefa 'Configurar o padrão de pastas e listas da Nexforce' criada com sucesso!
+Tarefa 'Dashboards de acompanhamento - Processo de atendimento' criada com sucesso!
+Tarefa 'Treinamento com o time de atendimento' criada com sucesso!
+Tarefa 'Reunião de trabalho: Dashboard' criada com sucesso!
+Tarefa 'Reunião de Forms e E-mails 2' criada com sucesso!
+Tarefa 'Reunião de Forms e E-mails 1' criada com sucesso!
+Tarefa 'Reunião 4' criada com sucesso!
+Tarefa 'Reunião 3' criada com sucesso!
+Falha ao criar a tarefa '[Auxilio em migração] - Auxiliar na migração de dados para Mesa Agro': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa '[Migração] Gerar negócios em cobertura de base utilizando a planilha e listas de migração' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Criar listas de registros para cobertura de base - Mesa Agro' criada com sucesso!
+Tarefa 'Criação dos mesmos dashboards de aquisição e Cobertura de Base - mas para o time de Mesa AGRO' criada com sucesso!
+Tarefa '⁠Correção dos dashboards e métricas dos painéis de cobertura de base com propriedades erradas (Duplicadas sem uso - por isso a higienização é necessária)' criada com sucesso!
+Tarefa 'Higienização das propriedades de cobertura de base em todos os objetos' criada com sucesso!
+Tarefa 'Garantir que a performance das métricas críticas se sustentam' criada com sucesso!
+Tarefa 'Período de sustentação da conta' criada com sucesso!
+Tarefa 'Monitorar indicadores hora 1' criada com sucesso!
+Tarefa 'Realizar o go-live oficialmente colocando o sistema em produção para uso' criada com sucesso!
+Tarefa 'Ligar workflows da operação' criada com sucesso!
+Tarefa 'Identificação e criação de planilha de registros a serem migrados' criada com sucesso!
+Tarefa 'Realizar um Discovery geral interno sobre o processo do cliente' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Deletar as views obsoletas ou redundantes' criada com sucesso!
+Tarefa 'Deletar as lists obsoletas ou redundantes' criada com sucesso!
+Tarefa 'Deletar os formulários obsoletos ou redundantes' criada com sucesso!
+Tarefa 'Deletar as propriedades obsoletas ou redundantes' criada com sucesso!
+Tarefa 'Deletar os custom objects obsoletos ou redundantes' criada com sucesso!
+Tarefa 'Deletar workflows obsoletos ou redundantes' criada com sucesso!
+Tarefa 'Documentar e analisar ativos da conta que devem ser eliminados ou refatorados' criada com sucesso!
+Falha ao criar a tarefa '[Auxilio em migração] Auxiliar na migração de dados da BluePay': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa '[Auxilio em sustentação] Ajustes das propriedades obrigatórias da pipeline de aquisição.': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa '[Solicitação] Alteração da Left-Side Bar de todos os objetos' criada com sucesso!
+Tarefa '[Solicitação] Desenvolver workflow de seleção de BDR para pré-vendas' criada com sucesso!
+Tarefa 'Aprovação do processo com stakeholder - (Pré-Vendas)' criada com sucesso!
+Tarefa 'War Room - Correção de erros e melhorias identificadas no Dry-Run' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Validar com a Cris (Head de CS) sobre o processo implementado' criada com sucesso!
+Tarefa 'Realizar treinamento de usabilidade e boas-práticas para o time de Marketing' criada com sucesso!
+Tarefa 'Período de sustentação da conta pt.1' criada com sucesso!
+Tarefa 'Monitorar indicadores hora 1' criada com sucesso!
+Tarefa 'Garantir que a performance das métricas críticas se sustentam' criada com sucesso!
+Tarefa 'Realizar o go live, oficialmente colocando o sistema em produção para uso' criada com sucesso!
+Tarefa 'Demonstrar a conta pronta para go live para os stakeholders e recursos da HubSpot (ex: app)' criada com sucesso!
+Tarefa 'Realizar treinamento para o time de vendas' criada com sucesso!
+Tarefa 'Realizar treinamento para o time de pré-vendas' criada com sucesso!
+Tarefa 'Realizar conexão entre o cliente e a ferramenta de VOIP (binagem inteligente)' criada com sucesso!
+Tarefa 'Realizar a migração dos dados' criada com sucesso!
+Tarefa 'Definir a data para realizar a migração da base de dados' criada com sucesso!
+Tarefa 'Criar visualizações no objeto Negócio' criada com sucesso!
+Tarefa 'Desenvolver processo de Handover Suporte <> Comercial' criada com sucesso!
+Tarefa 'Treinamento comercial' criada com sucesso!
+Tarefa 'Finalizar import da Base' criada com sucesso!
+Tarefa 'Demo do processo comercial' criada com sucesso!
+Tarefa 'Dashboards BRZ' criada com sucesso!
+Tarefa 'Ajustes pro Go Live BRZ' criada com sucesso!
+Tarefa 'Realizar um teste de estresse com um grupo de key users do cliente' criada com sucesso!
+Tarefa 'Finalizar customização do processo' criada com sucesso!
+Tarefa 'Reunião: Paid Seat' criada com sucesso!
+Tarefa 'Gravar vídeo sobre meeting link' criada com sucesso!
+Tarefa 'Demo do processo customizado' criada com sucesso!
+Tarefa 'Reunião de alinhamento (canais de entrada, MQL e sequência)' criada com sucesso!
+Tarefa 'Customizar processo a partir do briefing' criada com sucesso!
+Tarefa 'Pipelines e automações de handover' criada com sucesso!
+Tarefa 'Automações: Criação de task' criada com sucesso!
+Tarefa 'Automações: Marketing status' criada com sucesso!
+Tarefa 'Automações: Lead status' criada com sucesso!
+Tarefa 'Automações: Datas de reunião' criada com sucesso!
+Tarefa 'Marketing: Formulários' criada com sucesso!
+Tarefa 'Marketing: Email e Campanhas' criada com sucesso!
+Tarefa 'Ferramentas: Caixa de entrada' criada com sucesso!
+Tarefa 'Investigar como anexar formulário sem criação de automática de tickets no Portal do cliente' criada com sucesso!
+Tarefa 'Alterar nomenclatura na criação de tickets' criada com sucesso!
+Falha ao criar a tarefa 'Reunião de Trabalho 4': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Reunião de Trabalho 3' criada com sucesso!
+Tarefa 'Reunião de Trabalho 2' criada com sucesso!
+Tarefa 'Reunião de Trabalho 1' criada com sucesso!
+Tarefa 'Reunião de dúvidas' criada com sucesso!
+Tarefa 'Alinhamento comercial' criada com sucesso!
+Tarefa 'Ajustes processo de atendimento: Lógica condicional formulário' criada com sucesso!
+Tarefa 'Treinamento com o time de atendimento' criada com sucesso!
+Tarefa 'Adaptar e testar Deal Stage' criada com sucesso!
+Tarefa 'Reunião de trabalho: Briefing' criada com sucesso!
+Tarefa 'Reunião de trabalho: Formulário' criada com sucesso!
+Tarefa 'Demo do processo customizado' criada com sucesso!
+Tarefa 'Reunião de alinhamento (Canais de entrada e sequências)' criada com sucesso!
+Tarefa 'Pipelines e automações de handover' criada com sucesso!
+Tarefa 'Realizar configuração (Nexbot) + Briefing' criada com sucesso!
+Tarefa 'Automações: Criação de task' criada com sucesso!
+Tarefa 'Automações: Marketing status' criada com sucesso!
+Tarefa 'Automações: Lead status' criada com sucesso!
+Tarefa 'Automações: Datas de reunião' criada com sucesso!
+Tarefa 'Automações acessórias' criada com sucesso!
+Tarefa 'Marketing: Formulários' criada com sucesso!
+Tarefa 'Marketing: Email e Campanhas' criada com sucesso!
+Tarefa 'Ferramentas: Caixa de entrada' criada com sucesso!
+Tarefa 'Suporte criação caixa de entrada para configuração nova +55' criada com sucesso!
+Tarefa 'Desenvolvimento - Propriedade Cidade ' criada com sucesso!
+Tarefa 'Analise Objeto Metas Comerciais' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Cronograma Go Live VDI' criada com sucesso!
+Tarefa '[Onboarding] Desenvolver os Workflows de Record Owner de Tickets de Onboarding ' criada com sucesso!
+Tarefa '[Onboarding] Desenvolver as automações que definem as taxas igual a "não" (relativas a Ticket Status)' criada com sucesso!
+Tarefa '[Onboarding] Atualizar as automações de Lifecycle' criada com sucesso!
+Tarefa '[Onboarding] Desenvolver as automações de Customer Status' criada com sucesso!
+Tarefa '[Onboarding] Criar e configurar pipeline de Onboarding' criada com sucesso!
+Tarefa '[Onboarding] Blueprint TO BE: Definições de Pipelines e stages dos objetos de Onboarding' criada com sucesso!
+Tarefa '[Onboarding] Blueprint TO BE: Definições de Round Robin ' criada com sucesso!
+Tarefa '[Retenção] Desenvolver as automações que definem taxas igual a "não" (relativas a Lifecycle e Lead status)' criada com sucesso!
+Tarefa '[Retenção] Desenvolver as automações que definem as taxas igual a "não" (relativas a Deal)' criada com sucesso!
+Tarefa '[Retenção] Desenvolver as automações de Lead status' criada com sucesso!
+Tarefa '[Retenção] Desenvolver os Workflows de Record Owner de Deals de Revenue Retention para Company, Contact e Deal' criada com sucesso!
+Tarefa '[Retenção] Criar e configurar pipeline de Revenue Retention' criada com sucesso!
+Tarefa '[Retenção] Criar as propriedades de Deal em Data Management > Properties' criada com sucesso!
+Tarefa '[Retenção] Desenvolver o Blueprint TO BE -Propriedades de Profilling e Copy Property' criada com sucesso!
+Tarefa '[Retenção] Desenvolver o Blueprint TO BE: Definições de Pipelines e stages dos objetos de Revenue Retention' criada com sucesso!
+Tarefa '[Retenção] Desenvolver o Blueprint TO BE: Definições de Round Robin de Deals, Companies e Contacts' criada com sucesso!
+Tarefa 'Realizar o Onboarding nos Sistemas e Ferramentas' criada com sucesso!
+Tarefa 'Realizar a Reunião Success Plan com o Cliente' criada com sucesso!
+Tarefa 'Realizar a Reunião de Passagem de Bastão com o Comercial' criada com sucesso!
+Tarefa 'Whatsapp pra Pré Sales' criada com sucesso!
+Tarefa 'Relatório Campanha Quero Ser um Consultor' criada com sucesso!
+Tarefa 'Painel QA pra Migração' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Ajuste no workflow de recycle pro Housi Plataforma' criada com sucesso!
+Tarefa 'Workflow de criação de negocio Expertise' criada com sucesso!
+Tarefa 'Criar propriedades de profilling Expertise' criada com sucesso!
+Tarefa 'Importar a base e documentar pro cliente - HVendas' criada com sucesso!
+Tarefa 'Importar a base de registros e documentar pro cliente - Plataforma' criada com sucesso!
+Tarefa 'Desenvolver workflows de source remap' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Treinar usuários chave e lideres sobre o processo de HVENDAS' criada com sucesso!
+Tarefa 'Bugs identificados no pré-go-live de HVendas' criada com sucesso!
+Tarefa 'Criar plano de ação para realizar o go-live e validar com cliente' criada com sucesso!
+Tarefa 'Realizar testes completos do processo de HVENDAS com os usuários chave da área' criada com sucesso!
+Tarefa 'Analise de qualidade do processo Plataforma' criada com sucesso!
+Tarefa 'Treinar usuários chave e lideres sobre o processo de Plataforma' criada com sucesso!
+Tarefa 'Bugs identificados no pré-go-live de Plataforma' criada com sucesso!
+Tarefa 'Criar plano de ação para realizar o go-live e validar com cliente' criada com sucesso!
+Tarefa 'Realizar testes completos do processo de Plataforma com os usuários chave da área' criada com sucesso!
+Tarefa 'Realizar testes internos do processo de Pre-sales de ponta a ponta' criada com sucesso!
+Tarefa 'Configurar a visualização da barra lateral esquerda para o time de Expertise' criada com sucesso!
+Tarefa 'Criar e configurar pipeline Prospection' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: BPMN (Objetos, Pipes e Etapas) Expertise' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Propriedades de Profilling e Copy Property Expertise' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Round Robin Expertise' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Expertise - Aquisição' criada com sucesso!
+Tarefa 'Reunião de trabalho: Dúvidas sobre o processo' criada com sucesso!
+Tarefa 'Treinamento comercial' criada com sucesso!
+Falha ao criar a tarefa '[B2C] Demandas de Relatório': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Ajustes necessários pre go live pos win b2c' criada com sucesso!
+Tarefa 'V4 Dry run Pos Win B2C com cliente' criada com sucesso!
+Tarefa 'De Para dos registros das Etapas Upsell e Contrato Finalizado' criada com sucesso!
+Tarefa 'Desenvolver workflow lifecycle pos win B2C' criada com sucesso!
+Tarefa 'Desenvolver workflows de lifecycle pos win B2B' criada com sucesso!
+Tarefa 'Automações de comunicação com clientes' criada com sucesso!
+Tarefa 'Sustentação pós go live b2c pós win' criada com sucesso!
+Tarefa 'Analise - Migrar base retroativa pra Realizar o go live, oficialmente colocando o sistema em produção para uso' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Testar processo de Transferência' criada com sucesso!
+Todas as etapas concluídas em 656.74 segundos.
+Execução finalizada, desligando a instância...
+INFO:data_extraction.tasks_extraction:O sprint atual é: Sprint 24 - 2024
+Fetching tasks:   0%|          | 0/96 [00:00<?, ?it/s]Fetching tasks:  34%|███▍      | 33/96 [00:05<00:09,  6.48it/s]Fetching tasks:  35%|███▌      | 34/96 [00:05<00:09,  6.31it/s]Fetching tasks:  36%|███▋      | 35/96 [00:05<00:10,  5.90it/s]Fetching tasks:  38%|███▊      | 36/96 [00:07<00:18,  3.32it/s]Fetching tasks:  39%|███▊      | 37/96 [00:08<00:18,  3.25it/s]Fetching tasks:  40%|███▉      | 38/96 [00:08<00:20,  2.81it/s]Fetching tasks:  42%|████▏     | 40/96 [00:09<00:18,  2.97it/s]Fetching tasks:  43%|████▎     | 41/96 [00:10<00:27,  1.98it/s]Fetching tasks:  44%|████▍     | 42/96 [00:10<00:23,  2.30it/s]Fetching tasks:  46%|████▌     | 44/96 [00:11<00:19,  2.72it/s]Fetching tasks:  47%|████▋     | 45/96 [00:11<00:19,  2.63it/s]Fetching tasks:  48%|████▊     | 46/96 [00:11<00:17,  2.84it/s]Fetching tasks:  49%|████▉     | 47/96 [00:13<00:29,  1.66it/s]Fetching tasks:  50%|█████     | 48/96 [00:14<00:30,  1.60it/s]Fetching tasks:  51%|█████     | 49/96 [00:17<00:58,  1.25s/it]Fetching tasks:  53%|█████▎    | 51/96 [00:17<00:34,  1.30it/s]Fetching tasks:  54%|█████▍    | 52/96 [00:17<00:28,  1.55it/s]Fetching tasks:  55%|█████▌    | 53/96 [00:17<00:24,  1.77it/s]Fetching tasks:  56%|█████▋    | 54/96 [00:18<00:20,  2.06it/s]Fetching tasks:  57%|█████▋    | 55/96 [00:19<00:27,  1.48it/s]Fetching tasks:  58%|█████▊    | 56/96 [00:19<00:21,  1.84it/s]Fetching tasks:  59%|█████▉    | 57/96 [00:21<00:37,  1.03it/s]Fetching tasks:  60%|██████    | 58/96 [00:21<00:28,  1.31it/s]Fetching tasks:  64%|██████▎   | 61/96 [00:22<00:13,  2.61it/s]Fetching tasks:  65%|██████▍   | 62/96 [00:22<00:12,  2.67it/s]Fetching tasks:  66%|██████▌   | 63/96 [00:27<00:48,  1.46s/it]Fetching tasks:  67%|██████▋   | 64/96 [00:27<00:36,  1.15s/it]Fetching tasks:  69%|██████▉   | 66/96 [00:29<00:30,  1.03s/it]Fetching tasks:  70%|██████▉   | 67/96 [00:29<00:24,  1.21it/s]Fetching tasks:  72%|███████▏  | 69/96 [00:29<00:15,  1.80it/s]Fetching tasks:  73%|███████▎  | 70/96 [00:30<00:15,  1.63it/s]Fetching tasks:  74%|███████▍  | 71/96 [00:30<00:13,  1.91it/s]Fetching tasks:  75%|███████▌  | 72/96 [00:32<00:17,  1.35it/s]Fetching tasks:  76%|███████▌  | 73/96 [00:32<00:13,  1.70it/s]Fetching tasks:  77%|███████▋  | 74/96 [00:32<00:09,  2.20it/s]Fetching tasks:  78%|███████▊  | 75/96 [00:33<00:09,  2.13it/s]Fetching tasks:  79%|███████▉  | 76/96 [00:33<00:10,  1.86it/s]Fetching tasks:  80%|████████  | 77/96 [00:34<00:10,  1.84it/s]Fetching tasks:  81%|████████▏ | 78/96 [00:34<00:10,  1.73it/s]Fetching tasks:  82%|████████▏ | 79/96 [00:35<00:10,  1.59it/s]Fetching tasks:  83%|████████▎ | 80/96 [00:37<00:14,  1.08it/s]Fetching tasks:  84%|████████▍ | 81/96 [00:37<00:10,  1.44it/s]Fetching tasks:  85%|████████▌ | 82/96 [00:37<00:07,  1.76it/s]Fetching tasks:  86%|████████▋ | 83/96 [00:39<00:10,  1.29it/s]Fetching tasks:  88%|████████▊ | 84/96 [00:39<00:08,  1.49it/s]Fetching tasks:  90%|████████▉ | 86/96 [00:40<00:05,  1.78it/s]Fetching tasks:  91%|█████████ | 87/96 [00:40<00:04,  2.14it/s]Fetching tasks:  92%|█████████▏| 88/96 [00:40<00:03,  2.31it/s]Fetching tasks:  93%|█████████▎| 89/96 [00:41<00:04,  1.70it/s]Fetching tasks:  94%|█████████▍| 90/96 [00:43<00:05,  1.08it/s]Fetching tasks:  95%|█████████▍| 91/96 [00:45<00:05,  1.14s/it]Fetching tasks:  96%|█████████▌| 92/96 [00:46<00:04,  1.25s/it]Fetching tasks:  97%|█████████▋| 93/96 [00:47<00:03,  1.12s/it]Fetching tasks:  98%|█████████▊| 94/96 [00:49<00:02,  1.29s/it]Fetching tasks:  99%|█████████▉| 95/96 [00:51<00:01,  1.57s/it]Fetching tasks: 100%|██████████| 96/96 [00:53<00:00,  1.55s/it]Fetching tasks: 100%|██████████| 96/96 [00:53<00:00,  1.81it/s]
+INFO:data_extraction.tasks_extraction:Tarefas obtidas com sucesso!
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/task_management/tasks_creation.py:155: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  task_history = task_history.fillna(0)
+Etapa 1/5 concluída em 144.64 segundos.
+        task_id           task_name  ... date_created date_updated
+0   14220340285    Willian Teodosio  ...   2024-07-23   2024-12-02
+1   14220274509     Leonardo Mendes  ...   2024-07-23   2024-12-02
+2   14220338820        Heitor Saadj  ...   2024-07-23   2024-12-02
+3   14221010233   Gabriel Possomato  ...   2024-07-23   2024-12-02
+4   14221064469  Guilherme Katayose  ...   2024-07-23   2024-12-02
+..          ...                 ...  ...          ...          ...
+60  18835764653      Giovanna Ayoub  ...   2024-10-21   2024-12-02
+61  19312204151      Bruno Pancotto  ...   2024-11-04   2024-12-02
+62  19314517848    Eduardo Baldoino  ...   2024-11-04   2024-12-02
+63  19329566603     Thiago Oliveira  ...   2024-11-05   2024-12-02
+64  19414340759     Isabella Pecula  ...   2024-11-06   2024-12-02
+
+[65 rows x 14 columns]
+        task_id              task_name  ... renewal_term    status
+0   14959515507                   Sasi  ...         <NA>    active
+1   14963146054                 Magis5  ...         <NA>    active
+2   14963311801                 MKraft  ...         <NA>    active
+3   14963311872      Bluepay Solutions  ...         <NA>    active
+4   14963846170             Fechometal  ...         <NA>  inactive
+5   14964660517                Sellers  ...         <NA>    active
+6   14965086309                  Cepel  ...         <NA>    active
+7   14966965592                  Okena  ...         <NA>    active
+8   14987437892             Quick Soft  ...         <NA>    active
+9   14987437893                  Hurst  ...         <NA>    active
+10  14987437894                 Printi  ...         <NA>  inactive
+11  14990716536           Cubo Network  ...         <NA>    active
+12  14991174554                   Upik  ...         <NA>    active
+13  14992263052  Todos Empreendimentos  ...         <NA>    active
+14  14995201557             Rocketseat  ...         <NA>    active
+15  14995944007                     DM  ...         <NA>    active
+16  14995944008                Aeromot  ...         <NA>    active
+17  14995952174    Terra Investimentos  ...         <NA>    active
+18  14995990707         W1 Consultoria  ...         <NA>    active
+19  14996006433                   Bagy  ...         <NA>  inactive
+20  14996006434  Direcional Engenharia  ...         <NA>    active
+21  14996014991                  Housi  ...         <NA>    active
+22  14996176981                   Oobj  ...         <NA>    active
+23  14996339362           Ecom Energia  ...         <NA>    active
+24  14996354114                Plugify  ...         <NA>    active
+25  14996698917          MA Hospitalar  ...         <NA>    active
+26  14996849766                   Cora  ...         <NA>    active
+27  14997048701           Santo Inacio  ...         <NA>  inactive
+28  14997055532           Partido Novo  ...         <NA>    active
+29  14997215284                 Uniube  ...         <NA>    active
+30  14997215285         Remessa Online  ...         <NA>    active
+31  14997223812              Metadados  ...         <NA>    active
+32  14997232046                  Frete  ...         <NA>    active
+33  14997410635       Centro Dom Bosco  ...         <NA>    active
+34  14997428652    Seguralta Corretora  ...         <NA>    active
+35  14997433524         Soluti Digital  ...         <NA>    active
+36  14997433525                  Payfy  ...         <NA>    active
+37  14997627566           Akad Seguros  ...         <NA>    active
+38  14997685110             Data Guide  ...         <NA>  inactive
+39  14997692830               Poder360  ...         <NA>    active
+40  15644325166              Allied IT  ...         <NA>    active
+41  16279965720          Phytoterapica  ...         <NA>    active
+42  16279965721       Gifted Education  ...         <NA>    active
+43  16279965746               Inchurch  ...         <NA>    active
+44  16279965751                  Jusfy  ...         <NA>    active
+45  16286521388            MEI Digital  ...         <NA>    active
+46  17145705272             Unicidades  ...         <NA>    active
+47  19188266757           On Projeções  ...         <NA>    active
+48  19188266833                   Reag  ...         <NA>    active
+49  19245198172          Pris Software  ...         <NA>    active
+50  19459774991                 Lastro  ...         <NA>    active
+51  19649057892                  Konsi  ...         <NA>    active
+52  19840256596                Beetech  ...         <NA>    active
+53  19970189975                   Bene  ...         <NA>    active
+54  20344311065                New Way  ...         <NA>      None
+
+[55 rows x 23 columns]
+             id customer  ... service_end_date service_due_date
+0   14996849766     Cora  ...              NaN       19/01/2024
+1   14997215284   Uniube  ...              NaN       29/05/2025
+2   14959515507     Sasi  ...              NaN       29/12/2023
+3   14963311801   MKraft  ...              NaN       22/09/2024
+4   14966965592    Okena  ...              NaN       04/09/2025
+..          ...      ...  ...              ...              ...
+57  19459774991   Lastro  ...              NaN       01/06/2025
+58  19649057892    Konsi  ...              NaN       26/03/2025
+59  19840256596  Beetech  ...              NaN       05/05/2025
+60  19970189975     Bene  ...              NaN       02/04/2025
+61  20344311065  New Way  ...              NaN       14/11/2025
+
+[62 rows x 14 columns]
+       task_id  ...                          email
+0    86a5n1y6n  ...    nathan.ferreira@nexforce.co
+1    86a5km19a  ...        joao.aguiar@nexforce.co
+2    86a5gxd4c  ...    eduardo.cardoso@nexforce.co
+3    86a4pr5yb  ...  gabriel.possomato@nexforce.co
+4    86a5pdjg0  ...     gabriela.hadid@nexforce.co
+..         ...  ...                            ...
+441  86a59ze3r  ...      plinio.vieira@nexforce.co
+442  86a59ze25  ...      plinio.vieira@nexforce.co
+443  86a59ze24  ...      plinio.vieira@nexforce.co
+444  86a59ze23  ...      plinio.vieira@nexforce.co
+445  86a59ze22  ...      plinio.vieira@nexforce.co
+
+[446 rows x 21 columns]
+Etapa 2/5 concluída em 145.07 segundos.
+Tabela starry-compiler-387319.Stage.stg_squad foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_task foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_squad
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Dados carregados em starry-compiler-387319.Stage.stg_task
+Etapa 3/5 concluída em 164.08 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 204.59 segundos.
+Tarefa 'Gravar vídeo demonstrando views de tarefas' criada com sucesso!
+Tarefa 'Desenhar jornada simplificada com o uso do objeto Lead e informações vindas do spread.chat' criada com sucesso!
+Tarefa 'Construir jornada ideal do novo cliente Oobj e apresentação final para CEO' criada com sucesso!
+Tarefa 'Gerar propostas' criada com sucesso!
+Falha ao criar a tarefa '[INTERNAL] Dailies': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa '[INTERNAL] Reuniões e comunicação interna': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa '[Sprint 24-2024] Internal - Daily' criada com sucesso!
+Tarefa '[Sprint 24-2024] Internal - Cerimônias, reuniões, geral' criada com sucesso!
+Tarefa '[Sprint 24-2024] Monitoramento suporte para equipe' criada com sucesso!
+Tarefa '[Sprint 24-2024] Iniciar case Metadados e passar draft escrito para cliente complementars' criada com sucesso!
+Falha ao criar a tarefa '[Sprint 24-2024] Suporte Interno (reuniões, refinamento, revisões)': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Analisar atraso nas automações de passagem de fase e implementar melhorias' criada com sucesso!
+Terminated
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 53.30 segundos.
+        task_id  ...                 service_name
+0   14959515507  ...                  Sasi [RaaS]
+1   14963146054  ...                Magis5 [RaaS]
+2   14963311801  ...                Mkraft [RaaS]
+3   14963311872  ...  Bluepay Solutions [Project]
+4   14963846170  ...         Fechometal [Project]
+..          ...  ...                          ...
+73  21318858811  ...                          NaN
+74  21320088592  ...                          NaN
+75  21321449634  ...                          NaN
+76  21322686506  ...                          NaN
+77  21340731654  ...                          NaN
+
+[78 rows x 24 columns]
+             id  ... service_due_date
+0   14996849766  ...       19/01/2024
+1   14997215284  ...       29/05/2025
+2   14959515507  ...       29/12/2023
+3   14963311801  ...       22/09/2024
+4   14966965592  ...       04/09/2025
+..          ...  ...              ...
+73  21301954841  ...              NaN
+74  21293284643  ...              NaN
+75  21322686506  ...              NaN
+76  21320088592  ...              NaN
+77  21298547203  ...              NaN
+
+[78 rows x 14 columns]
+Etapa 2/5 concluída em 53.52 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Traceback (most recent call last):
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py", line 2593, in load_table_from_file
+    response = self._do_multipart_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py", line 3157, in _do_multipart_upload
+    response = upload.transmit(
+               ^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/resumable_media/requests/upload.py", line 153, in transmit
+    return _request_helpers.wait_and_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/resumable_media/requests/_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+               ^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/resumable_media/requests/upload.py", line 149, in retriable_request
+    self._process_response(result)
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/resumable_media/_upload.py", line 125, in _process_response
+    _helpers.require_status_code(response, (http.client.OK,), self._get_status_code)
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/resumable_media/_helpers.py", line 108, in require_status_code
+    raise common.InvalidResponse(
+google.resumable_media.common.InvalidResponse: ('Request failed with status code', 400, 'Expected one of', <HTTPStatus.OK: 200>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ricardo_semerene/etl_prod/main.py", line 184, in <module>
+    main()
+  File "/home/ricardo_semerene/etl_prod/main.py", line 139, in main
+    load_to_bigquery(exp_customer, table_id_customer, client)
+  File "/home/ricardo_semerene/etl_prod/main.py", line 67, in load_to_bigquery
+    job = client.load_table_from_dataframe(df, table_id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py", line 2833, in load_table_from_dataframe
+    return self.load_table_from_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py", line 2597, in load_table_from_file
+    raise exceptions.from_http_response(exc.response)
+google.api_core.exceptions.BadRequest: 400 POST https://bigquery.googleapis.com/upload/bigquery/v2/projects/starry-compiler-387319/jobs?uploadType=multipart: Provided Schema does not match Table starry-compiler-387319:Stage.stg_customer. Cannot add fields (field: service_name)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 52.51 segundos.
+        task_id  ...                 service_name
+0   14959515507  ...                  Sasi [RaaS]
+1   14963146054  ...                Magis5 [RaaS]
+2   14963311801  ...                Mkraft [RaaS]
+3   14963311872  ...  Bluepay Solutions [Project]
+4   14963846170  ...         Fechometal [Project]
+..          ...  ...                          ...
+73  21318858811  ...                          NaN
+74  21320088592  ...                          NaN
+75  21321449634  ...                          NaN
+76  21322686506  ...                          NaN
+77  21340731654  ...                          NaN
+
+[78 rows x 24 columns]
+             id  ... service_due_date
+0   14996849766  ...       19/01/2024
+1   14997215284  ...       29/05/2025
+2   14959515507  ...       29/12/2023
+3   14963311801  ...       22/09/2024
+4   14966965592  ...       04/09/2025
+..          ...  ...              ...
+73  21301954841  ...              NaN
+74  21293284643  ...              NaN
+75  21322686506  ...              NaN
+76  21320088592  ...              NaN
+77  21298547203  ...              NaN
+
+[78 rows x 14 columns]
+Etapa 2/5 concluída em 52.71 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Etapa 3/5 concluída em 60.57 segundos.
+Etapa 4/5 concluída em 60.57 segundos.
+Todas as etapas concluídas em 60.57 segundos.
+Execução finalizada, desligando a instância...
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 51.30 segundos.
+        task_id  ...                 service_name
+0   14959515507  ...                  Sasi [RaaS]
+1   14963146054  ...                Magis5 [RaaS]
+2   14963311801  ...                Mkraft [RaaS]
+3   14963311872  ...  Bluepay Solutions [Project]
+4   14963846170  ...         Fechometal [Project]
+..          ...  ...                          ...
+74  21320088592  ...                          NaN
+75  21321449634  ...                          NaN
+76  21322686506  ...                          NaN
+77  21340731654  ...                          NaN
+78  21530393002  ...         White Wall [Project]
+
+[79 rows x 24 columns]
+             id  ... service_due_date
+0   14996849766  ...       19/01/2024
+1   14997215284  ...       29/05/2025
+2   14959515507  ...       29/12/2023
+3   14963311801  ...       22/09/2024
+4   14966965592  ...       04/09/2025
+..          ...  ...              ...
+74  21293284643  ...              NaN
+75  21322686506  ...              NaN
+76  21320088592  ...              NaN
+77  21298547203  ...              NaN
+78  21530393002  ...       28/02/2025
+
+[79 rows x 14 columns]
+Etapa 2/5 concluída em 51.51 segundos.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Etapa 3/5 concluída em 58.69 segundos.
+Etapa 4/5 concluída em 58.69 segundos.
+Todas as etapas concluídas em 58.69 segundos.
+Execução finalizada, desligando a instância...
+INFO:data_extraction.tasks_extraction:O sprint atual é: Sprint 25 - 2024
+Fetching tasks:   0%|          | 0/99 [00:00<?, ?it/s]Fetching tasks:  31%|███▏      | 31/99 [00:02<00:05, 13.15it/s]Fetching tasks:  33%|███▎      | 33/99 [00:03<00:06,  9.79it/s]Fetching tasks:  34%|███▍      | 34/99 [00:03<00:07,  9.13it/s]Fetching tasks:  35%|███▌      | 35/99 [00:03<00:07,  8.27it/s]Fetching tasks:  36%|███▋      | 36/99 [00:05<00:16,  3.76it/s]Fetching tasks:  37%|███▋      | 37/99 [00:06<00:24,  2.57it/s]Fetching tasks:  39%|███▉      | 39/99 [00:07<00:22,  2.70it/s]Fetching tasks:  40%|████      | 40/99 [00:07<00:21,  2.79it/s]Fetching tasks:  42%|████▏     | 42/99 [00:07<00:16,  3.50it/s]Fetching tasks:  44%|████▍     | 44/99 [00:08<00:13,  3.98it/s]Fetching tasks:  45%|████▌     | 45/99 [00:08<00:14,  3.75it/s]Fetching tasks:  46%|████▋     | 46/99 [00:08<00:13,  3.85it/s]Fetching tasks:  47%|████▋     | 47/99 [00:09<00:23,  2.23it/s]Fetching tasks:  48%|████▊     | 48/99 [00:10<00:21,  2.41it/s]Fetching tasks:  49%|████▉     | 49/99 [00:10<00:25,  1.94it/s]Fetching tasks:  51%|█████     | 50/99 [00:11<00:22,  2.15it/s]Fetching tasks:  52%|█████▏    | 51/99 [00:14<00:57,  1.21s/it]Fetching tasks:  53%|█████▎    | 52/99 [00:14<00:44,  1.06it/s]Fetching tasks:  54%|█████▎    | 53/99 [00:16<00:54,  1.19s/it]Fetching tasks:  55%|█████▍    | 54/99 [00:16<00:40,  1.10it/s]Fetching tasks:  56%|█████▌    | 55/99 [00:18<00:47,  1.08s/it]Fetching tasks:  57%|█████▋    | 56/99 [00:18<00:36,  1.17it/s]Fetching tasks:  58%|█████▊    | 57/99 [00:19<00:44,  1.06s/it]Fetching tasks:  59%|█████▊    | 58/99 [00:20<00:34,  1.19it/s]Fetching tasks:  60%|█████▉    | 59/99 [00:20<00:27,  1.48it/s]Fetching tasks:  61%|██████    | 60/99 [00:21<00:30,  1.27it/s]Fetching tasks:  62%|██████▏   | 61/99 [00:22<00:29,  1.28it/s]Fetching tasks:  64%|██████▎   | 63/99 [00:22<00:17,  2.11it/s]Fetching tasks:  65%|██████▍   | 64/99 [00:22<00:13,  2.54it/s]Fetching tasks:  66%|██████▌   | 65/99 [00:22<00:11,  3.08it/s]Fetching tasks:  68%|██████▊   | 67/99 [00:23<00:07,  4.37it/s]Fetching tasks:  69%|██████▊   | 68/99 [00:23<00:08,  3.47it/s]Fetching tasks:  70%|██████▉   | 69/99 [00:23<00:08,  3.55it/s]Fetching tasks:  71%|███████   | 70/99 [00:25<00:22,  1.32it/s]Fetching tasks:  72%|███████▏  | 71/99 [00:26<00:17,  1.63it/s]Fetching tasks:  73%|███████▎  | 72/99 [00:28<00:29,  1.08s/it]Fetching tasks:  74%|███████▎  | 73/99 [00:28<00:21,  1.20it/s]Fetching tasks:  75%|███████▍  | 74/99 [00:30<00:29,  1.17s/it]Fetching tasks:  76%|███████▌  | 75/99 [00:30<00:21,  1.10it/s]Fetching tasks:  77%|███████▋  | 76/99 [00:32<00:27,  1.21s/it]Fetching tasks:  78%|███████▊  | 77/99 [00:33<00:24,  1.12s/it]Fetching tasks:  80%|███████▉  | 79/99 [00:33<00:12,  1.56it/s]Fetching tasks:  81%|████████  | 80/99 [00:34<00:10,  1.80it/s]Fetching tasks:  83%|████████▎ | 82/99 [00:34<00:06,  2.59it/s]Fetching tasks:  84%|████████▍ | 83/99 [00:34<00:06,  2.56it/s]Fetching tasks:  85%|████████▍ | 84/99 [00:35<00:05,  2.84it/s]Fetching tasks:  86%|████████▌ | 85/99 [00:35<00:04,  2.81it/s]Fetching tasks:  87%|████████▋ | 86/99 [00:35<00:04,  2.64it/s]Fetching tasks:  88%|████████▊ | 87/99 [00:36<00:06,  1.93it/s]Fetching tasks:  90%|████████▉ | 89/99 [00:37<00:05,  1.84it/s]Fetching tasks:  92%|█████████▏| 91/99 [00:38<00:02,  2.78it/s]Fetching tasks:  93%|█████████▎| 92/99 [00:39<00:03,  2.05it/s]Fetching tasks:  95%|█████████▍| 94/99 [00:39<00:01,  3.05it/s]Fetching tasks:  97%|█████████▋| 96/99 [00:39<00:00,  3.15it/s]Fetching tasks:  98%|█████████▊| 97/99 [00:42<00:01,  1.26it/s]Fetching tasks:  99%|█████████▉| 98/99 [00:43<00:00,  1.23it/s]Fetching tasks: 100%|██████████| 99/99 [00:47<00:00,  1.54s/it]Fetching tasks: 100%|██████████| 99/99 [00:47<00:00,  2.10it/s]
+INFO:data_extraction.tasks_extraction:Tarefas obtidas com sucesso!
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/task_management/tasks_creation.py:155: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  task_history = task_history.fillna(0)
+Etapa 1/5 concluída em 151.00 segundos.
+        task_id           task_name  ... date_created date_updated
+0   14220340285    Willian Teodosio  ...   2024-07-23   2024-12-23
+1   14220274509     Leonardo Mendes  ...   2024-07-23   2024-12-23
+2   14220338820        Heitor Saadj  ...   2024-07-23   2024-12-23
+3   14221010233   Gabriel Possomato  ...   2024-07-23   2024-12-23
+4   14221064469  Guilherme Katayose  ...   2024-07-23   2024-12-23
+..          ...                 ...  ...          ...          ...
+65  20575227463         Yuri Sasaki  ...   2024-12-06   2024-12-23
+66  21274233706       Marina Macuco  ...   2024-12-17   2024-12-23
+67  21274233714       Vinicius Braz  ...   2024-12-17   2024-12-23
+68  21228614976       Mariana Porto  ...   2024-12-17   2024-12-23
+69  21274233721  Leonardo Romanelli  ...   2024-12-17   2024-12-23
+
+[70 rows x 14 columns]
+        task_id  ...                 service_name
+0   14959515507  ...                  Sasi [RaaS]
+1   14963146054  ...                Magis5 [RaaS]
+2   14963311801  ...                Mkraft [RaaS]
+3   14963311872  ...  Bluepay Solutions [Project]
+4   14963846170  ...         Fechometal [Project]
+..          ...  ...                          ...
+74  21320088592  ...                          NaN
+75  21321449634  ...                          NaN
+76  21322686506  ...                          NaN
+77  21340731654  ...                          NaN
+78  21530393002  ...         White Wall [Project]
+
+[79 rows x 24 columns]
+             id                  customer  ... service_end_date service_due_date
+0   14996849766             Cora [NexOps]  ...              NaN       19/01/2024
+1   14997215284           Uniube [NexOps]  ...              NaN       29/05/2025
+2   14959515507             Sasi [NexOps]  ...              NaN       29/12/2023
+3   14963311801           MKraft [NexOps]  ...              NaN       22/09/2024
+4   14966965592            Okena [NexOps]  ...              NaN       04/09/2025
+..          ...                       ...  ...              ...              ...
+74  21293284643    Partido Novo [Nexwave]  ...              NaN              NaN
+75  21322686506  Soluti Digital [Nexwave]  ...              NaN              NaN
+76  21320088592   MA Hospitalar [Nexwave]  ...              NaN              NaN
+77  21298547203    Akad Seguros [Nexwave]  ...              NaN              NaN
+78  21530393002       White Wall [NexOps]  ...              NaN       28/02/2025
+
+[79 rows x 14 columns]
+       task_id  ...                      email
+0    86a605vnd  ...    osmar.alves@nexforce.co
+1    86a5yhjnb  ...    osmar.alves@nexforce.co
+2    86a5wxpmt  ...  matheus.ecles@nexforce.co
+3    86a5utn3k  ...    osmar.alves@nexforce.co
+4    86a5utmzd  ...    osmar.alves@nexforce.co
+..         ...  ...                        ...
+605  86a59ze7f  ...  plinio.vieira@nexforce.co
+606  86a59ze72  ...  plinio.vieira@nexforce.co
+607  86a59ze67  ...  plinio.vieira@nexforce.co
+608  86a59ze5a  ...  plinio.vieira@nexforce.co
+609  86a5ru6uy  ...  matheus.ecles@nexforce.co
+
+[610 rows x 21 columns]
+Etapa 2/5 concluída em 151.43 segundos.
+Tabela starry-compiler-387319.Stage.stg_squad foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_task foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_squad
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Dados carregados em starry-compiler-387319.Stage.stg_task
+Etapa 3/5 concluída em 172.79 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 215.78 segundos.
+Tarefa 'Configurar ajustes - Processo de atendimento' criada com sucesso!
+Tarefa 'Auxílio importação MailChimp' criada com sucesso!
+Falha ao criar a tarefa 'Alterar atribuição de Deals do pipeline de recuperação': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Investigar disparo de comunicação' criada com sucesso!
+Tarefa 'Investigar possibilidades de reports' criada com sucesso!
+Tarefa 'Investigar integração com o Mailchimp' criada com sucesso!
+Tarefa 'Desenvolver workflows de disparo de comunicação (Planos Premium)' criada com sucesso!
+Tarefa 'Desenvolver dashboard para o processo Planos Premium' criada com sucesso!
+Tarefa 'Go-live processo Planos Premium' criada com sucesso!
+Tarefa 'Testar processo Planos Premium' criada com sucesso!
+Tarefa 'Discovery do processo DN' criada com sucesso!
+Tarefa 'Investigar e ajustes de WhatsApp' criada com sucesso!
+Tarefa 'Adicionar propriedade de "Período do evento" no processo de Eventos' criada com sucesso!
+Tarefa 'Desenvolver processo de consumo de créditos' criada com sucesso!
+Tarefa 'Ajustar fluxos de Envio de Handover time Cubo Onboarding Corp' criada com sucesso!
+Tarefa 'Ajustes Onboarding Corporate' criada com sucesso!
+Tarefa 'Realizar ajustes no pipeline de Investors' criada com sucesso!
+Tarefa 'Adicionar copies de e-mail no processo de Onboarding Startups' criada com sucesso!
+Tarefa 'Refatorar etapas de eventos' criada com sucesso!
+Tarefa 'Mapear uso de etapas e pipeline de Eventos' criada com sucesso!
+Tarefa 'Investigar associação de eventos com o Card de reunião' criada com sucesso!
+Tarefa 'Investigar limitações de Paid seat no Help desk' criada com sucesso!
+Tarefa 'Passar processo para Produção' criada com sucesso!
+Tarefa 'Configurar dashboards Gerais' criada com sucesso!
+Tarefa 'Demonstração de funcionalidades Docusign' criada com sucesso!
+Tarefa 'Realizar treinamento Atendimento 1' criada com sucesso!
+Tarefa 'Realizar reunião de trabalho sobre configuração de relatórios' criada com sucesso!
+Tarefa 'Gerar propostas' criada com sucesso!
+Tarefa 'Configurar motivos de desqualificação macro (Lead)' criada com sucesso!
+Tarefa 'Realizar segmentação inicial da base de contatos do Hubspot (fontes & trabalho)' criada com sucesso!
+Tarefa 'Desenvolver dashboard de Source Remap' criada com sucesso!
+Tarefa 'Desenvolver dashboard para visualização de informações de Leads de Parceria' criada com sucesso!
+Tarefa 'Investigar casos fora do processo de source remap e adaptar ao processo' criada com sucesso!
+Tarefa 'Desenvolver processo de Source remap 2/2' criada com sucesso!
+Tarefa 'Adaptar dashboard para mostrar impacto de sequências de prospecção automática' criada com sucesso!
+Tarefa '[Nexbot] Migração Enterprise' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Round Robin ' criada com sucesso!
+Tarefa '[Onboarding do cliente] Interação das demandas e anotações' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de integrações internas e externas' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de relacionamento entre objetos' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: BPMN (Objetos, etapas e pipes) B2C' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Lifecycle' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Integrações e Dados' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Visão geral em alto nível' criada com sucesso!
+Tarefa 'Configurar o padrão de pastas e listas da Nexforce' criada com sucesso!
+Tarefa 'Configurações: Configurar Privacidade e consentimento na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar Marketplaces na guia Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar o objeto Atividades na guia de Gerenciamento de dados' criada com sucesso!
+Tarefa 'Configurações: Configurar Conteúdos na guia de Ferramentas' criada com sucesso!
+Tarefa 'Configurações: Configurar Rastreamento e análises na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Criar Sandbox na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar Marketing na guia de Ferramentas' criada com sucesso!
+Tarefa 'Configurações: Configurar os padrões da conta na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Entregar os dados necessários para configuração geral da conta' criada com sucesso!
+Tarefa '[Sprint 25-2024] Material interno Case Rocketseat' criada com sucesso!
+Tarefa '[Sprint 25-2025] Revisão de Tarefas' criada com sucesso!
+Tarefa '[Sprint 25-2025] Revisão de Tarefas' criada com sucesso!
+Tarefa '[Sprint 25-2025] [Weiss & Talks] Apresentação GTM' criada com sucesso!
+Tarefa '[Sprint 25-2024] Ajuste permissionamentos NX nas contas Dunkel' criada com sucesso!
+Tarefa '[Sprint 25-2024] Monitoramento suporte para equipe' criada com sucesso!
+Tarefa '[Sprint 25-2024] Iniciar case ECOM e passar draft escrito para cliente complementar' criada com sucesso!
+Tarefa '[Sprint 25-2024] Suporte Interno (reuniões, refinamento, revisões)' criada com sucesso!
+Tarefa 'Criação de Fluxo Paleativo para Reciclagem de Leads com desqualificação automática' criada com sucesso!
+Tarefa 'Redesenhar régua de conexão e qualificação de pré vendas' criada com sucesso!
+Tarefa 'Ajustar erros de designação de conversas de WhatsApp' criada com sucesso!
+Tarefa 'Realizar ação de reciclagem pontual de leads' criada com sucesso!
+Tarefa 'Documentar os erros de Spread.chat e encaminhar para suporte' criada com sucesso!
+Tarefa 'Complementar análises de performance do processo de pré vendas' criada com sucesso!
+Tarefa 'Implementar passagem de fase via atividades no lead' criada com sucesso!
+Tarefa 'Revisar preenchimento e cópia das propriedades de source remap' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Criação e atribuição de registros' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Métricas calculadas de performance' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de reciclagem de oportunidades' criada com sucesso!
+Tarefa 'Cerimônias da Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Configurar pipeline de Assessores' criada com sucesso!
+Tarefa 'Configurar o objeto Negócio' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de integrações internas e externas' criada com sucesso!
+Tarefa 'Desenvolver funil a partir da propriedade Multiple Checkboxes' criada com sucesso!
+Tarefa 'Desenvolver apresentação da Feature AI para criação de conteúdo' criada com sucesso!
+Tarefa 'Demonstração processo Tag One to Many' criada com sucesso!
+Tarefa 'Investigar tempo elevado de envio de mensagem de Whatsapp através de fluxo' criada com sucesso!
+Tarefa 'Investigar possibilidade de envio de mensagem de resposta automática' criada com sucesso!
+Tarefa 'Apresentar TO BE de Onboarding' criada com sucesso!
+Tarefa 'Desenvolver novo processo de Tags one to many' criada com sucesso!
+Tarefa 'Investigar problemas de associação de Coraliados (Contato <> Empresa)' criada com sucesso!
+Tarefa 'Deletar assets obsoletos (Hunters)' criada com sucesso!
+Tarefa 'Realizar mapeamento de propriedades utilizadas no processo de Coraliados (1/2)' criada com sucesso!
+Tarefa 'Higienização de Propriedades - FRETE' criada com sucesso!
+Tarefa 'Refinar o Blueprint TO BE: Definições da Régua de Comunicação em Pré-Sales' criada com sucesso!
+Tarefa 'Documentar as regras de de duplicação de contatos' criada com sucesso!
+Tarefa 'Deletar ou Refatorar os Workflows, Propriedades, Formulários e Pipelines (higienização)' criada com sucesso!
+Tarefa 'Criar visualizações no objeto Negócio' criada com sucesso!
+Tarefa 'Configurar as caixas de entrada de contatos de Revenue Acquisition' criada com sucesso!
+Tarefa 'Configurar a visualização da barra lateral esquerda para o time de Revenue Acquisition' criada com sucesso!
+Tarefa 'Criar e configurar pipeline Revenue Acquisition' criada com sucesso!
+Tarefa 'Configurar o objeto Negócio' criada com sucesso!
+Tarefa 'Enviar procedimento para importação dos documentos de vendas' criada com sucesso!
+Tarefa 'Enviar procedimento para criação dos links de reunião dos agentes' criada com sucesso!
+Tarefa 'Construção do Workflow de informações de contrato' criada com sucesso!
+Tarefa 'Suporte CSAT - Relatórios e Campos Personalizados' criada com sucesso!
+Tarefa 'Criação de campos calculados - Objeto Deal' criada com sucesso!
+Tarefa 'Resolução de Whatsapp' criada com sucesso!
+Tarefa 'Revisão do relatório de reuniões e Integração com Sales Navigator' criada com sucesso!
+Tarefa 'Realizar integração entre Slack e HubSpot - Abertura de Tickets' criada com sucesso!
+Tarefa 'Realizar treinamento da nova arquitetura para o time de Revendas' criada com sucesso!
+Tarefa 'Realizar Go-Live da frente de Revendas' criada com sucesso!
+Tarefa 'Revisão e higienização de WorkFlows de Sales' criada com sucesso!
+Tarefa 'Correção de bugs, ajustes e otimizações pós go-live de Sales' criada com sucesso!
+Tarefa 'Plantão pós go-live Sales' criada com sucesso!
+Tarefa 'Configurar os painéis ideais da conta na frente de vendas' criada com sucesso!
+Tarefa 'Configurar os painéis ideais da conta na frente de pré-vendas' criada com sucesso!
+Tarefa 'Finalizar a higienização dos painéis da conta Plugify' criada com sucesso!
+Tarefa 'Book Handover arquitetura: LC,  GF e arquitetura de fontes ' criada com sucesso!
+Tarefa 'Book handover processo Pedidos: finalização da documentação' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Apoios diversos' criada com sucesso!
+Tarefa 'Analisar viabilidade para preenchimento do checkin (confirmação de presença) de eventos - Lojista' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de caixas de entrada de contatos e formulários de Onboarding' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Pipelines e estágios de Ongoing' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de métricas do processo de Ongoing' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: otimização código zapsign cadastro parceiro' criada com sucesso!
+Tarefa 'Monitoramento e apoio ativo com painel tático de vendas' criada com sucesso!
+Tarefa 'Melhorias de processos: Pack melhorias de fim de ano' criada com sucesso!
+Tarefa 'Pipeline de Relacionamento Parceiro: Levantamento de requisitos para ajustes' criada com sucesso!
+Tarefa 'Pipeline de Pré-Venda Lead Parceiro: Criação dashboard de auditoria do processo' criada com sucesso!
+Tarefa 'Pipe pre-venda Lead Parceiro: Criação Dashboard negócio novo pipeline' criada com sucesso!
+Tarefa 'Implementação Pipeline Vendas Indiretas: Testes conjuntos  e ajustes (Ecommerce)' criada com sucesso!
+Tarefa 'Pipeline de Pré-Venda e Cadastro Parceiro: Apoio e estabilização do processo' criada com sucesso!
+Tarefa 'Pipeline de Vendas: Apoio e estabilização do processo' criada com sucesso!
+Tarefa 'Sustentação - Solicitações de Suporte' criada com sucesso!
+Tarefa 'Sustentação - Solicitações de Suporte' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: desenvolvimento ZapSign' criada com sucesso!
+Tarefa 'Implementação pipeline vendas indiretas: apoio técnico DEV' criada com sucesso!
+Tarefa 'Implementação melhorias de vendas: preencher template nutrição' criada com sucesso!
+Tarefa '[Manutenção] Acompanhamento de liberação dos slots de usuário na conta CDT' criada com sucesso!
+Tarefa '[Central do Conhecimento] Treinamento de boas práticas em importação e e-mails transacionais' criada com sucesso!
+Tarefa '[🛑Issue🛑] Análise da lista de disparo e correção do workflow' criada com sucesso!
+Tarefa '[Leads UDN] Update do workflow de redistribuição' criada com sucesso!
+Tarefa '[🛑Task Force🛑] [CDT] Tratar as colunas de dados Via R preservando o conjunto de dados selecionado' criada com sucesso!
+Tarefa '[🛑Task Force🛑] [CDT] Envio de e-mail com os dados de importação' criada com sucesso!
+Tarefa '[Distribuição] Analisar o motivo da movimentação do leads fechados nas pipes de televendas e televendas ativo' criada com sucesso!
+Tarefa '[Redistribuição][MVP] Monitoramento do desempenho da redistribuição' criada com sucesso!
+Falha ao criar a tarefa '[Redistribuição][MVP] Go Live no Piloto': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa '[Redistribuição][MVP] Duplicar o Workflow de leads e voltado para SP Interior': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa '[Redistribuição][MVP] Criar Lista de leads com a regional SP Interior (menos presidente prudente)': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa '[Distribuição de leads] Revisão do Workflow de Leads Freemium' criada com sucesso!
+Tarefa '[🛑Task Force🛑] Resolução da associação do contador de leads' criada com sucesso!
+Tarefa '[🛑Task Force🛑] Higienização gradual dos contatos de marketing' criada com sucesso!
+Tarefa '[Leads UDN] Dê-para dos cards da AS | Multicanalidade' criada com sucesso!
+Falha ao criar a tarefa '[Regularização de contatos - E-mails] Levantamento e classificação de contatos afetados': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa '[Regularização de contatos - E-mails]Análise de problemas e identificação da origem': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa '[Origem do lead] Definição dos canais de conversão' criada com sucesso!
+Tarefa '[Origem do lead]  Oficialização da Origem do Lead v2 + Planejamento de expansão de origem' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Análise revops/auditoria: correção WF' criada com sucesso!
+Tarefa 'Apresentçao analises atendimento pipe suporte' criada com sucesso!
+Tarefa 'Criação Dashboards Pipe editora e validação com cliente' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Alinar governança go live com dailys Pipe Membros' criada com sucesso!
+Tarefa 'Ligar fluxos de nutrição pipe Membros' criada com sucesso!
+Tarefa 'Revisão e ajustes do case proposto' criada com sucesso!
+Tarefa 'Desenvolver codificação de SKU que identifique selo infantil. Prefixo ORT' criada com sucesso!
+Tarefa 'Execução treinamento Pipe Membros' criada com sucesso!
+Tarefa 'Criação Dashboards MVP Pipe Membros' criada com sucesso!
+Tarefa 'Revisão LC e automações após pipeline Membros criado' criada com sucesso!
+Tarefa 'Testar pipe Membros, integrações e automações' criada com sucesso!
+Tarefa 'Criar templates de email para comunicações pipe Membros' criada com sucesso!
+Tarefa 'MQL: Criação de painel GF MQL' criada com sucesso!
+Tarefa 'Identificar padrão de WAU (weekly average usage) para membros (Discovery)' criada com sucesso!
+Tarefa 'Revisão LC e automações após pipeline Execução de Projetos criado.' criada com sucesso!
+Tarefa 'Preparar planilha go live e governança' criada com sucesso!
+Tarefa 'Criação Dashboards MVP Pipe Projetos Eng.s' criada com sucesso!
+Tarefa 'Implementar flulxos de nutrição / sequencias pipe Projetos Eng' criada com sucesso!
+Tarefa 'Atualizar fluxos de comunicação após templates de email finalizados pela Aeromot: Pipe Onboarding' criada com sucesso!
+Tarefa 'Atualizar fluxos de comunicação após templates de email finalizados pela Aeromot: Pipe Manutenção' criada com sucesso!
+Tarefa 'Implementação Chatbot e testes' criada com sucesso!
+Tarefa 'Reunião instrução de desenho para fluxo conversacional' criada com sucesso!
+Tarefa 'Mapeamento requisitos chatbot e desenho fluxo conversacional' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Revisão e ajustes do case proposto' criada com sucesso!
+Tarefa 'Mapear cadeias de comunicação/sequência PIPE Projetos Eng e criar copys' criada com sucesso!
+Tarefa 'Mapear cadeias de comunicação/sequência PIPE Manutenção e criar copys' criada com sucesso!
+Tarefa 'Treinamento conjunto de permissões' criada com sucesso!
+Tarefa 'Mapear cadeias de nutricao nos pipelines Onboarding e criar copys' criada com sucesso!
+Tarefa 'Apresentar funcionalidades de apps de assinatura eletrônica. comparação prós e contras, funcionalidades e preços de apps populares do marketplace' criada com sucesso!
+Tarefa 'Implementar pesquisas de satisfação' criada com sucesso!
+Tarefa 'Atualizar documentação das mudanças no processo: Pops pv e venda' criada com sucesso!
+Tarefa 'Refatoração processos: Realizar treinamento alterações: Venda' criada com sucesso!
+Tarefa 'Refatoração dos processos: Realizar treinamento das alterações: PV' criada com sucesso!
+Tarefa 'Planilha com mapeamento de marketing - forms, LPs etc ' criada com sucesso!
+Tarefa 'Reativar redes sociais ' criada com sucesso!
+Tarefa 'Higienização de formulários' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Refatoração processos: Revisão dashboards' criada com sucesso!
+Tarefa 'Refatoração dos processos: Lifecycle' criada com sucesso!
+Tarefa 'Refatoração dos processos: Automações pipelines + Testes ' criada com sucesso!
+Tarefa 'Refatoração processos: Motivos de perda' criada com sucesso!
+Tarefa 'Refatoração dos processos: Propriedades obrigatórias pipelines' criada com sucesso!
+Tarefa 'Refatoração dos processos: Mudanças de etapa pipelines' criada com sucesso!
+Tarefa 'Ajuste base gerenciador e gerador e importação' criada com sucesso!
+Tarefa 'Criação painel auditoria' criada com sucesso!
+Tarefa 'Criação Dashboards MVP Pipes tickets ' criada com sucesso!
+Tarefa 'Treinamento funcionalidades de relatórios e dashboards' criada com sucesso!
+Tarefa 'Execução treinamento MKT para Rodrigo VP' criada com sucesso!
+Tarefa 'Preenchimento tabela com dados de contratos ativos atualizados' criada com sucesso!
+Tarefa 'Criação de Dashboards MVP PV' criada com sucesso!
+Tarefa 'Dashboards MVP MKT' criada com sucesso!
+Tarefa 'Treinamento Arquitetura fontes' criada com sucesso!
+Tarefa 'Suporte e estabilização' criada com sucesso!
+Tarefa 'Suporte e estabilização' criada com sucesso!
+Tarefa 'Suporte e estabilização' criada com sucesso!
+Tarefa 'Suporte e estabilização' criada com sucesso!
+Tarefa 'Codigo Customizado verificaçao alteração preco unitário' criada com sucesso!
+Tarefa 'Apoio em testes do cod customizado orcamento' criada com sucesso!
+Tarefa 'Planejar  e implementar graficos dash auditoria de processo revops + engajamento' criada com sucesso!
+Tarefa 'Dashboards comerciais' criada com sucesso!
+Tarefa 'Correções de QA' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Mapear relatórios mínimos necessários em Dashboards' criada com sucesso!
+Tarefa 'Execução treinamento Consult Serviço' criada com sucesso!
+Tarefa 'Faturamento: Ajustes finais' criada com sucesso!
+Tarefa 'Import de imagens dos produtos na biblioteca' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente (4)' criada com sucesso!
+Tarefa 'Validar Processo de Corretores que foi implementado' criada com sucesso!
+Tarefa 'Importações das Bases - Enviar base de dados para importação' criada com sucesso!
+Tarefa 'Averbação - Desenvolvimento do Processo' criada com sucesso!
+Tarefa 'Parceiros - Revisão do Processo' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente' criada com sucesso!
+Tarefa 'Importações das Bases - Tarefa Recorrente' criada com sucesso!
+Tarefa 'Automatização de e-mails - Abertura/Reabertura' criada com sucesso!
+Tarefa 'Chat Bot - Finalizar Benchmark Whatsapp com chatbot + IA' criada com sucesso!
+Tarefa 'Sustentação - Solicitações de Suporte' criada com sucesso!
+Tarefa 'Averbação - Definições TO BE' criada com sucesso!
+Tarefa 'Emissão Demais Ramos - Detalhamento AS IS' criada com sucesso!
+Tarefa 'Reclame Aqui - Definição da Integração' criada com sucesso!
+Tarefa 'Reclame Aqui -  Validar Definições TO BE' criada com sucesso!
+Tarefa 'Reclame Aqui - Definições TO BE' criada com sucesso!
+Tarefa 'Corporate - Validação do fluxo de atribuição de proprietário' criada com sucesso!
+Tarefa 'Corporate - Desenvolvimento do Fluxo de Cobrança de Corretores' criada com sucesso!
+Tarefa 'Assessorias - Construir relatórios complementares' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'OGGI - Deploy do Formulário' criada com sucesso!
+Tarefa 'CX - Envio das documentações' criada com sucesso!
+Tarefa 'Integrações e Dados - Definições TO BE (Negócios)' criada com sucesso!
+Tarefa 'Governança - Validar proposta TO BE' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Qualidade - Mapeamento de Rotinas' criada com sucesso!
+Tarefa 'Integrações e Dados - Definições TO BE (Produto)' criada com sucesso!
+Tarefa 'Enviar parâmetros de dados utilizado no Zendesk' criada com sucesso!
+Tarefa 'Casos Especiais - Definições TO BE' criada com sucesso!
+Tarefa 'Casos Especiais - Discovery do Processo' criada com sucesso!
+Tarefa 'CX - Discovery (Subprocessos)' criada com sucesso!
+Tarefa 'CS (Client Service) - Definições TO BE' criada com sucesso!
+Tarefa 'Governança - Implementar Processo' criada com sucesso!
+Tarefa 'Governança - Definições TO BE' criada com sucesso!
+Tarefa 'Processos de Atendimento - Mapeamento AS IS (CX e CS)' criada com sucesso!
+Tarefa 'Governança - Mapeamento AS IS' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Visão geral em alto nível (CS)' criada com sucesso!
+Tarefa 'Realizar a Reunião Success Plan com o Cliente' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Integrações e Dados' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Configurações: Configurar os padrões da conta na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'SDR - Documentação POP' criada com sucesso!
+Tarefa 'Compromissos - Documentação do Processo de Nutrição de WhatsApp' criada com sucesso!
+Tarefa 'Lifecycle - Revisar Arquitetura e regras de Negócios' criada com sucesso!
+Tarefa 'Compromissos - Automatizar Higienização de Objetos Duplicados' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'SDR - Mapeamento de entrada de Leads' criada com sucesso!
+Tarefa 'SDR - Implementar processo de entrada de Leads' criada com sucesso!
+Tarefa 'Validação do mapeamento de propriedades' criada com sucesso!
+Tarefa 'Suporte para a Correção da integração do Salesforce com o Hubspot' criada com sucesso!
+Tarefa 'Integração - Mapear todos os campos utilizados no Salesforce e realizar de/para com propriedades HubSpot' criada com sucesso!
+Tarefa 'Execução de análises e correções de QA' criada com sucesso!
+Tarefa 'Soltar invites treinamentos' criada com sucesso!
+Tarefa 'Go Live Pipe Inscrição Matrícula' criada com sucesso!
+Tarefa 'Revisão e ajustes equipes e permissionamentos' criada com sucesso!
+Tarefa 'Revisão e ajustes equipes e permissionamentos' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Criação material treinamento pipe inscrição matrícula (pop + ppt)' criada com sucesso!
+Tarefa 'Dry run com cliente pipe IM' criada com sucesso!
+Tarefa 'Conexão canais inbox comercial ' criada com sucesso!
+Tarefa 'Apoio em alinhamento MKT e DTI sobre CPF de Lead' criada com sucesso!
+Tarefa 'Deploy para produção integração pipe IM' criada com sucesso!
+Tarefa 'Testes Pipe IM em sandbox e ajustes' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões, revisões e construção do roadmap' criada com sucesso!
+Tarefa 'Definição período de daily para soltar invite' criada com sucesso!
+Tarefa 'Suporte geral & Sustentação: bug/melhorias' criada com sucesso!
+Tarefa 'Validação de cadência de comunicação PV e IM' criada com sucesso!
+Tarefa 'Plano migração deals do pipe IM antigo do intake atual' criada com sucesso!
+Tarefa 'Plano deploy do novo formulario simplifica' criada com sucesso!
+Tarefa 'Criação material treinamento PV (POP + PPT apresentação)' criada com sucesso!
+Tarefa 'Dry run com cliente e ajustes PV' criada com sucesso!
+Tarefa 'Contrução de copys de emails e comunicações Régua PV e IM' criada com sucesso!
+Tarefa 'Organizar formulários (criar, alterar e excluir)' criada com sucesso!
+Tarefa 'Retroaliementação do SGA pelo Hubspot' criada com sucesso!
+Tarefa 'Go Live Pipe Expansão Polos' criada com sucesso!
+Tarefa 'Criar LP Captação Leads e LP Eventos e arquivar em pasta correta' criada com sucesso!
+Tarefa 'Criar LP para captação polo' criada com sucesso!
+Tarefa 'Ajuste dos relatórios do painel NX04. Comercial - 01. Gestão' criada com sucesso!
+Tarefa 'Adicionar o histórico de itens de linha no Objeto Empresa' criada com sucesso!
+Tarefa 'Redefinição das regras de criação e conclusão de tarefas e ajustes/criação dos fluxos' criada com sucesso!
+Tarefa 'Telefonia - Aquisição e Configuração dos números +55 no Hubspot' criada com sucesso!
+Tarefa 'Envio de Copy dos E-mails | Clientes Sem Cotação > 30 dias E Se os Pedidos entregues chegaram corretamente.' criada com sucesso!
+Tarefa 'Definição de Tarefas de Perfil de Negócio' criada com sucesso!
+Tarefa 'WhatsApp e Telefonia - Escolha da Ferramenta complementar ao Hubspot' criada com sucesso!
+Tarefa 'Criar dashboard de QA para Contato, Empresa e Negócio' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Criar dashboard de acompanhamento das tarefas de relacionamento' criada com sucesso!
+Tarefa 'Mapeamento dos painéis e relatórios para higienização' criada com sucesso!
+Tarefa 'Higienização - Realizar ações de higienização' criada com sucesso!
+Tarefa 'Higienização - Validação do Plano de Higienização' criada com sucesso!
+Tarefa 'Handoff - Documentação Técnica dos processo do Service Hub - Apontamentos MS/TS' criada com sucesso!
+Tarefa 'Handoff - Documentação Técnica dos processo do Service Hub - Onboarding TS' criada com sucesso!
+Tarefa 'Handoff - Documentação Técnica dos processo do Service Hub - Implantação MS' criada com sucesso!
+Tarefa 'Handoff - Documentações Técnicas dos Desenvolvimentos do Service Hub' criada com sucesso!
+Tarefa 'Revisão dos dados Growth Formula - Solicitações do cliente' criada com sucesso!
+Tarefa 'Remapeamento dos canais de entrada dos leads' criada com sucesso!
+Tarefa 'Revisão da Modelagem de objetos (Lead Nativo)' criada com sucesso!
+Tarefa 'Dados - Correção dos dados legados Hubs x BD (02)' criada com sucesso!
+Tarefa 'Treinamento de confecção de Dashboards' criada com sucesso!
+Tarefa '[Solicitação] Desenvolvimento - Revisão completa da automação de cadência de tarefas' criada com sucesso!
+Tarefa '[Sustentação] Office Hours - BluePay' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa '[Issue] Negócios não associados à empresas (Mas associados à Leads)' criada com sucesso!
+Tarefa '[Manutenção] Correção dos times de pré-vendas e vendas em Governança' criada com sucesso!
+Tarefa '[Issue] Verificar acesso do Rodrigo Goes - Não move negócios e não visualiza tarefas' criada com sucesso!
+Tarefa '[Solicitação] Atualização da barra lateral esquerda para registros' criada com sucesso!
+Tarefa '[Desenvolvimento] Organizar as permissões de acessos às listas para o time de Marketing' criada com sucesso!
+Tarefa '[Desenvolvimento] Desenho TO BE e desenvolvimento do processo de aprovação de campanhas marketing' criada com sucesso!
+Tarefa 'Desenvolver as automações de regras para Marketing e Non Marketing Contact' criada com sucesso!
+Tarefa 'Configurar a visualização da barra lateral esquerda para o time de Marketing' criada com sucesso!
+Tarefa '[Solicitação] Criar automação de envio de notificação interna para passagem de fase - Aprovação de assinatura' criada com sucesso!
+Tarefa '[Solicitação] Criar automação de envio de notificação interna para passagem de fase - Análise de Solicitação' criada com sucesso!
+Tarefa 'War Room - Correção de erros identificados no Dry-Run' criada com sucesso!
+Tarefa 'Criar o novo formulário do CEPEL' criada com sucesso!
+Tarefa 'MBR Dezembro (Performance Novembro)' criada com sucesso!
+Tarefa 'Realizar Treinamento básico do HubSpot' criada com sucesso!
+Tarefa 'Realizar o Dry-Run com o cliente' criada com sucesso!
+Tarefa 'Realizar o Dry-Run Interno' criada com sucesso!
+Tarefa '[Solicitação] Ajustar a geração automática de um número (ID) para o orçamento - respeitando os prefixos e sufixos' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Reunião alinhamento CS' criada com sucesso!
+Tarefa 'Reunião de dúvidas sobre Dashboard' criada com sucesso!
+Tarefa 'Reunião 5' criada com sucesso!
+Tarefa 'Go-live do processo de atendimento' criada com sucesso!
+Tarefa 'Análise e Revisão do fluxo de trabalho de entrada do formulário' criada com sucesso!
+Tarefa '[Solicitação] Treinamento - Overview HubSpot' criada com sucesso!
+Tarefa '[Solicitação] Refatorar a propriedade "Originador do Negócio"' criada com sucesso!
+Tarefa 'Analisar e mapear as métricas presentes na conta do cliente e documentar quais precisam ser excluídas, refatoradas e novas métricas que precisam ser adicionadas' criada com sucesso!
+Tarefa 'Realizar um discovery interno e externo sobre as métricas necessárias para a conta do cliente' criada com sucesso!
+Tarefa 'MBR Dezembro (Desempenho Novembro)' criada com sucesso!
+Tarefa 'Mapear usuários inativos ou não que devem ser removidos, validar o mapeamento com o cliente e executar a higienização' criada com sucesso!
+Tarefa 'Mapeamento de formulários não HubSpot' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Falha ao criar a tarefa 'Desenvolver workflows de criação de registros de Cliente': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Criar objetos customizados: Pagamentos, Portfolio e Cliente' criada com sucesso!
+Tarefa 'Criação das propriedades de Profilling em todos os objetos' criada com sucesso!
+Falha ao criar a tarefa 'Suporte a integração': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Desenvolver as automações para registro de métricas e datas em Negócio (uma pra cada estágio do pipeline de Revenue Acquisition)' criada com sucesso!
+Tarefa 'Atualizar as automações de Efficiency rate que definem as taxas igual a "não"' criada com sucesso!
+Tarefa 'Atualizar as automações de Lifecycle' criada com sucesso!
+Tarefa 'Atualizar as automações de Lead status' criada com sucesso!
+Tarefa 'Validar  e configurar pipelines dos objetos necessários' criada com sucesso!
+Tarefa 'Configurar a visualização da barra lateral esquerda para os objetos necessários' criada com sucesso!
+Tarefa 'Configurar o objeto Negócio' criada com sucesso!
+Tarefa 'Desenvolver as automações de Source Remap' criada com sucesso!
+Tarefa 'Desenvolver as automações de distribuição de registros de Tickets nos diferentes níveis' criada com sucesso!
+Tarefa 'Desenvolver as automações para envio do CSAT de Support' criada com sucesso!
+Tarefa 'Desenvolver as automações para registro de métricas e datas em Ticket (uma pra cada estágio dos pipelines de Support)' criada com sucesso!
+Tarefa 'Criar e configurar pipeline Support L1 e Support L2' criada com sucesso!
+Tarefa 'Configurar o objeto Ticket' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Suporte e SLA' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Propriedades de Profilling & Copy Property' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Lifecycle' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de governança da conta' criada com sucesso!
+Tarefa 'Gravar vídeo demonstrando processo de handover' criada com sucesso!
+Tarefa 'Treinamento comercial 4' criada com sucesso!
+Tarefa 'Reunião de trabalho: Playbook' criada com sucesso!
+Tarefa 'Gravar vídeo sobre mkt contact e disparo de e-mails' criada com sucesso!
+Falha ao criar a tarefa 'Desenvolver e refatorar propriedades': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Desenvolver reports + vídeo' criada com sucesso!
+Tarefa 'Alterar tipo de propriedade CNPJ' criada com sucesso!
+Tarefa 'Desenvolver workflow de notificação a partir do chatbot' criada com sucesso!
+Tarefa 'Desenvolver visualização de propriedades de fonte' criada com sucesso!
+Tarefa 'Treinamento: Dashboards' criada com sucesso!
+Tarefa 'Reunião de dúvidas' criada com sucesso!
+Tarefa 'Treinamento comercial 3' criada com sucesso!
+Tarefa 'Go-live comercial' criada com sucesso!
+Tarefa 'Treinamento comercial 2' criada com sucesso!
+Tarefa 'Desenvolver modelos e workflow de cadência' criada com sucesso!
+Tarefa 'Desenvolver notificação no Slack' criada com sucesso!
+Tarefa 'Ativar a opção "Substitua se o contato tiver um proprietário" nas ações de round robin' criada com sucesso!
+Tarefa 'Finalizar ajustes processo de atendimento' criada com sucesso!
+Tarefa 'Treinamento comercial' criada com sucesso!
+Tarefa 'Go-live comercial' criada com sucesso!
+Tarefa 'Desenvolver processo de notificação para vendedores' criada com sucesso!
+Tarefa 'Alterar rotação de Pré-vendas e Vendas a partir de critérios' criada com sucesso!
+Tarefa 'Treinamento: Comercial' criada com sucesso!
+Tarefa 'Adicionar canais de entrada nos workflows' criada com sucesso!
+Tarefa 'Demo do processo comercial' criada com sucesso!
+Tarefa 'Desenvolver Dash de Marketing' criada com sucesso!
+Tarefa 'Reunião e desenvolvimento de propriedade recent conversion history' criada com sucesso!
+Tarefa 'Desenvolver workflow de task para No-Show' criada com sucesso!
+Falha ao criar a tarefa 'Reunião de trabalho: Cadências': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Alterar gatilho de abertura de lead e envio de e-mail + vídeo' criada com sucesso!
+Tarefa 'Treinamento: Dashboards' criada com sucesso!
+Tarefa 'Gravar vídeo sobre propriedades obrigatórias' criada com sucesso!
+Tarefa 'Desenvolver fluxo de boas vindas' criada com sucesso!
+Falha ao criar a tarefa 'Construir automação de criação de tasks': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Desenvolver dash de Vendas' criada com sucesso!
+Tarefa 'Investigar interações com Ads' criada com sucesso!
+Tarefa 'Import da base' criada com sucesso!
+Tarefa 'Finalizar a customização do processo' criada com sucesso!
+Tarefa 'Go-live comercial' criada com sucesso!
+Tarefa 'Treinamento comercial' criada com sucesso!
+Tarefa 'Automações: Métricas e Datas' criada com sucesso!
+Tarefa 'Atualizar customização do processo' criada com sucesso!
+Tarefa 'Finalizar customização do processo' criada com sucesso!
+Tarefa 'Automações: Métricas e Datas' criada com sucesso!
+Tarefa 'Automações: Lifecycle' criada com sucesso!
+Tarefa 'Criar propriedades e adicioná-las aos wfs de copia/criação de registros' criada com sucesso!
+Tarefa 'Ferramentas: Conteúdo' criada com sucesso!
+Tarefa 'Ferramentas: Marketing' criada com sucesso!
+Tarefa 'Ferramentas: Caixa de entrada' criada com sucesso!
+Tarefa 'Ferramentas: Reuniões e Chamadas' criada com sucesso!
+Tarefa 'Gerenciamento de dados: Objetos' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Privacidade e Consentimento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Código de rastreamento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Integrações & Marketplace' criada com sucesso!
+Tarefa 'Gerenciamento da conta: usuários e equipes' criada com sucesso!
+Tarefa 'Gerenciamento da conta: padrões da conta' criada com sucesso!
+Tarefa 'Suas preferências: Geral e Notificações' criada com sucesso!
+Tarefa 'Pipelines e automações de handover' criada com sucesso!
+Tarefa 'Realizar configuração (Nexbot) e mapeamento dos workflows' criada com sucesso!
+Tarefa 'Automações: Criação de task' criada com sucesso!
+Tarefa 'Automações: Métricas e Datas' criada com sucesso!
+Tarefa 'Automações: Marketing status' criada com sucesso!
+Tarefa 'Automações: Lead status' criada com sucesso!
+Tarefa 'Automações: Lifecycle' criada com sucesso!
+Tarefa 'Automações: Datas de reunião' criada com sucesso!
+Tarefa 'Automações acessórias' criada com sucesso!
+Tarefa 'CRM: Listas' criada com sucesso!
+Tarefa 'RT: Landing Pages e Formulários' criada com sucesso!
+Tarefa 'RT: E-mails (Vendas e Marketing)' criada com sucesso!
+Tarefa 'Demo: processo geral' criada com sucesso!
+Tarefa 'Reunião de dúvidas: Suporte' criada com sucesso!
+Tarefa 'Demo: processo geral' criada com sucesso!
+Tarefa 'Ferramentas: Conteúdo' criada com sucesso!
+Tarefa 'Ferramentas: Marketing' criada com sucesso!
+Tarefa 'Ferramentas: Caixa de entrada' criada com sucesso!
+Tarefa 'Ferramentas: Reuniões e Chamadas' criada com sucesso!
+Tarefa 'Gerenciamento de dados: Objetos' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Privacidade e Consentimento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Código de rastreamento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Integrações & Marketplace' criada com sucesso!
+Tarefa 'Gerenciamento da conta: usuários e equipes' criada com sucesso!
+Tarefa 'Gerenciamento da conta: padrões da conta' criada com sucesso!
+Tarefa 'Suas preferências: Geral e Notificações' criada com sucesso!
+Tarefa 'Realizar a Reunião Success Plan com o Cliente' criada com sucesso!
+Tarefa 'Realizar a Reunião de Passagem de Bastão com o Comercial' criada com sucesso!
+Tarefa '[Solicitação] Atualizar tarefas de cobertura de base para nova regra de negócio' criada com sucesso!
+Tarefa 'Criar TAG no objeto Tícket com o nome "Atendimento Repassado"' criada com sucesso!
+Tarefa '[Solicitação] Geração de um workflow de tarefas para aquisição' criada com sucesso!
+Tarefa '[Manutenção] Alterações em automações de record owner de aquisição e tarefas de cobertura de base' criada com sucesso!
+Tarefa '[Manutenção] Mellhorias - Workflows de Cobertura de Base' criada com sucesso!
+Tarefa '[Sustentação] Office Hours - Mesa Agro' criada com sucesso!
+Tarefa '[Solicitação] Auxilio em gráficos de tarefas / Limpeza de tarefas' criada com sucesso!
+Tarefa '[Manutenção] Adicionar heads de negócio como opções para cross-sell em cobertura de base' criada com sucesso!
+Tarefa '[Manutenção] Realizar a higienização dos relatórios' criada com sucesso!
+Tarefa '[Gerenciamento] Realizar uma análise da Growth Fórmula do processo completo - Hunters até Cobertura de Base' criada com sucesso!
+Tarefa '[Manutenção] Desenvolver bloqueio para o limite de associações de EMAIL por COMPANY' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'MBR - Dezembro (Desempenho Novembro)' criada com sucesso!
+Tarefa '[Manutenção] Correção - Processos antigos que interferem em tarefas e atividades para negócios (Agro)' criada com sucesso!
+Tarefa '[Manutenção] Análise - Processos antigos que interferem em tarefas e atividades para negócios (Cobertura de Base - Agro & Assessoria)' criada com sucesso!
+Tarefa '[Desenvolvimento] Revisão e adição de reports de tempo nos dashboards de mesa agro (Agro)' criada com sucesso!
+Tarefa '[Analise] Workflow para envio do WhatsApp' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint AS IS: Definições de relacionamento entre objetos' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Integrações e Dados' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Visão geral em alto nível' criada com sucesso!
+Tarefa 'Desenvolver as automações de distribuição de registros de Negócios, Contatos e Empresas' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de distribuição de registros de Negócios, Empresas e Contato' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: Marketing' criada com sucesso!
+Tarefa 'Configurar o padrão de pastas e listas da Nexforce' criada com sucesso!
+Tarefa 'Configurações: Configurar Privacidade e consentimento na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar Marketplaces na guia Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar Integrações na guia Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar Conteúdos na guia de Ferramentas' criada com sucesso!
+Tarefa 'Configurações: Configurar o objeto Atividades na guia de Gerenciamento de dados' criada com sucesso!
+Tarefa 'Configurações: Configurar Marketing na guia de Ferramentas' criada com sucesso!
+Tarefa 'Configurações: Criar Sandbox na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar Rastreamento e análises na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Configurações: Configurar os padrões da conta na guia de Configuração geral do sistema' criada com sucesso!
+Tarefa 'Entregar os dados necessários para configuração geral da conta' criada com sucesso!
+Falha ao criar a tarefa 'Preparar e Importar Base W1 Business + doc pro cliente)': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa 'Integração Planilha proprietário': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Validação de preenchiemento de UTM's e Alimentação de informação na planilha Externa' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Ajustar workflow recycle pra W1 Business (negocio)' criada com sucesso!
+Tarefa 'Treinar usuários chave W1 Business' criada com sucesso!
+Tarefa 'Realizar testes completos do processo de W1 Business com os usuários chave da área' criada com sucesso!
+Tarefa 'Realizar testes internos do processo de W1 Business' criada com sucesso!
+Tarefa 'Desenvolver as automações de distribuição de registros' criada com sucesso!
+Tarefa 'Desenvolver as automações para registro de métricas e datas em Lead (uma pra cada stage do pipeline)' criada com sucesso!
+Tarefa 'Desenvolver as automações de Efficiency rate que definem as taxas igual a "não"' criada com sucesso!
+Tarefa 'Desenvolver as automações de Lifecycle' criada com sucesso!
+Tarefa 'Desenvolver as automações de Lead status' criada com sucesso!
+Tarefa 'Criar e configurar pipeline Prospection' criada com sucesso!
+Tarefa 'Configurar valores de lifecycle nos objetos' criada com sucesso!
+Tarefa 'Configurar o objeto Empresa' criada com sucesso!
+Tarefa 'Configurar o objeto Contato' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Critérios de setting Métricas' criada com sucesso!
+Tarefa 'Criação de propriedades de profilling por etapa e Copy Property' criada com sucesso!
+Tarefa 'Reestruturar pipeline e playbooks' criada com sucesso!
+Tarefa 'Treinamento Operacional - Expansão' criada com sucesso!
+Tarefa '[Onboarding] Migrar times, permissões e ajustar os dashboards e workflows que utilizam os times e usuários' criada com sucesso!
+Tarefa '[Onboarding] Blueprint TO BE: Definições de governança' criada com sucesso!
+Tarefa '[Onboarding] Configurar SideBar de Ticket' criada com sucesso!
+Falha ao criar a tarefa 'Suporte a criação Pipe Intellisign': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa 'Suporte e apoios a Soluti': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Mapeamento Propriedades Existentes - VDI [Ticket]' criada com sucesso!
+Falha ao criar a tarefa 'Revisar Obrigatoriedade - Item de linha e/ou Tabela de Preço': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa 'Treinamento Inicial Hubspot VDI': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Instruções, Treinamento, Ajustes & Desenvolvimento - Processos B2B' criada com sucesso!
+Tarefa 'Criar a base de importação VDI' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Office hours VDI' criada com sucesso!
+Tarefa 'Bugs no processo pós go live - VDI' criada com sucesso!
+Tarefa 'Migração dados VDI' criada com sucesso!
+Tarefa 'Governança VDI - Migrar times, permissões e ajustar os dashboards e workflows que utilizam os times e usuários' criada com sucesso!
+Tarefa 'Bugs no processo pré go live do VDI' criada com sucesso!
+Tarefa 'Dry run com usuários chaves do cliente | VDI' criada com sucesso!
+Tarefa 'Dry run interno processo | VDI' criada com sucesso!
+Tarefa 'Analise de qualidade do processo  | VDI' criada com sucesso!
+Tarefa 'Treinamento Time VDI' criada com sucesso!
+Tarefa 'Go Live VDI' criada com sucesso!
+Tarefa '[Retenção] Desenvolver as automações de Lifecycle' criada com sucesso!
+Tarefa 'Migrar base retroativa B2C Pos win' criada com sucesso!
+Tarefa 'Documentação Offboarding' criada com sucesso!
+Tarefa 'Dashboard Pos Win B2C - Indicadores da integração' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Tarefa 'Realizar configuração (Nexbot) e mapeamento dos workflows' criada com sucesso!
+Tarefa 'Ferramentas: Conteúdo' criada com sucesso!
+Tarefa 'Ferramentas: Marketing' criada com sucesso!
+Tarefa 'Ferramentas: Caixa de entrada' criada com sucesso!
+Tarefa 'Ferramentas: Reuniões e Chamadas' criada com sucesso!
+Tarefa 'Gerenciamento de dados: Objetos' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Privacidade e Consentimento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Código de rastreamento' criada com sucesso!
+Tarefa 'Gerenciamento da conta: Integrações & Marketplace' criada com sucesso!
+Tarefa 'Gerenciamento da conta: usuários e equipes' criada com sucesso!
+Tarefa 'Gerenciamento da conta: padrões da conta' criada com sucesso!
+Tarefa 'Realizar a Reunião Success Plan com o Cliente' criada com sucesso!
+Tarefa 'Realizar a Reunião de Passagem de Bastão com o Comercial' criada com sucesso!
+Tarefa 'Criar bloqueado para abertura de Lead' criada com sucesso!
+Tarefa 'Gravar vídeo sobre o processo' criada com sucesso!
+Tarefa 'Alterar processo de retenção (Drive)' criada com sucesso!
+Tarefa 'Adaptar processo de responsável' criada com sucesso!
+Tarefa 'Reunião de trabalho: Dúvidas sobre o processo 2' criada com sucesso!
+Tarefa 'Go-live comercial' criada com sucesso!
+Falha ao criar a tarefa 'Desenvolver workflow de recycle pra Expertise': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Workflow de criação de ticket pra RI - Plataforma (Proprietário e Incorporador)' criada com sucesso!
+Tarefa 'TO BE Plataforma (RI) - Pipes, Etapas' criada com sucesso!
+Tarefa 'Criar pipelines ticket pra RI - Plataforma' criada com sucesso!
+Falha ao criar a tarefa 'Workflow de criação de Negocio AppSpace': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Falha ao criar a tarefa 'Criar as propriedades AppSpace': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Importar a base e documentar pro cliente - HVendas' criada com sucesso!
+Tarefa 'Importar a base de registros e documentar pro cliente - Plataforma' criada com sucesso!
+Falha ao criar a tarefa 'Importar os dados e enviar documentação cliente - Expertise': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Tratar a base de importação de registros Expertise' criada com sucesso!
+Tarefa 'Cerimônias do Sprint, reuniões e construção do roadmap' criada com sucesso!
+Falha ao criar a tarefa 'Treinamento Gestão HVENDAS': 400 - {"err":"Priority invalid","ECODE":"INPUT_007"}
+Tarefa 'Bugs identificados no pós-go-live de HVendas' criada com sucesso!
+Tarefa 'Agendar reuniões de acompanhamento diário de 30 min durante 2 semanas' criada com sucesso!
+Tarefa '[Sustentação]Bugs identificados no pós-go-live de Plataforma' criada com sucesso!
+Tarefa 'Agendar reuniões de acompanhamento diário de 30 min durante 2 semanas Plataforma' criada com sucesso!
+Tarefa 'AppSpace- Desenvolver workflows de recycle' criada com sucesso!
+Tarefa 'Bugs identificados no pré-go-live de AppSpace' criada com sucesso!
+Tarefa 'Criar plano de ação para realizar o go-live - Housi App Space' criada com sucesso!
+Tarefa 'Realizar testes completos do processo de AppSpace com os usuários chave da área' criada com sucesso!
+Tarefa 'Realizar testes internos do processo de AppSpace de ponta a ponta' criada com sucesso!
+Tarefa 'Desenvolver as automações de taxas e datas pra AppSpace' criada com sucesso!
+Tarefa 'Desenvolver as automações de Lifecycle - AppSpace' criada com sucesso!
+Tarefa 'Configurar a visualização da barra lateral esquerda para o time AppSpace' criada com sucesso!
+Tarefa 'Criar e configurar pipeline Prospection' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de BPMN (Objetos, Pipes e Etapas) AppSpace' criada com sucesso!
+Tarefa 'Desenvolver o Blueprint TO BE: Definições de Propriedades de Profilling e Copy Property AppSpace' criada com sucesso!
+Tarefa 'Documentar o processo AS IS: AppSpace' criada com sucesso!
+Tarefa 'Analise de qualidade do processo Expertise' criada com sucesso!
+Tarefa 'Garantir que todos os usuários tem acesso a conta' criada com sucesso!
+Tarefa 'Bugs identificados no pós-go-live de Expertise' criada com sucesso!
+Tarefa 'Agendar reuniões de acompanhamento diário de 30 min durante 2 semanas' criada com sucesso!
+Tarefa 'Treinar usuários chave e lideres sobre o processo de Expertise' criada com sucesso!
+Tarefa 'Bugs identificados no pré-go-live de Expertise' criada com sucesso!
+Tarefa 'Criar plano de ação para realizar o go-live' criada com sucesso!
+Tarefa 'Realizar testes completos do processo de Expertise com os usuários chave da área' criada com sucesso!
+Tarefa 'Realizar testes internos do processo de Expertise de ponta a ponta' criada com sucesso!
+Tarefa 'Desenvolver as automações para taxas e datas Expertise' criada com sucesso!
+Tarefa 'Desenvolver as automações de Lifecycle' criada com sucesso!
+Tarefa 'Gravar vídeo sobre os processos desenvolvidos' criada com sucesso!
+Todas as etapas concluídas em 824.53 segundos.
+Execução finalizada, desligando a instância...
+Traceback (most recent call last):
+  File "/home/ricardo_semerene/etl_prod/main.py", line 10, in <module>
+    from data_extraction.tasks_extraction import extract_tasks_data
+  File "/home/ricardo_semerene/etl_prod/data_extraction/tasks_extraction.py", line 31
+    sprints = [
+               ^
+IndentationError: unindent does not match any outer indentation level
+INFO:data_extraction.tasks_extraction:O sprint atual é: None
+Fetching tasks:   0%|          | 0/104 [00:00<?, ?it/s]Fetching tasks:  33%|███▎      | 34/104 [00:00<00:00, 84.77it/s]Fetching tasks:  41%|████▏     | 43/104 [00:07<00:13,  4.38it/s]Fetching tasks:  45%|████▌     | 47/104 [00:12<00:20,  2.72it/s]Fetching tasks:  47%|████▋     | 49/104 [00:14<00:23,  2.29it/s]Fetching tasks:  49%|████▉     | 51/104 [00:15<00:23,  2.27it/s]Fetching tasks:  51%|█████     | 53/104 [00:15<00:20,  2.54it/s]Fetching tasks:  52%|█████▏    | 54/104 [00:15<00:18,  2.65it/s]Fetching tasks:  53%|█████▎    | 55/104 [00:16<00:19,  2.53it/s]Fetching tasks:  54%|█████▍    | 56/104 [00:16<00:17,  2.73it/s]Fetching tasks:  55%|█████▍    | 57/104 [00:17<00:19,  2.40it/s]Fetching tasks:  56%|█████▌    | 58/104 [00:17<00:17,  2.68it/s]Fetching tasks:  57%|█████▋    | 59/104 [00:20<00:46,  1.03s/it]Fetching tasks:  58%|█████▊    | 60/104 [00:20<00:36,  1.21it/s]Fetching tasks:  59%|█████▊    | 61/104 [00:22<00:40,  1.07it/s]Fetching tasks:  61%|██████    | 63/104 [00:22<00:25,  1.60it/s]Fetching tasks:  62%|██████▏   | 64/104 [00:25<00:45,  1.14s/it]Fetching tasks:  62%|██████▎   | 65/104 [00:25<00:35,  1.11it/s]Fetching tasks:  63%|██████▎   | 66/104 [00:26<00:32,  1.16it/s]Fetching tasks:  64%|██████▍   | 67/104 [00:26<00:24,  1.48it/s]Fetching tasks:  66%|██████▋   | 69/104 [00:28<00:26,  1.34it/s]Fetching tasks:  67%|██████▋   | 70/104 [00:28<00:21,  1.57it/s]Fetching tasks:  68%|██████▊   | 71/104 [00:29<00:22,  1.50it/s]Fetching tasks:  69%|██████▉   | 72/104 [00:29<00:17,  1.85it/s]Fetching tasks:  70%|███████   | 73/104 [00:30<00:18,  1.64it/s]Fetching tasks:  71%|███████   | 74/104 [00:30<00:15,  1.93it/s]Fetching tasks:  72%|███████▏  | 75/104 [00:30<00:11,  2.46it/s]Fetching tasks:  73%|███████▎  | 76/104 [00:30<00:09,  2.86it/s]Fetching tasks:  74%|███████▍  | 77/104 [00:32<00:22,  1.21it/s]Fetching tasks:  75%|███████▌  | 78/104 [00:33<00:17,  1.51it/s]Fetching tasks:  76%|███████▌  | 79/104 [00:35<00:26,  1.06s/it]Fetching tasks:  77%|███████▋  | 80/104 [00:35<00:19,  1.23it/s]Fetching tasks:  78%|███████▊  | 81/104 [00:36<00:22,  1.01it/s]Fetching tasks:  79%|███████▉  | 82/104 [00:37<00:17,  1.25it/s]Fetching tasks:  80%|███████▉  | 83/104 [00:37<00:14,  1.41it/s]Fetching tasks:  81%|████████  | 84/104 [00:37<00:10,  1.84it/s]Fetching tasks:  82%|████████▏ | 85/104 [00:38<00:11,  1.65it/s]Fetching tasks:  83%|████████▎ | 86/104 [00:38<00:09,  1.84it/s]Fetching tasks:  84%|████████▎ | 87/104 [00:39<00:07,  2.23it/s]Fetching tasks:  85%|████████▍ | 88/104 [00:39<00:06,  2.35it/s]Fetching tasks:  87%|████████▋ | 90/104 [00:40<00:06,  2.12it/s]Fetching tasks:  88%|████████▊ | 91/104 [00:40<00:05,  2.43it/s]Fetching tasks:  88%|████████▊ | 92/104 [00:41<00:05,  2.03it/s]Fetching tasks:  89%|████████▉ | 93/104 [00:42<00:05,  1.86it/s]Fetching tasks:  90%|█████████ | 94/104 [00:42<00:04,  2.30it/s]Fetching tasks:  91%|█████████▏| 95/104 [00:42<00:03,  2.60it/s]Fetching tasks:  92%|█████████▏| 96/104 [00:42<00:02,  2.91it/s]Fetching tasks:  93%|█████████▎| 97/104 [00:43<00:02,  2.81it/s]Fetching tasks:  94%|█████████▍| 98/104 [00:43<00:01,  3.36it/s]Fetching tasks:  95%|█████████▌| 99/104 [00:44<00:03,  1.57it/s]Fetching tasks:  96%|█████████▌| 100/104 [00:45<00:02,  1.42it/s]Fetching tasks:  97%|█████████▋| 101/104 [00:47<00:02,  1.10it/s]Fetching tasks:  98%|█████████▊| 102/104 [00:48<00:01,  1.01it/s]Fetching tasks:  99%|█████████▉| 103/104 [00:48<00:00,  1.12it/s]Fetching tasks: 100%|██████████| 104/104 [00:51<00:00,  1.34s/it]Fetching tasks: 100%|██████████| 104/104 [00:51<00:00,  2.03it/s]
+INFO:data_extraction.tasks_extraction:Tarefas obtidas com sucesso!
+Traceback (most recent call last):
+  File "/home/ricardo_semerene/etl_prod/main.py", line 184, in <module>
+    main()
+  File "/home/ricardo_semerene/etl_prod/main.py", line 109, in main
+    tasks_req = extract_tasks_data()  
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/data_extraction/tasks_extraction.py", line 177, in extract_tasks_data
+    df_task['contains_target'] = df_task.apply(row_contains_target, axis=1, target=target_name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/frame.py", line 10374, in apply
+    return op.apply().__finalize__(self, method="apply")
+           ^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/apply.py", line 916, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/apply.py", line 1063, in apply_standard
+    results, res_index = self.apply_series_generator()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/apply.py", line 1081, in apply_series_generator
+    results[i] = self.func(v, *self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/data_extraction/tasks_extraction.py", line 175, in row_contains_target
+    return any(row.astype(str).str.contains(target))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/strings/accessor.py", line 137, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/strings/accessor.py", line 1327, in contains
+    if regex and re.compile(pat).groups:
+                 ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/re/__init__.py", line 227, in compile
+    return _compile(pattern, flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/re/__init__.py", line 286, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+INFO:data_extraction.tasks_extraction:O sprint atual é: Sprint 1 - 2025
+Fetching tasks:   0%|          | 0/104 [00:00<?, ?it/s]Fetching tasks:  32%|███▏      | 33/104 [00:02<00:04, 15.32it/s]Fetching tasks:  34%|███▎      | 35/104 [00:02<00:05, 12.78it/s]Fetching tasks:  35%|███▍      | 36/104 [00:03<00:07,  9.15it/s]Fetching tasks:  36%|███▌      | 37/104 [00:03<00:10,  6.61it/s]Fetching tasks:  37%|███▋      | 38/104 [00:04<00:11,  5.57it/s]Fetching tasks:  38%|███▊      | 39/104 [00:05<00:16,  3.84it/s]Fetching tasks:  39%|███▉      | 41/104 [00:06<00:23,  2.69it/s]Fetching tasks:  40%|████      | 42/104 [00:06<00:21,  2.84it/s]Fetching tasks:  41%|████▏     | 43/104 [00:07<00:23,  2.64it/s]Fetching tasks:  42%|████▏     | 44/104 [00:07<00:20,  3.00it/s]Fetching tasks:  43%|████▎     | 45/104 [00:07<00:20,  2.92it/s]Fetching tasks:  44%|████▍     | 46/104 [00:08<00:25,  2.23it/s]Fetching tasks:  45%|████▌     | 47/104 [00:12<01:14,  1.31s/it]Fetching tasks:  46%|████▌     | 48/104 [00:12<00:57,  1.03s/it]Fetching tasks:  48%|████▊     | 50/104 [00:13<00:34,  1.58it/s]Fetching tasks:  49%|████▉     | 51/104 [00:13<00:32,  1.61it/s]Fetching tasks:  50%|█████     | 52/104 [00:13<00:27,  1.91it/s]Fetching tasks:  51%|█████     | 53/104 [00:14<00:24,  2.04it/s]Fetching tasks:  52%|█████▏    | 54/104 [00:14<00:20,  2.41it/s]Fetching tasks:  53%|█████▎    | 55/104 [00:15<00:26,  1.87it/s]Fetching tasks:  54%|█████▍    | 56/104 [00:15<00:22,  2.14it/s]Fetching tasks:  55%|█████▍    | 57/104 [00:15<00:18,  2.48it/s]Fetching tasks:  56%|█████▌    | 58/104 [00:16<00:16,  2.80it/s]Fetching tasks:  58%|█████▊    | 60/104 [00:16<00:11,  3.92it/s]Fetching tasks:  59%|█████▊    | 61/104 [00:21<01:04,  1.49s/it]Fetching tasks:  61%|██████    | 63/104 [00:21<00:38,  1.07it/s]Fetching tasks:  62%|██████▏   | 64/104 [00:22<00:36,  1.09it/s]Fetching tasks:  62%|██████▎   | 65/104 [00:23<00:29,  1.34it/s]Fetching tasks:  63%|██████▎   | 66/104 [00:24<00:32,  1.16it/s]Fetching tasks:  64%|██████▍   | 67/104 [00:24<00:25,  1.42it/s]Fetching tasks:  65%|██████▌   | 68/104 [00:25<00:26,  1.38it/s]Fetching tasks:  66%|██████▋   | 69/104 [00:25<00:24,  1.44it/s]Fetching tasks:  67%|██████▋   | 70/104 [00:26<00:19,  1.73it/s]Fetching tasks:  68%|██████▊   | 71/104 [00:26<00:15,  2.13it/s]Fetching tasks:  69%|██████▉   | 72/104 [00:26<00:13,  2.36it/s]Fetching tasks:  71%|███████   | 74/104 [00:26<00:08,  3.35it/s]Fetching tasks:  72%|███████▏  | 75/104 [00:27<00:09,  3.10it/s]Fetching tasks:  73%|███████▎  | 76/104 [00:27<00:08,  3.41it/s]Fetching tasks:  74%|███████▍  | 77/104 [00:27<00:08,  3.22it/s]Fetching tasks:  75%|███████▌  | 78/104 [00:29<00:16,  1.62it/s]Fetching tasks:  76%|███████▌  | 79/104 [00:33<00:41,  1.67s/it]Fetching tasks:  77%|███████▋  | 80/104 [00:33<00:30,  1.26s/it]Fetching tasks:  78%|███████▊  | 81/104 [00:34<00:24,  1.08s/it]Fetching tasks:  79%|███████▉  | 82/104 [00:34<00:19,  1.14it/s]Fetching tasks:  80%|███████▉  | 83/104 [00:35<00:18,  1.16it/s]Fetching tasks:  82%|████████▏ | 85/104 [00:35<00:09,  2.04it/s]Fetching tasks:  83%|████████▎ | 86/104 [00:36<00:10,  1.65it/s]Fetching tasks:  85%|████████▍ | 88/104 [00:37<00:06,  2.45it/s]Fetching tasks:  86%|████████▌ | 89/104 [00:37<00:07,  2.10it/s]Fetching tasks:  87%|████████▋ | 90/104 [00:38<00:07,  1.77it/s]Fetching tasks:  88%|████████▊ | 91/104 [00:39<00:06,  1.88it/s]Fetching tasks:  88%|████████▊ | 92/104 [00:39<00:05,  2.08it/s]Fetching tasks:  89%|████████▉ | 93/104 [00:40<00:05,  1.93it/s]Fetching tasks:  91%|█████████▏| 95/104 [00:40<00:03,  2.76it/s]Fetching tasks:  92%|█████████▏| 96/104 [00:40<00:03,  2.55it/s]Fetching tasks:  93%|█████████▎| 97/104 [00:41<00:02,  2.98it/s]Fetching tasks:  94%|█████████▍| 98/104 [00:41<00:01,  3.19it/s]Fetching tasks:  96%|█████████▌| 100/104 [00:41<00:00,  4.94it/s]Fetching tasks:  97%|█████████▋| 101/104 [00:42<00:01,  2.07it/s]Fetching tasks:  98%|█████████▊| 102/104 [00:45<00:02,  1.04s/it]Fetching tasks:  99%|█████████▉| 103/104 [00:47<00:01,  1.41s/it]Fetching tasks: 100%|██████████| 104/104 [00:48<00:00,  1.25s/it]Fetching tasks: 100%|██████████| 104/104 [00:48<00:00,  2.13it/s]
+INFO:data_extraction.tasks_extraction:Tarefas obtidas com sucesso!
+Etapa 1/5 concluída em 144.67 segundos.
+Traceback (most recent call last):
+  File "/home/ricardo_semerene/etl_prod/main.py", line 184, in <module>
+    main()
+  File "/home/ricardo_semerene/etl_prod/main.py", line 120, in main
+    exp_squad = transform_squads_data(squads) 
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/data_transformation/squads_transformation.py", line 21, in transform_squads_data
+    squads['hs_lastmodifieddate'] = pd.to_datetime(squads['hs_lastmodifieddate']).dt.strftime('%d/%m/%Y')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/tools/datetimes.py", line 1067, in to_datetime
+    values = convert_listlike(arg._values, format)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/tools/datetimes.py", line 433, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo_semerene/etl_prod/venv/lib/python3.11/site-packages/pandas/core/tools/datetimes.py", line 467, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "strptime.pyx", line 501, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 451, in pandas._libs.tslibs.strptime.array_strptime
+  File "strptime.pyx", line 583, in pandas._libs.tslibs.strptime._parse_with_format
+ValueError: time data "2025-01-09T11:00:35Z" doesn't match format "%Y-%m-%dT%H:%M:%S.%f%z", at position 46. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+INFO:data_extraction.tasks_extraction:O sprint atual é: Sprint 1 - 2025
+Fetching tasks:   0%|          | 0/108 [00:00<?, ?it/s]Fetching tasks:  32%|███▏      | 35/108 [00:00<00:00, 254.39it/s]Fetching tasks:  44%|████▍     | 48/108 [00:10<00:00, 254.39it/s]Fetching tasks:  45%|████▌     | 49/108 [00:10<00:16,  3.57it/s] Fetching tasks:  46%|████▋     | 50/108 [00:15<00:24,  2.37it/s]Fetching tasks:  56%|█████▋    | 61/108 [00:19<00:18,  2.49it/s]Fetching tasks:  62%|██████▏   | 67/108 [00:25<00:21,  1.88it/s]Fetching tasks:  66%|██████▌   | 71/108 [00:29<00:23,  1.56it/s]Fetching tasks:  69%|██████▊   | 74/108 [00:29<00:18,  1.81it/s]Fetching tasks:  70%|███████   | 76/108 [00:30<00:16,  1.98it/s]Fetching tasks:  72%|███████▏  | 78/108 [00:31<00:15,  1.96it/s]Fetching tasks:  74%|███████▍  | 80/108 [00:31<00:12,  2.27it/s]Fetching tasks:  76%|███████▌  | 82/108 [00:34<00:16,  1.54it/s]Fetching tasks:  77%|███████▋  | 83/108 [00:35<00:17,  1.46it/s]Fetching tasks:  78%|███████▊  | 84/108 [00:36<00:18,  1.28it/s]Fetching tasks:  79%|███████▊  | 85/108 [00:36<00:15,  1.52it/s]Fetching tasks:  80%|███████▉  | 86/108 [00:37<00:15,  1.40it/s]Fetching tasks:  81%|████████  | 87/108 [00:38<00:12,  1.63it/s]Fetching tasks:  81%|████████▏ | 88/108 [00:38<00:12,  1.57it/s]Fetching tasks:  82%|████████▏ | 89/108 [00:39<00:13,  1.45it/s]Fetching tasks:  83%|████████▎ | 90/108 [00:39<00:10,  1.79it/s]Fetching tasks:  84%|████████▍ | 91/108 [00:40<00:07,  2.27it/s]Fetching tasks:  85%|████████▌ | 92/108 [00:40<00:06,  2.56it/s]Fetching tasks:  86%|████████▌ | 93/108 [00:41<00:07,  1.89it/s]Fetching tasks:  87%|████████▋ | 94/108 [00:41<00:07,  1.75it/s]Fetching tasks:  88%|████████▊ | 95/108 [00:43<00:11,  1.15it/s]Fetching tasks:  90%|████████▉ | 97/108 [00:44<00:06,  1.65it/s]Fetching tasks:  91%|█████████ | 98/108 [00:44<00:05,  1.69it/s]Fetching tasks:  92%|█████████▏| 99/108 [00:44<00:04,  2.15it/s]Fetching tasks:  94%|█████████▎| 101/108 [00:45<00:02,  2.91it/s]Fetching tasks:  94%|█████████▍| 102/108 [00:45<00:01,  3.08it/s]Fetching tasks:  95%|█████████▌| 103/108 [00:46<00:02,  1.75it/s]Fetching tasks:  96%|█████████▋| 104/108 [00:47<00:02,  1.78it/s]Fetching tasks:  97%|█████████▋| 105/108 [00:47<00:01,  1.65it/s]Fetching tasks:  98%|█████████▊| 106/108 [00:49<00:01,  1.04it/s]Fetching tasks:  99%|█████████▉| 107/108 [00:50<00:00,  1.20it/s]Fetching tasks: 100%|██████████| 108/108 [00:53<00:00,  1.42s/it]Fetching tasks: 100%|██████████| 108/108 [00:53<00:00,  2.03it/s]
+INFO:data_extraction.tasks_extraction:Tarefas obtidas com sucesso!
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['plan_points'] = pd.to_numeric(service['plan_points'], errors='coerce').fillna(0).round().astype('int64')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:92: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['mrr'] = service['mrr'].astype('float')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:95: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_start_date'] = service['service_start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:96: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_due_date'] = service['service_due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:97: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  service['service_end_date'] = service['service_end_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:118: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['plan_points'] = pd.to_numeric(customer['plan_points'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['monthly_revenue'] = pd.to_numeric(customer['monthly_revenue'], errors='coerce')
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:120: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['start_date'] = customer[['start_date']].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: UserWarning: Parsing dates in %d/%m/%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+/home/ricardo_semerene/etl_prod/data_transformation/customers_transformation.py:121: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  customer['due_date'] = customer['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce'))
+Etapa 1/5 concluída em 157.25 segundos.
+        task_id           task_name  ... date_created date_updated
+0   14220340285    Willian Teodosio  ...   2024-07-23   2025-01-18
+1   14220274509     Leonardo Mendes  ...   2024-07-23   2025-01-18
+2   14220338820        Heitor Saadj  ...   2024-07-23   2025-01-18
+3   14221010233   Gabriel Possomato  ...   2024-07-23   2025-01-18
+4   14221064469  Guilherme Katayose  ...   2024-07-23   2025-01-18
+..          ...                 ...  ...          ...          ...
+67  21274233714       Vinicius Braz  ...   2024-12-17   2025-01-18
+68  21228614976       Mariana Porto  ...   2024-12-17   2025-01-18
+69  21274233721  Leonardo Romanelli  ...   2024-12-17   2025-01-18
+70  22293559364    Marcos Mantovani  ...   2025-01-08   2025-01-18
+71  22298842778        Rafael Auada  ...   2025-01-08   2025-01-18
+
+[72 rows x 14 columns]
+        task_id  ...                       service_name
+0   14959515507  ...                        Sasi [RaaS]
+1   14963146054  ...                      Magis5 [RaaS]
+2   14963311801  ...                      Mkraft [RaaS]
+3   14963311872  ...        Bluepay Solutions [Project]
+4   14963846170  ...               Fechometal [Project]
+..          ...  ...                                ...
+93  22556963699  ...         IPOG [Payments] [Payments]
+94  22591740428  ...       Letrus [Payments] [Payments]
+95  22653342515  ...                 Educbank [Project]
+96  22695580688  ...                       Armac [RaaS]
+97  22731849536  ...  Bosch Brasil - 3 Seats [Payments]
+
+[98 rows x 24 columns]
+             id  ... service_due_date
+0   14996849766  ...       19/01/2024
+1   14997215284  ...       29/05/2025
+2   14959515507  ...       29/12/2023
+3   14963311801  ...       22/09/2024
+4   14966965592  ...       04/09/2025
+..          ...  ...              ...
+93  22556963699  ...              NaN
+94  22591740428  ...              NaN
+95  22653342515  ...       21/02/2025
+96  22695580688  ...              NaN
+97  22731849536  ...              NaN
+
+[98 rows x 14 columns]
+       task_id  ...                     email
+0    86a65xvmn  ...   joao.aguiar@nexforce.co
+1    86a64f4x1  ...   osmar.alves@nexforce.co
+2    86a63wupk  ...   joao.aguiar@nexforce.co
+3    86a63wt97  ...   joao.aguiar@nexforce.co
+4    86a5tu5nm  ...   joao.aguiar@nexforce.co
+..         ...  ...                       ...
+442  86a5hghwz  ...  vitor.soares@nexforce.co
+443  86a59zgqw  ...  vitor.soares@nexforce.co
+444  86a59zgqf  ...  vitor.soares@nexforce.co
+445  86a59zgq7  ...  vitor.soares@nexforce.co
+446  86a59zgq3  ...  vitor.soares@nexforce.co
+
+[447 rows x 21 columns]
+Etapa 2/5 concluída em 157.66 segundos.
+Tabela starry-compiler-387319.Stage.stg_squad foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_customer foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_task foi truncada com sucesso.
+Tabela starry-compiler-387319.Stage.stg_service foi truncada com sucesso.
+Dados carregados em starry-compiler-387319.Stage.stg_squad
+Dados carregados em starry-compiler-387319.Stage.stg_customer
+Dados carregados em starry-compiler-387319.Stage.stg_service
+Dados carregados em starry-compiler-387319.Stage.stg_task
+Etapa 3/5 concluída em 177.47 segundos.
+Tabela starry-compiler-387319.Clickup_Source.dim_service foi truncada com sucesso.
+Query executada com sucesso
+Query executada com sucesso
+Query executada com sucesso
+Etapa 4/5 concluída em 225.71 segundos.
+Todas as etapas concluídas em 225.71 segundos.
+Execução finalizada, desligando a instância...
