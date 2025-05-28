@@ -1,6 +1,8 @@
 import json
 import pandas as pd
 from shared_utils import convert_to_brazilian_date, date_columns
+from datetime import datetime
+import numpy as np
 
 def transform_tasks_data(tasks, exp_squad):  # Passando o DataFrame de squads como argumento
     # Aplicando a conversão para cada coluna de data
@@ -95,10 +97,20 @@ def transform_tasks_data(tasks, exp_squad):  # Passando o DataFrame de squads co
  
     tasks['points_estimate'] = tasks['points_estimate'].astype('Int64')  # points_estimate em INTEGER
     tasks['points_estimate_rolled_up'] = tasks['points_estimate_rolled_up'].astype('Int64')  # points_estimate_rolled_up em INTEGER
-    tasks['start_date'] = pd.to_datetime(tasks['start_date'], format='%d/%m/%Y', errors='coerce').dt.date  # start_date em DATE
-    tasks['due_date'] = pd.to_datetime(tasks['due_date'], format='%d/%m/%Y', errors='coerce').dt.date  # due_date em DATE
-    tasks['date_created'] = pd.to_datetime(tasks['date_created'], format='%d/%m/%Y', errors='coerce').dt.date  # date_created em DATE
-    tasks['date_updated'] = pd.to_datetime(tasks['date_updated'], format='%d/%m/%Y', errors='coerce').dt.date  # date_updated em DATE
+    tasks['start_date'] = pd.to_datetime(tasks['start_date'], format='%d/%m/%Y', errors='coerce')  # start_date em DATE
+    tasks['due_date'] = pd.to_datetime(tasks['due_date'], format='%d/%m/%Y', errors='coerce')  # due_date em DATE
+    tasks['date_created'] = pd.to_datetime(tasks['date_created'], format='%d/%m/%Y', errors='coerce')  # date_created em DATE
+    tasks['date_updated'] = pd.to_datetime(tasks['date_updated'], format='%d/%m/%Y', errors='coerce')  # date_updated em DATE
+
+    # Adicionar coluna import_date com a data/hora atual (UTC)
+    tasks['import_date'] = pd.to_datetime(datetime.utcnow())
+
+    tasks['import_date_time'] = pd.to_datetime(datetime.utcnow())
+
+    # Aplicar LTRIM e RTRIM em colunas do tipo string
+    string_columns = tasks.select_dtypes(include=['string', 'object']).columns
+    for col in string_columns:
+        tasks[col] = tasks[col].astype(str).str.strip()
 
     exp_task = tasks.copy()
 

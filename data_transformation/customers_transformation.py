@@ -1,6 +1,8 @@
 # customers_transformation.py
 
 import pandas as pd
+from datetime import datetime
+import numpy as np
 
 def transform_customers_data(customer):
 
@@ -151,9 +153,22 @@ def transform_customers_data(customer):
     df_final['go_live_date'] = pd.to_datetime(df_final['go_live_date'], errors='coerce', dayfirst=True)
     df_final['last_renew_date'] = pd.to_datetime(df_final['last_renew_date'], errors='coerce', dayfirst=True)
 
+   
+    # Adicionar coluna import_date com a data/hora atual (UTC)
+    df_final['import_date'] = pd.to_datetime(datetime.utcnow())
+
+    df_final['import_date_time'] = pd.to_datetime(datetime.utcnow())
+
+    # Aplicar LTRIM e RTRIM em colunas do tipo string
+    string_columns = df_final.select_dtypes(include=['string', 'object']).columns
+    for col in string_columns:
+        df_final[col] = df_final[col].astype(str).str.strip()
+
+    df_final = df_final[~df_final["service_name"].str.contains("NexWave", case=False, na=False)]
+
     exp_customer = df_final.copy()
 
-    return exp_customer, service
+    return exp_customer
 
 
 

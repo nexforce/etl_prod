@@ -132,7 +132,7 @@ def extract_tasks_data():
                 if space_name == "Squads: Sprints":
                     folders = get_all_folders(space_id)['folders']
                     for folder in folders:
-                        if folder['name'] == "Sprints 2024":
+                        if folder['name'] == "Sprints 2025":
                             folder_id = folder['id']
                             lists = get_all_lists(folder_id)['lists']
                             for list_item in lists:

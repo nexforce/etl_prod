@@ -24,46 +24,66 @@ def extract_customers_data(teams):
     # Usar o token no header
     headers = {'Authorization': 'Bearer ' + hubspot_token}
 
-    # Função para realizar a requisição e processar os registros do objeto principal
-    def fetch_records(query):
-        response = requests.post(url, headers=headers, json=query)
-        return response.json() if response.status_code == 200 else None
+    # Função para realizar a requisição e processar os registros do objeto principal com paginação
+    def fetch_records_with_pagination(query):
+        all_results = []
+        has_more = True
+        after = None
+        
+        while has_more:
+            if after:
+                query['after'] = after  # Adiciona o parâmetro de paginação à query
+            
+            response = requests.post(url, headers=headers, json=query)
+            
+            if response.status_code == 200:
+                data = response.json()
+                all_results.extend(data.get('results', []))  # Adiciona os resultados à lista
+                # Verifica se há mais páginas
+                paging = data.get('paging')
+                if paging and 'next' in paging:
+                    after = paging['next']['after']  # Atribui o valor de 'after' para a próxima página
+                else:
+                    has_more = False  # Não há mais páginas
+            else:
+                print(f"Erro ao obter registros: {response.status_code}")
+                has_more = False
+        
+        return all_results
 
     # Função para obter IDs dos objetos associados para um registro específico do objeto principal
     def get_associated_objects(record_id, associated_object_id):
-        assoc_url = f"https://api.hubapi.com/crm/v3/objects/{object_id}/{record_id}/associations/{associated_object_id}"
-        response = requests.get(assoc_url, headers=headers)
+            assoc_url = f"https://api.hubapi.com/crm/v3/objects/{object_id}/{record_id}/associations/{associated_object_id}"
+            response = requests.get(assoc_url, headers=headers)
         
-        if response.status_code == 200:
-            return response.json()
-        else:
-            print(f"Erro ao obter objetos associados para {record_id} com o objeto {associated_object_id}: {response.status_code}")
-            return None
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print(f"Erro ao obter objetos associados para {record_id} com o objeto {associated_object_id}: {response.status_code}")
+                return None
 
     # Requisição: Obter registros e todas as propriedades do objeto principal
     query_initial = {
         "properties": [
-        "customer_name", "customer_status", "hs_createdate", "growth_formula_implemented", 
-        "subscription_crm_id",  "hs_lastmodifieddate", 
+            "customer_name", "customer_status", "hs_createdate", "growth_formula_implemented", 
+            "subscription_crm_id",  "hs_lastmodifieddate", 
         ],
-        "limit": 100  
+        "limit": 120  # Tenta buscar até 120, mas a paginação garante que você busque tudo
     }
 
-    # Buscar os registros do objeto principal
-    result = fetch_records(query_initial)
+    # Buscar os registros do objeto principal com paginação
+    result = fetch_records_with_pagination(query_initial)
 
     # Processar os registros
-    if result and 'results' in result:
-        all_records = result['results']
-
+    if result:
         # Criar DataFrame para registros do objeto principal
-        df_records = pd.DataFrame(all_records)
+        df_records = pd.DataFrame(result)
         customers = pd.json_normalize(df_records['properties']) if 'properties' in df_records.columns else pd.DataFrame()
         
         # Obter IDs dos registros do objeto principal
         record_ids = df_records['id'].tolist()
         
-       # Buscar detalhes dos objetos associados ao objeto principal (para ambos os IDs)
+        # Buscar detalhes dos objetos associados ao objeto principal (para ambos os IDs)
         associated_details_1 = []
         
         for record_id in record_ids:
@@ -78,48 +98,45 @@ def extract_customers_data(teams):
             
         # Criar DataFrames com detalhes dos objetos associados
         df_associated_1 = pd.DataFrame(associated_details_1)
-    
+
         # Expandir os dados das propriedades do objeto principal
         customers = df_records.drop(columns=['properties']).join(customers)
         
         # Combinar os registros principais com os objetos associados
         customers = customers.merge(df_associated_1, left_on='id', right_on='customer_id', how='left')
-    
-        # objeto purchase
+
+    # Requisição para buscar registros do objeto Purchase
     object_id = "2-34344148"
     url = f"https://api.hubapi.com/crm/v3/objects/{object_id}/search"
 
-    # Requisição: Obter registros e todas as propriedades
     query2 = {
         "properties": ["amount", "discount", "gross_value", "payment_end_date", "payment_frequency", 
-        "payment_start_date", "service_currency", "service_due_date", "service_end_date", "service_name", 
-        "service_start_date", "service_status", "service_type", "sprint_points_plan", "subscription_service_plan",
-        "gross_value","discount","mrr","intermediation_fee",'payment_frequency'],  
+                       "payment_start_date", "service_currency", "service_due_date", "service_end_date", "service_name", 
+                       "service_start_date", "service_status", "service_type", "sprint_points_plan", "subscription_service_plan",
+                       "gross_value","discount","mrr","intermediation_fee",'payment_frequency'],  
         "limit": 100  
     }
 
-    # Buscar os registros
-    result = fetch_records(query2)
+    # Buscar os registros do objeto Purchase com paginação
+    result = fetch_records_with_pagination(query2)
 
-    # Processar os registros
-    if result and 'results' in result:
-        all_records = result['results']
+    # Processar os registros do objeto Purchase
+    if result:
+       all_records = result
 
-        # Cria DataFrame para registros
-        df_records = pd.DataFrame(all_records)
-        df_purchase = pd.json_normalize(df_records['properties']) if 'properties' in df_records.columns else pd.DataFrame()
+       # Criar DataFrame para registros do objeto Purchase
+       df_records = pd.DataFrame(all_records)
+       df_purchase = pd.json_normalize(df_records['properties']) if 'properties' in df_records.columns else pd.DataFrame()
 
     df_final = customers.merge(df_purchase, left_on='associated_object_1_id', right_on='hs_object_id', how='left')
 
-    #BUSCAR PURCHASE
-    # IDs principais
+    # Buscar registros do objeto Purchase
     purchase_object_id = "2-34344148"  # Objeto Purchase
     squad_object_id = "2-32628364"  # Objeto Squad
 
-    # URL para buscar registros do objeto Purchase
     url_purchase = f"https://api.hubapi.com/crm/v3/objects/{purchase_object_id}/search"
 
-    # Função para buscar os registros do objeto Purchase
+    # Função para buscar os registros do objeto Purchase com paginação
     def fetch_purchase_records(query):
         response = requests.post(url_purchase, headers=headers, json=query)
         return response.json() if response.status_code == 200 else None
@@ -138,13 +155,13 @@ def extract_customers_data(teams):
     # Query para buscar registros do objeto Purchase com todas as propriedades relevantes
     purchase_query = {
         "properties": ["amount", "discount", "gross_value", "payment_end_date", "payment_frequency", 
-        "payment_start_date", "service_currency", "service_due_date", "service_end_date", "service_name", 
-        "service_start_date", "service_status", "service_type", "sprint_points_plan", "subscription_service_plan",
-        "gross_value", "discount", "mrr", "intermediation_fee", "payment_frequency","slack_channel"],  
-        "limit": 100  
+                       "payment_start_date", "service_currency", "service_due_date", "service_end_date", "service_name", 
+                       "service_start_date", "service_status", "service_type", "sprint_points_plan", "subscription_service_plan",
+                       "gross_value", "discount", "mrr", "intermediation_fee", "payment_frequency","slack_channel"],  
+        "limit": 200  
     }
 
-    # Buscar registros do objeto Purchase
+    # Buscar registros do objeto Purchase com paginação
     purchase_result = fetch_purchase_records(purchase_query)
 
     # Processar registros do objeto Purchase
@@ -182,16 +199,13 @@ def extract_customers_data(teams):
         )
 
         # Resultado final
-        
     else:
         print("Nenhum registro de Purchase encontrado.")
 
-    aux_pur = pd.merge(purchase_with_squads,teams, how='left', on="team_id")
-
-    aux_pur = aux_pur[['id','slack_channel','squad_name']]
-
+    aux_pur = pd.merge(purchase_with_squads, teams, how='left', on="team_id")
+    aux_pur = aux_pur[['id', 'slack_channel', 'squad_name']]
     purchase = aux_pur.rename(columns={'id': 'associated_object_1_id'})
 
-    customers = pd.merge(df_final,purchase, how='left', on='associated_object_1_id')
+    customers = pd.merge(df_final, purchase, how='left', on='associated_object_1_id')
 
     return customers 

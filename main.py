@@ -100,8 +100,8 @@ def main():
     table_id_squad = f"{project_id}.{dataset_stage}.stg_squad"
     table_id_customer = f"{project_id}.{dataset_stage}.stg_customer"
     table_id_tasks = f"{project_id}.{dataset_stage}.stg_task"
-    table_id_service = f"{project_id}.{dataset_stage}.stg_service"
-    table_dim_service = f"{project_id}.Clickup_Source.dim_service"
+   # table_id_service = f"{project_id}.{dataset_stage}.stg_service"
+   # table_dim_service = f"{project_id}.Clickup_Source.dim_service"
 
     # 1. Extração de dados
     squads, teams = extract_squads_data()  
@@ -119,9 +119,8 @@ def main():
     # 2. Transformação de dados
     exp_squad = transform_squads_data(squads) 
     print(exp_squad)
-    exp_customer, service = transform_customers_data(customer) 
+    exp_customer = transform_customers_data(customer) 
     print(exp_customer) 
-    print(service)
     exp_task = transform_tasks_data(tasks, exp_squad)
     print(exp_task)
 
@@ -133,11 +132,11 @@ def main():
     truncate_table(table_id_squad, client)
     truncate_table(table_id_customer, client)
     truncate_table(table_id_tasks, client)
-    truncate_table(table_id_service, client)
+    # truncate_table(table_id_service, client)
 
     load_to_bigquery(exp_squad, table_id_squad, client)
     load_to_bigquery(exp_customer, table_id_customer, client)
-    load_to_bigquery(service, table_id_service, client)
+   # load_to_bigquery(service, table_id_service, client)
     load_to_bigquery(exp_task, table_id_tasks, client)
     
     current_step += 1
@@ -153,14 +152,14 @@ def main():
 
     #CÓDIGO NUVEM
     query_tl_dim_customer = load_query_from_file("tl_dim_customer", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
-    query_tl_dim_service = load_query_from_file("tl_dim_service", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
+   # query_tl_dim_service = load_query_from_file("tl_dim_service", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
     query_tl_dim_squad = load_query_from_file("tl_dim_squad", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
     query_tl_dim_task = load_query_from_file("tl_dim_task", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
     query_tl_fat_sprint_detail = load_query_from_file("tl_fat_sprint_detail", file_path="/home/ricardo_semerene/etl_prod/sql_queries/queries.sql")
 
-    truncate_table(table_dim_service, client)
+   # truncate_table(table_dim_service, client)
 
-    run_query(client, query_tl_dim_service)
+    #run_query(client, query_tl_dim_service)
     run_query(client, query_tl_dim_customer)
     run_query(client, query_tl_dim_squad)
     run_query(client, query_tl_dim_task)
@@ -178,7 +177,7 @@ def main():
 
     # Após a execução do código
     print("Execução finalizada, desligando a instância...")
-    subprocess.run(["sudo", "shutdown", "-h", "now"])
+   # subprocess.run(["sudo", "shutdown", "-h", "now"])
 
 if __name__ == "__main__":
      main()

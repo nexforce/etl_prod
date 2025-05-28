@@ -162,7 +162,7 @@ def create_tasks_in_history(task_history, exp_squad):
     df = pd.read_json('tasks.json', lines=True)
 
     # Token e ID
-    list_id = '901301447850'
+    list_id = '901306303370'
     # Carregar variáveis do arquivo .env
     load_dotenv()
 

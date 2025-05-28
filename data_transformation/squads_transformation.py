@@ -2,6 +2,7 @@
 
 import pandas as pd
 import numpy as np
+from datetime import datetime
 
 def transform_squads_data(squads):
     
@@ -18,7 +19,7 @@ def transform_squads_data(squads):
 
     # Converter colunas de data para o formato dd/mm/yyyy
     squads['hs_createdate'] = pd.to_datetime(squads['hs_createdate']).dt.strftime('%d/%m/%Y')
-    squads['hs_lastmodifieddate'] = pd.to_datetime(squads['hs_lastmodifieddate']).dt.strftime('%d/%m/%Y')
+    squads['hs_lastmodifieddate'] = pd.to_datetime(squads['hs_lastmodifieddate'], format='mixed').dt.strftime('%d/%m/%Y')
 
     # Selecionar e renomear colunas
     squads = squads[['id','member_name','function','member_email','capacity_points','monthly_cost','squad_name','slack_channel','member_status',
@@ -44,11 +45,21 @@ def transform_squads_data(squads):
     squads['list'] = squads['list'].replace('None', np.nan).astype('string')
     
     # Converter colunas de data para o formato de string ou datetime adequado para BigQuery
-    squads['date_created'] = pd.to_datetime(squads['date_created'], errors='coerce', dayfirst=True).dt.date  # Converte para formato de data
-    squads['date_updated'] = pd.to_datetime(squads['date_updated'], errors='coerce', dayfirst=True).dt.date  # Converte para formato de data
+    squads['date_created'] = pd.to_datetime(squads['date_created'], errors='coerce', dayfirst=True)  # Converte para formato de data
+    squads['date_updated'] = pd.to_datetime(squads['date_updated'], errors='coerce', dayfirst=True)  # Converte para formato de data
 
     squads['start_date'] = squads['start_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
-    squads['due_date'] = squads['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(x) else x)
+    squads['due_date'] = squads['due_date'].apply(lambda x: pd.to_datetime(x, errors='coerce').strftime('%d/%m/%Y') if pd.notnull(pd.to_datetime(x, errors='coerce')) else None)
+
+    # Adicionar coluna import_date com a data/hora atual (UTC)
+    squads['import_date'] = pd.to_datetime(datetime.utcnow())
+
+    squads['import_date_time'] = pd.to_datetime(datetime.utcnow())
+
+    # Aplicar LTRIM e RTRIM em colunas do tipo string
+    string_columns = squads.select_dtypes(include=['string', 'object']).columns
+    for col in string_columns:
+        squads[col] = squads[col].astype(str).str.strip()
 
     exp_squad = squads.copy()
     
